@@ -10,16 +10,15 @@ const { data } = await useFetch('https://rickandmortyapi.com/api/character?page=
       v-for="character in data.results"
       :key="character.id"
       :to="`/characters/${character.id}`"
+      class="p-2 border rounded border-pink-700 w-full flex mb-4 flex-col"
     >
-     <h3>
+     <span class="text-xl">
      {{character.name}}
-     </h3>
-     <p>
+     </span>
+     <div>
      {{character.status}}
-     </p>
-     <p>
      {{character.species}}
-     </p>
+     </div>
     </NuxtLink>
   </div>
 </template>
