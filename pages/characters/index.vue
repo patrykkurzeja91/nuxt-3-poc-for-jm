@@ -1,5 +1,5 @@
 <script setup>
-const { data } = await useFetch('https://rickandmortyapi.com/api/character?page=1')
+const { data } = await useFetch(()=> 'https://rickandmortyapi.com/api/character?page=1')
 
 // const results = computed(() => data.value.results)
 </script>
