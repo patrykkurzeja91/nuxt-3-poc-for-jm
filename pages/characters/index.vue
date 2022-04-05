@@ -6,11 +6,11 @@ const { data } = await useFetch(()=> 'https://rickandmortyapi.com/api/character?
 
 <template>
   <div>
-    <NuxtLink
+    <button
+      @click="$router.push(`/characters/${character.id}`)"
       v-for="character in data.results"
       :key="character.id"
-      :to="`/characters/${character.id}`"
-      class="p-2 border rounded border-pink-700 w-full flex mb-4 flex-col"
+      class="n-link-base p-2 border rounded border-pink-700 w-full flex mb-4 flex-col"
     >
      <span class="text-xl">
      {{character.name}}
@@ -19,6 +19,6 @@ const { data } = await useFetch(()=> 'https://rickandmortyapi.com/api/character?
      {{character.status}}
      {{character.species}}
      </div>
-    </NuxtLink>
+    </button>
   </div>
 </template>

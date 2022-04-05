@@ -6,10 +6,10 @@ const { data } = await useFetch(() => 'https://api.cosmicjs.com/v2/buckets/nuxt-
 
 <template>
   <div>
-    <NuxtLink
+    <button
       v-for="post in data.objects"
       :key="post.slug"
-            :to="`/posts/${post.id}`"
+      @click="$router.push(`/posts/${post.id}`)"
       class="p-2 border rounded border-pink-700 w-full flex mb-4 flex-col"
     >
      <span class="text-xl">
@@ -18,6 +18,6 @@ const { data } = await useFetch(() => 'https://api.cosmicjs.com/v2/buckets/nuxt-
      </span>
      <div v-html="post.content">
      </div>
-    </NuxtLink>
+    </button>
   </div>
 </template>
