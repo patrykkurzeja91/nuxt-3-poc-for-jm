@@ -1,23 +1,27 @@
 <script setup>
-const { data } = await useFetch(() => 'https://api.cosmicjs.com/v2/buckets/nuxt-3-test-production/objects?pretty=true&query=%7B%22type%22%3A%22blog-posts%22%7D&read_key=Xz0kw63T52Oyhr4zlqscL5glyFVLdAFFLe9MQHI5UZPSlp4Ssk&limit=20&props=slug,title,content,id')
-// https://api.cosmicjs.com/v2/buckets/nuxt-3-test-production/objects/624c88bb6449640009b5d1ab?pretty=true&read_key=Xz0kw63T52Oyhr4zlqscL5glyFVLdAFFLe9MQHI5UZPSlp4Ssk&props=slug,title,content
+const readKey = 'Xz0kw63T52Oyhr4zlqscL5glyFVLdAFFLe9MQHI5UZPSlp4Ssk'
+const API_URL= 'https://api.cosmicjs.com/v2/buckets/nuxt-3-test-production/objects'
+const { data } = await useFetch(`${API_URL}?read_key=${readKey}&limit=20&props=slug,title,content`, {
+   query: {
+      type: 'blog-posts',
+    },
+})
 // const results = computed(() => data.value.results)
 </script>
 
 <template>
   <div>
-    <button
+  {{ data }}
+    <nuxt-link
       v-for="post in data.objects"
       :key="post.slug"
-      @click="$router.push(`/posts/${post.id}`)"
+      :to="`/posts/${post.slug}`"
       class="p-2 border rounded border-pink-700 w-full flex mb-4 flex-col"
     >
      <span class="text-xl">
+     {{post}}
      {{post.title}}
-     {{post.id}}
      </span>
-     <div v-html="post.content">
-     </div>
-    </button>
+    </nuxt-link>
   </div>
 </template>

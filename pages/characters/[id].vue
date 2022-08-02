@@ -1,7 +1,12 @@
 <script setup>
 const route = useRoute()
-console.log(route.params.id)
-const { data, pending } = await useFetch(() => `https://rickandmortyapi.com/api/character/${route.params.id}`)
+const { data } = await useFetch( () => `https://rickandmortyapi.com/api/character/${route.params.id}`)
+
+// to działa
+// const data = ref({})
+// onMounted(async () => {
+//   data.value = await $fetch(`https://rickandmortyapi.com/api/character/${route.params.id}`)
+// })
 </script>
 
 <template>
