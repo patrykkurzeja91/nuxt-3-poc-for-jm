@@ -1,0 +1,57 @@
+:root {
+  --cadmium-orange: #E08C37ff;
+
+  --royal-blue-dark: #002366; /* primary color;*/
+  --dark-orange: #664300; /* complementory color;*/
+
+  --dark-golden: #b8860b;
+
+
+  --pale-silver: #BDB8A9ff;
+  --platinum: #EDEDEAff;
+  --silver: #C1C1BFff;
+  --cultured: #FAFAF9ff;
+
+  --cobalt-blue: #1E4BAAff;
+  --space-cadet: #101E45ff;
+  --glaucous: #667FB2ff;
+  --royal-blue-dark-2: #0B2A70ff;
+
+
+/* CSS HEX palette from logo*/
+--yale-blue: #1B4A8Bff;
+--white: #FEFEFEff;
+--bdazzled-blue: #3A5FA4ff;
+--bdazzled-blue-2: #2F59A3ff;
+--white-2: #FFFFFFff;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 1px;
+  @apply font-serif font-bold;
+}
+
+h1 {
+  @apply text-6xl;
+}
+h2 {
+  @apply text-4xl;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+h4 {
+  @apply text-2xl;
+}
+
+h5 {
+  @apply text-xl;
+}
+
+h6 {
+  @apply text-lg;
+}
+

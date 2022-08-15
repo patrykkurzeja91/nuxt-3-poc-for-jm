@@ -1,12 +1,16 @@
 <template>
     <div>
-      <header class="container px-4 py-8 mx-auto">
+    <TheNavbar />
+    <!-- <TheNavbarTemplate /> -->
+      <!-- <header class="container px-4 py-8 mx-auto">
         <NuxtLink to="/">| HOME</NuxtLink>
         <NuxtLink to="/characters">| CHARACTERS</NuxtLink>
         <NuxtLink to="/posts">| POSTS</NuxtLink>
-      </header>
-      <main class="container px-4 mx-auto">
+        <NuxtLink to="/mountains">| MOUNTAINS</NuxtLink>
+      </header> -->
+      <main class="pt-24">
         <slot/>
       </main>
+      <TheFooter />
     </div>
 </template>
