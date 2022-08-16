@@ -1,11 +1,5 @@
-<script setup>
-
-</script>
-
 <template>
-  <PageHero />
   <MoleculesContentBlock3 />
   <MoleculesContentBlock2 />
   <MoleculesContentBlock1 />
-  <NewsletterForm />
 </template>

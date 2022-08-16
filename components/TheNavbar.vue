@@ -11,7 +11,6 @@
           </a>
         </div>
         <!-- hamburger button -->
-5C3B18
         <div class="flex ml-auto">
           <div class="-mr-2 -my-2 md:hidden">
             <PopoverButton class="bg-white rounded-lg p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
