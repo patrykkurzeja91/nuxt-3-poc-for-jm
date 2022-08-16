@@ -1,7 +1,9 @@
 <template>
 <div class="relative">
   <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-    <MailIcon aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" />
+    MAIL ICON
+
+    <!-- <MailIcon aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" /> -->
   </div>
   <input
     v-bind="$attrs"
@@ -14,7 +16,7 @@
 </template>
 
 <script setup lang="ts">
-import { MailIcon } from "@heroicons/vue/outline"
+// import { MailIcon } from "@heroicons/vue/outline"
 
 defineProps<{
   modelValue: string

@@ -4,7 +4,7 @@
     <div class="container max-w-screen-xl mx-auto px-4 sm:px-6">
       <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:space-x-10">
         <div class="flex justify-start lg:w-0 lg:flex-1">
-          <a href="#" class="justify-center items-center">
+          <a href="/" class="justify-center items-center">
             <span class="sr-only">Workflow</span>
             <!-- <h5 class="text-dark-golden w-auto ">B | K</h5> -->
             <img class="h-8 w-auto sm:h-10" src="@/assets/images/Slice.svg" alt="" />
@@ -15,7 +15,7 @@
           <div class="-mr-2 -my-2 md:hidden">
             <PopoverButton class="bg-white rounded-lg p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span class="sr-only">Open menu</span>
-              <MenuIcon class="h-6 w-6" aria-hidden="true" />
+              <!-- <MenuIcon class="h-6 w-6" aria-hidden="true" /> -->
             </PopoverButton>
           </div>
           <div class="hidden md:flex space-x-2">
@@ -43,14 +43,14 @@
               <div class="-mr-2">
                 <PopoverButton class="bg-white rounded-lg p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span class="sr-only">Close menu</span>
-                  <XIcon class="h-6 w-6" aria-hidden="true" />
+                  <!-- <XIcon class="h-6 w-6" aria-hidden="true" /> -->
                 </PopoverButton>
               </div>
             </div>
             <div class="mt-6">
               <nav class="grid gap-y-8">
                 <a v-for="item in solutions" :key="item.name" :href="item.href" class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
-                  <component :is="item.icon" class="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                  <!-- <component :is="item.icon" class="flex-shrink-0 h-6 w-6 text-indigo-600" aria-hidden="true" /> -->
                   <span class="ml-3 text-base font-medium text-gray-900">
                     {{ item.name }}
                   </span>
@@ -84,74 +84,54 @@
 
 <script setup>
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue'
-import {
-  BookmarkAltIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  CursorClickIcon,
-  MenuIcon,
-  RefreshIcon,
-  ShieldCheckIcon,
-  SupportIcon,
-  ViewGridIcon,
-  XIcon,
-} from '@heroicons/vue/outline'
+
 
 const solutions = [
   {
     name: 'Analytics',
     description: 'Get a better understanding of where your traffic is coming from.',
     href: '#',
-    icon: ChartBarIcon,
   },
   {
     name: 'Engagement',
     description: 'Speak directly to your customers in a more meaningful way.',
     href: '#',
-    icon: CursorClickIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
+  { name: 'Security',
+   description: "Your customers' data will be safe and secure.",
+   href: '#'
+  },
   {
     name: 'Integrations',
     description: "Connect with third-party tools that you're already using.",
     href: '#',
-    icon: ViewGridIcon,
   },
   {
     name: 'Automations',
     description: 'Build strategic funnels that will drive your customers to convert',
     href: '#',
-    icon: RefreshIcon,
   },
 ]
-// const callsToAction = [
-//   { name: 'Watch Demo', href: '#', icon: PlayIcon },
-//   { name: 'Contact Sales', href: '#', icon: PhoneIcon },
-// ]
+
 const resources = [
   {
     name: 'Help Center',
     description: 'Get all of your questions answered in our forums or contact support.',
     href: '#',
-    icon: SupportIcon,
+
   },
   {
     name: 'Guides',
     description: 'Learn how to maximize our platform to get the most out of it.',
     href: '#',
-    icon: BookmarkAltIcon,
+
   },
   {
     name: 'Events',
     description: 'See what meet-ups and other events we might be planning near you.',
     href: '#',
-    icon: CalendarIcon,
+
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', },
 ]
-// const recentPosts = [
-//   { id: 1, name: 'Boost your conversion rate', href: '#' },
-//   { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-//   { id: 3, name: 'Improve your customer experience', href: '#' },
-// ]
 </script>

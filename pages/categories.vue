@@ -1,5 +1,7 @@
 <template>
-  <MoleculesContentBlock3 />
-  <MoleculesContentBlock2 />
-  <MoleculesContentBlock1 />
+  <div>
+    <MoleculesContentBlock2 />
+    <MoleculesContentBlock1 />
+    <MoleculesContentBlock3 />
+  </div>
 </template>
