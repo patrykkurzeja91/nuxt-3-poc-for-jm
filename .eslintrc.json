@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "extends": [
+    "plugin:nuxt/recommended",
+    "@nuxtjs/eslint-config-typescript",
+    "plugin:prettier/recommended"
+  ],
+  "parserOptions": {
+     "parser": "@typescript-eslint/parser",
+          "sourceType": "module"
+      },
+  "rules": {
+    "vue/multi-word-component-names": 0,
+    "prettier/prettier": ["error", { "singleQuote": true, "semi": false }]
+  }
+}

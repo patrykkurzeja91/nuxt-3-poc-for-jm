@@ -1,38 +1,67 @@
 <template>
-    <section class="text-gray-600 body-font relative">
-  <div class="container px-5 py-24 mx-auto">
-    <div class="flex flex-col text-center w-full mb-12">
-      <h1 class="mb-10 text-gray-900">Contact Us</h1>
-      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify.</p>
-    </div>
-    <form class="lg:w-1/2 md:w-2/3 mx-auto">
-      <div class="flex flex-wrap">
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
-            <input type="text" id="name" name="name" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
-        </div>
-        <div class="p-2 w-1/2">
-          <div class="relative">
-            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
-            <input type="email" id="email" name="email" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-          </div>
-        </div>
-        <div class="p-2 w-full">
-          <div class="relative">
-            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
-            <textarea id="message" name="message" class="w-full bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-          </div>
-        </div>
-        <div class="p-2 w-full">
-          <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
-        </div>
-        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
-          <a class="text-blue-500">example@email.com</a>
-        </div>
+  <section class="body-font relative text-gray-600">
+    <div class="container mx-auto px-5 py-24">
+      <div class="mb-12 flex w-full flex-col text-center">
+        <h1 class="mb-10 text-gray-900">Contact Us</h1>
+        <p class="mx-auto text-base leading-relaxed lg:w-2/3">
+          Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+          gentrify.
+        </p>
       </div>
-    </form>
-  </div>
-</section>
+      <form class="mx-auto md:w-2/3 lg:w-1/2">
+        <div class="flex flex-wrap">
+          <div class="w-1/2 p-2">
+            <div class="relative">
+              <label for="name" class="text-sm leading-7 text-gray-600"
+                >Name</label
+              >
+              <input
+                id="name"
+                type="text"
+                name="name"
+                class="w-full rounded border border-gray-300 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200"
+              />
+            </div>
+          </div>
+          <div class="w-1/2 p-2">
+            <div class="relative">
+              <label for="email" class="text-sm leading-7 text-gray-600"
+                >Email</label
+              >
+              <input
+                id="email"
+                type="email"
+                name="email"
+                class="w-full rounded border border-gray-300 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200"
+              />
+            </div>
+          </div>
+          <div class="w-full p-2">
+            <div class="relative">
+              <label for="message" class="text-sm leading-7 text-gray-600"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="h-32 w-full resize-none rounded border border-gray-300 bg-opacity-50 py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-blue-500 focus:bg-white focus:ring-2 focus:ring-blue-200"
+              ></textarea>
+            </div>
+          </div>
+          <div class="w-full p-2">
+            <button
+              class="mx-auto flex rounded border-0 bg-blue-500 py-2 px-8 text-lg text-white hover:bg-blue-600 focus:outline-none"
+            >
+              Button
+            </button>
+          </div>
+          <div
+            class="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center"
+          >
+            <a class="text-blue-500">example@email.com</a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
 </template>
