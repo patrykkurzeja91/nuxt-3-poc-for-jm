@@ -1,10 +1,9 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
   <div>
     <PageHero />
+    <MoleculesContentBlockWithImages />
     <MoleculesContentBlock3 />
     <MoleculesContentBlock2 />
     <MoleculesContentBlock1 />

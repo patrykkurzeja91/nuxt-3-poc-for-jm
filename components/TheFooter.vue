@@ -1,6 +1,6 @@
 <template>
-  <footer class="bg-royal-blue py-20 sm:px-6">
-    <div class="container mx-auto max-w-6xl px-4">
+  <footer class="bg-royal-blue py-24">
+    <div class="container mx-auto max-w-screen-xl px-4 sm:px-6">
       <div class="md:flex md:justify-between">
         <div class="mb-6 md:mb-0">
           <a href="https://flowbite.com/" class="flex items-center text-white">
@@ -26,9 +26,9 @@
                 >
               </li>
               <li>
-                <a href="https://tailwindcss.com/" class="hover:underline"
-                  >Tailwind CSS</a
-                >
+                <a href="https://tailwindcss.com/" class="hover:underline">
+                  Tailwind CSS
+                </a>
               </li>
             </ul>
           </div>

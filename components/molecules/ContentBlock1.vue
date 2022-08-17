@@ -1,6 +1,6 @@
 <template>
   <section class="body-font text-gray-600">
-    <div class="container mx-auto px-5 py-24">
+    <div class="container mx-auto max-w-screen-xl px-5 py-24">
       <div
         class="mb-20 flex w-full flex-col flex-wrap items-center text-center"
       >
@@ -12,7 +12,7 @@
       </div>
       <div class="-m-4 flex flex-wrap">
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -36,7 +36,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -64,7 +64,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -89,7 +89,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -115,7 +115,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -139,7 +139,7 @@
           </div>
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
-          <div class="rounded-lg border border-gray-200 p-6">
+          <div class="rounded-md border border-gray-200 p-6">
             <div
               class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
             >
@@ -165,7 +165,7 @@
       </div>
       <button
         href="#"
-        class="mx-auto mt-16 flex items-center justify-center whitespace-nowrap rounded-sm border border-transparent bg-royal-blue px-10 py-3 text-base font-medium text-white hover:shadow-sm hover:shadow-dark-golden"
+        class="mx-auto mt-16 flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-royal-blue px-10 py-3 text-base font-medium text-white hover:shadow-sm hover:shadow-dark-golden"
       >
         Register
       </button>
