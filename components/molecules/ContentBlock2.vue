@@ -1,12 +1,12 @@
 <template>
   <section class="body-font text-gray-600">
-    <div class="container mx-auto flex flex-col px-5 py-24">
+    <div class="container mx-auto flex max-w-screen-xl flex-col px-5 py-24">
       <div class="mx-auto">
-        <div class="h-64 overflow-hidden rounded-lg">
+        <div class="h-64 overflow-hidden rounded-md">
           <img
             alt="content"
             class="h-full w-full object-cover object-center"
-            src="https://dummyimage.com/1200x500"
+            src="https://picsum.photos/1200/300"
           />
         </div>
         <div class="mt-10 flex flex-col sm:flex-row">
