@@ -34,7 +34,7 @@ const marketingList = ref([
     <section class="relative">
       <div class="container mx-auto px-6 py-4 lg:py-24">
         <div
-          class="mx-auto mb-12 flex w-full flex-col rounded-md text-center md:w-2/3 lg:border lg:border-light-grayish-blue-200 lg:p-16"
+          class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white text-center md:w-2/3 lg:border lg:border-light-grayish-blue-200 lg:p-16"
         >
           <div class="contact-info">
             <h1 class="mb-12">Contact us</h1>
