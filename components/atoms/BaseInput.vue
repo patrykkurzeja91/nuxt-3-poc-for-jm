@@ -1,9 +1,13 @@
 <template>
   <div class="relative">
     <div
-      class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3"
+      class="icon-wrapper pointer-events-none absolute flex items-center pl-3"
     >
-      MAIL ICON
+      <nuxt-icon
+        name="mail"
+        fill
+        class="flex h-5 w-5 items-center justify-center"
+      />
       <!-- <MailIcon aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" /> -->
     </div>
     <input
@@ -35,3 +39,16 @@ const updateValue = (e: InputEvent) => {
   emit('update:modelValue', (e.target as HTMLInputElement).value)
 }
 </script>
+<style scoped>
+.icon-wrapper {
+  top: 50%;
+  transform: translateY(-50%);
+}
+</style>
+<style>
+.nuxt-icon > svg {
+  margin-bottom: 0;
+  width: auto;
+  height: auto;
+}
+</style>
