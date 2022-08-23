@@ -165,9 +165,9 @@ const categories = ref([
 
 <template>
   <section class="relative overflow-x-hidden">
-    <AtomsBackgroundPatternWave
+    <!-- <AtomsBackgroundPatternWave
       class="absolute bottom-0 left-0 right-0 -z-10 w-screen"
-    />
+    /> -->
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
         <h1 class="mb-12">Categories</h1>
@@ -189,7 +189,7 @@ const categories = ref([
           class="w-full p-3 md:w-1/2 lg:w-1/3"
         >
           <div
-            class="card relative flex h-full flex-col items-start justify-start rounded-xl bg-white/80 p-6 drop-shadow-2xl backdrop-blur-sm"
+            class="card relative flex h-full flex-col items-start justify-start rounded-xl border-2 border-light-grayish-blue-100 bg-white/80 p-6"
           >
             <h6
               class="title-font mb-3 mr-4 text-5xl font-medium text-dark-golden/30"
