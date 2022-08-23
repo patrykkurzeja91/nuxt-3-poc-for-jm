@@ -14,13 +14,13 @@
       <div class="-m-4 flex flex-wrap">
         <div class="w-full p-4 lg:w-1/3">
           <div
-            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-gray-200 p-6"
+            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-light-grayish-blue-100 bg-white/70 p-6 drop-shadow-2xl backdrop-blur-md"
           >
             <h2 class="title-font mb-1 text-sm font-medium tracking-widest">
               SILVER
             </h2>
             <h1
-              class="mb-4 flex items-center border-b border-gray-200 pb-4 text-5xl leading-none text-gray-900"
+              class="mb-4 flex items-center border-b border-light-grayish-blue-100 pb-4 text-5xl leading-none text-gray-900"
             >
               <span>£56,99 </span>
               <!-- <span class="ml-1 text-lg font-normal text-light-grayish-blue-800">/mo</span> -->
@@ -134,7 +134,7 @@
         </div>
         <div class="w-full p-4 lg:w-1/3">
           <div
-            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-dark-golden p-6"
+            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-dark-golden bg-white/70 p-6 drop-shadow-2xl backdrop-blur-md"
           >
             <span
               class="absolute right-0 top-0 rounded-bl bg-dark-golden px-3 py-1 text-xs tracking-widest text-white"
@@ -144,7 +144,7 @@
               GOLD
             </h2>
             <h1
-              class="mb-4 flex items-center border-b border-gray-200 pb-4 text-5xl leading-none text-gray-900"
+              class="mb-4 flex items-center border-b border-light-grayish-blue-100 pb-4 text-5xl leading-none text-gray-900"
             >
               <span>£99,00 </span>
               <!-- <span class="ml-1 text-lg font-normal text-light-grayish-blue-800">/mo</span> -->
@@ -241,13 +241,13 @@
         </div>
         <div class="w-full p-4 lg:w-1/3">
           <div
-            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-gray-200 p-6"
+            class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 border-light-grayish-blue-100 bg-white/70 p-6 drop-shadow-2xl backdrop-blur-md"
           >
             <h2 class="title-font mb-1 text-sm font-medium tracking-widest">
               PLATINUM
             </h2>
             <h1
-              class="mb-4 flex items-center border-b border-gray-200 pb-4 text-5xl leading-none text-gray-900"
+              class="mb-4 flex items-center border-b border-light-grayish-blue-100 pb-4 text-5xl leading-none text-gray-900"
             >
               <span>£199,00 </span>
               <!-- <span class="ml-1 text-lg font-normal text-light-grayish-blue-800">/mo</span> -->
