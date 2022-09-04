@@ -33,6 +33,12 @@
               About us
             </nuxt-link>
             <nuxt-link
+              to="tickets"
+              class="px-6 py-3 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
+            >
+              Tickets</nuxt-link
+            >
+            <nuxt-link
               to="categories"
               class="px-6 py-3 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
             >

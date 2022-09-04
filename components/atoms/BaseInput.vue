@@ -1,35 +1,62 @@
 <template>
-  <div class="relative">
-    <div
-      class="icon-wrapper pointer-events-none absolute flex items-center pl-3"
-    >
-      <nuxt-icon
-        name="mail"
-        fill
-        class="flex h-5 w-5 items-center justify-center"
+  <div class="block">
+    <div class="relative" :class="{ 'input--error': v && v.$error }">
+      <div
+        v-if="icon"
+        class="icon-wrapper pointer-events-none absolute flex items-center pl-3"
+      >
+        <nuxt-icon
+          name="mail"
+          fill
+          class="flex h-5 w-5 items-center justify-center"
+        />
+      </div>
+      <label v-if="label" :for="label" class="mb-2 inline-flex text-lg"
+        >{{ label
+        }}<span v-if="required" class="ml-1 text-red-600">*</span></label
+      >
+      <input
+        v-bind="$attrs"
+        :id="label"
+        :value="modelValue"
+        type="text"
+        :required="required"
+        :class="[{ 'pl-10': icon }, errorClass]"
+        class="block w-full rounded-md border border-light-grayish-blue-300 p-3 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500"
+        :placeholder="placeholder"
+        @input="updateValue"
       />
-      <!-- <MailIcon aria-hidden="true" class="w-5 h-5 text-gray-500 dark:text-gray-400" /> -->
     </div>
-    <input
-      v-bind="$attrs"
-      id="email-address-icon"
-      :value="modelValue"
-      type="text"
-      class="block w-full rounded-md border border-gray-300 bg-gray-50 p-2.5 pl-10 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder-gray-400 dark:focus:border-blue-500 dark:focus:ring-blue-500"
-      placeholder="name@flowbite.com"
-      @input="updateValue"
-    />
+    <span
+      v-if="showErrorMessage"
+      class="mt-3 inline-flex w-full text-left text-red-600"
+    >
+      {{ errorMessage }}
+    </span>
   </div>
 </template>
 
 <script setup lang="ts">
-// import { MailIcon } from "@heroicons/vue/outline"
+import { ValidationArgs } from '@vuelidate/core'
 
-defineProps<{
-  modelValue: string
-}>()
-
-console.log('ss')
+const props = withDefaults(
+  defineProps<{
+    modelValue: string
+    icon?: string
+    placeholder?: string
+    label?: string
+    v?: ValidationArgs<any>
+    type?: string
+    required?: boolean
+  }>(),
+  {
+    icon: '',
+    placeholder: '',
+    label: '',
+    type: 'text',
+    required: false,
+  }
+)
 
 const emit = defineEmits<{
   (e: 'update:modelValue', modelValue: string | number): void
@@ -38,6 +65,27 @@ const emit = defineEmits<{
 const updateValue = (e: InputEvent) => {
   emit('update:modelValue', (e.target as HTMLInputElement).value)
 }
+
+// const fieldInput = computed({
+//   get() {
+//     return props.modelValue
+//   },
+//   set(newValue: string | number) {
+//     emit('update:modelValue', newValue)
+//   },
+// })
+const errorMessage = computed(() => {
+  // if (props.v !== undefined && isArrayEmpty(props.v.$errors)) {
+  //   return ''
+  // }
+  return props.v?.$errors[0].$message
+})
+const errorClass = computed(() => {
+  return props.v?.$error ? 'input--error' : ''
+})
+const showErrorMessage = computed(() => {
+  return props.v?.$error
+})
 </script>
 <style scoped>
 .icon-wrapper {
@@ -46,6 +94,9 @@ const updateValue = (e: InputEvent) => {
 }
 </style>
 <style>
+.input--error {
+  @apply border-red-600;
+}
 .nuxt-icon > svg {
   margin-bottom: 0;
   width: auto;
