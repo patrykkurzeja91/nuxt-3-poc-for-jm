@@ -215,13 +215,13 @@
     "file": "_nuxt/error-component.4a8a5ca6.css",
     "src": "virtual:nuxt:/home/runner/work/nuxt-3-poc-for-jm/nuxt-3-poc-for-jm/.nuxt/error-component.css"
   },
-  "pages/contact.css": {
-    "file": "_nuxt/contact.4a5c87d2.css",
-    "src": "pages/contact.css"
-  },
   "pages/privacy.css": {
     "file": "_nuxt/privacy.e056d86e.css",
     "src": "pages/privacy.css"
+  },
+  "pages/contact.css": {
+    "file": "_nuxt/contact.4a5c87d2.css",
+    "src": "pages/contact.css"
   },
   "node_modules/nuxt/dist/app/entry.css": {
     "file": "_nuxt/entry.7ef1fc6b.css",
