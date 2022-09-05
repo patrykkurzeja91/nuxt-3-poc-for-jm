@@ -1,8 +1,8 @@
 <template>
-  <section class="body-font relative text-gray-600">
+  <section class="body-font relative">
     <div class="container mx-auto px-5 py-24">
       <div class="mb-12 flex w-full flex-col text-center">
-        <h1 class="mb-10 text-gray-900">Contact Us</h1>
+        <h1 class="heading mb-16">Contact Us</h1>
         <p class="mx-auto text-base leading-relaxed lg:w-2/3">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
           gentrify.

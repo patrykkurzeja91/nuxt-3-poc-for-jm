@@ -15,7 +15,7 @@
         >{{ label
         }}<span v-if="required" class="ml-1 text-red-600">*</span></label
       >
-      <input
+      <textarea
         v-bind="$attrs"
         :id="label"
         :value="modelValue"

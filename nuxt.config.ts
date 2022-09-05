@@ -4,6 +4,7 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: ['nuxt-icons'],
+  plugins: ['@/plugins/vue-select.ts'],
   build: {
     postcss: {
       postcssOptions: {
