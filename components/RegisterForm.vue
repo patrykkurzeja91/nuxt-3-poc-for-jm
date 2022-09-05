@@ -142,7 +142,7 @@
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '@vuelidate/validators'
 import type { Ticket, Category } from '@/types'
-import useGroupedCategories from '~~/composables/useGroupedCategories'
+import useGroupedCategories from '@/composables/useGroupedCategories'
 const { data: currentEvent } = await useFetch<Ticket>(
   () => import.meta.env.VITE_API_URL + `/event`,
   { pick: ['id'] }
