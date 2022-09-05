@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import useGroupedCategories from '@/composables/useGroupedCategories'
-
 interface Category {
   id: string
   name: string
