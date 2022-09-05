@@ -28,7 +28,7 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
           heard of them.
         </p>
       </div>
-      <divg
+      <div
         v-for="group in groupedCategories"
         :key="group.subcat"
         class="mx-auto mb-16 max-w-4xl"
@@ -51,7 +51,7 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
             </div>
           </div>
         </div>
-      </divg>
+      </div>
     </div>
   </section>
 </template>
