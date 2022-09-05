@@ -29,7 +29,7 @@ export default function useGroupedCategories(categories: Category[]) {
     )
     return Object.entries(groupedCategoriesObject).map((e) => ({
       subcat: e[0],
-      data: e[1],
+      data: e[1] as { data: { id: string; name: string } },
     }))
   })
   return {
