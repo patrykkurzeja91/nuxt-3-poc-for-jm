@@ -24,7 +24,7 @@
     "src": "assets/images/bk-awards-full-logo.svg"
   },
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "_nuxt/entry.d3c87bed.mjs",
+    "file": "_nuxt/entry.392649dd.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -45,7 +45,7 @@
     ]
   },
   "virtual:nuxt:/home/runner/work/nuxt-3-poc-for-jm/nuxt-3-poc-for-jm/.nuxt/error-component.mjs": {
-    "file": "_nuxt/error-component.73c61c8b.mjs",
+    "file": "_nuxt/error-component.d6e18375.mjs",
     "src": "virtual:nuxt:/home/runner/work/nuxt-3-poc-for-jm/nuxt-3-poc-for-jm/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -60,73 +60,66 @@
     "file": "_nuxt/_plugin-vue_export-helper.7287ed4b.mjs"
   },
   "pages/about.vue": {
-    "file": "_nuxt/about.1e712b12.mjs",
+    "file": "_nuxt/about.b3e54efb.mjs",
     "src": "pages/about.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_ContentBlock1.0f3bcdaf.mjs",
+      "_ContentBlock1.183b6b16.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
-  "_ContentBlock1.0f3bcdaf.mjs": {
-    "file": "_nuxt/ContentBlock1.0f3bcdaf.mjs",
+  "_ContentBlock1.183b6b16.mjs": {
+    "file": "_nuxt/ContentBlock1.183b6b16.mjs",
     "imports": [
       "__plugin-vue_export-helper.7287ed4b.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/categories.vue": {
-    "file": "_nuxt/categories.f85d2441.mjs",
+    "file": "_nuxt/categories.00373d5e.mjs",
     "src": "pages/categories.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_fetch.8bef6659.mjs",
-      "_useGroupedCategories.da897c6d.mjs",
+      "_fetch.32ba23f0.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs"
     ]
   },
-  "_fetch.8bef6659.mjs": {
-    "file": "_nuxt/fetch.8bef6659.mjs",
-    "imports": [
-      "node_modules/nuxt/dist/app/entry.mjs"
-    ]
-  },
-  "_useGroupedCategories.da897c6d.mjs": {
-    "file": "_nuxt/useGroupedCategories.da897c6d.mjs",
+  "_fetch.32ba23f0.mjs": {
+    "file": "_nuxt/fetch.32ba23f0.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/contact.vue": {
-    "file": "_nuxt/contact.27e2c1ea.mjs",
+    "file": "_nuxt/contact.4b3faeb4.mjs",
     "src": "pages/contact.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_nuxt-icon.5bf2c226.mjs",
+      "_nuxt-icon.04e60077.mjs",
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
     "css": [
       "_nuxt/contact.4a5c87d2.css"
     ]
   },
-  "_nuxt-icon.5bf2c226.mjs": {
-    "file": "_nuxt/nuxt-icon.5bf2c226.mjs",
+  "_nuxt-icon.04e60077.mjs": {
+    "file": "_nuxt/nuxt-icon.04e60077.mjs",
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ]
   },
   "pages/index.vue": {
-    "file": "_nuxt/index.ec52d3a2.mjs",
+    "file": "_nuxt/index.5d748cce.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs",
-      "_ContentBlock1.0f3bcdaf.mjs",
-      "_nuxt-icon.5bf2c226.mjs",
-      "_index.esm.61a18b44.mjs"
+      "_ContentBlock1.183b6b16.mjs",
+      "_nuxt-icon.04e60077.mjs",
+      "_index.esm.65a3fcc5.mjs"
     ],
     "assets": [
       "_nuxt/bk_logo-gold.37c2d77d.png",
@@ -135,16 +128,16 @@
       "_nuxt/patraspan_beauty_contest_20890e04-d58c-48e3-9f68-37d67bacefb0.b1d4aa73.png"
     ]
   },
-  "_index.esm.61a18b44.mjs": {
-    "file": "_nuxt/index.esm.61a18b44.mjs",
+  "_index.esm.65a3fcc5.mjs": {
+    "file": "_nuxt/index.esm.65a3fcc5.mjs",
     "imports": [
-      "_nuxt-icon.5bf2c226.mjs",
+      "_nuxt-icon.04e60077.mjs",
       "node_modules/nuxt/dist/app/entry.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs"
     ]
   },
   "pages/privacy.vue": {
-    "file": "_nuxt/privacy.4aab9fef.mjs",
+    "file": "_nuxt/privacy.f4f3dfd3.mjs",
     "src": "pages/privacy.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -156,20 +149,19 @@
     ]
   },
   "pages/register.vue": {
-    "file": "_nuxt/register.5c9bbce4.mjs",
+    "file": "_nuxt/register.23cdf30c.mjs",
     "src": "pages/register.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_index.esm.61a18b44.mjs",
-      "_nuxt-icon.5bf2c226.mjs",
+      "_index.esm.65a3fcc5.mjs",
+      "_nuxt-icon.04e60077.mjs",
       "node_modules/nuxt/dist/app/entry.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs",
-      "_fetch.8bef6659.mjs",
-      "_useGroupedCategories.da897c6d.mjs"
+      "_fetch.32ba23f0.mjs"
     ]
   },
   "pages/sponsors.vue": {
-    "file": "_nuxt/sponsors.3a2a151f.mjs",
+    "file": "_nuxt/sponsors.4ec29b9e.mjs",
     "src": "pages/sponsors.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -178,7 +170,7 @@
     ]
   },
   "pages/terms-and-conditions.vue": {
-    "file": "_nuxt/terms-and-conditions.94b247ae.mjs",
+    "file": "_nuxt/terms-and-conditions.8f8815a8.mjs",
     "src": "pages/terms-and-conditions.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -187,19 +179,19 @@
     ]
   },
   "pages/tickets.vue": {
-    "file": "_nuxt/tickets.b063b4fd.mjs",
+    "file": "_nuxt/tickets.61b482cd.mjs",
     "src": "pages/tickets.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_index.esm.61a18b44.mjs",
+      "_index.esm.65a3fcc5.mjs",
       "node_modules/nuxt/dist/app/entry.mjs",
-      "_fetch.8bef6659.mjs",
+      "_fetch.32ba23f0.mjs",
       "__plugin-vue_export-helper.7287ed4b.mjs",
-      "_nuxt-icon.5bf2c226.mjs"
+      "_nuxt-icon.04e60077.mjs"
     ]
   },
   "layouts/default.vue": {
-    "file": "_nuxt/default.01356b00.mjs",
+    "file": "_nuxt/default.7d9c4237.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
