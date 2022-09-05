@@ -54,3 +54,17 @@ h5 {
 h6 {
   @apply text-lg;
 }
+.heading {
+  position: relative;
+}
+.heading::after {
+content: '';
+display: block;
+position: absolute;
+bottom: -24px;
+left: 50%;
+transform: translateX(-50%);
+width: 70px;
+height: 1px;
+background-color: var(--dark-golden);
+}

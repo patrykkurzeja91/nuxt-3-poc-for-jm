@@ -5,7 +5,7 @@
     /> -->
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="mb-12">Register for event</h1>
+        <h1 class="heading mb-16">Register for event</h1>
 
         <p class="mx-auto mb-10 lg:w-2/3">
           A company from the Beauty industry may submit an interest in the

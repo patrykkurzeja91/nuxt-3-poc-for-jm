@@ -1,11 +1,9 @@
 <template>
-  <section class="overflow-hidden text-gray-600">
+  <section class="overflow-hidden">
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="mb-8 text-gray-900">Become a Sponsor</h1>
-        <p
-          class="mx-auto text-base leading-relaxed text-light-grayish-blue-800 lg:w-2/3"
-        >
+        <h1 class="heading mb-16">Become a Sponsor</h1>
+        <p class="mx-auto leading-relaxed lg:w-2/3">
           Choose our sponsorship model. Lorem ipsum, dolor sit amet consectetur
           adipisicing elit. Alias, repudiandae accusantium laudantium sequi
           quasi magnam explicabo veniam consectetur ullam placeat!

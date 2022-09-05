@@ -37,7 +37,7 @@ const marketingList = ref([
           class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white text-center md:w-2/3 lg:border lg:border-light-grayish-blue-200 lg:p-16"
         >
           <div class="contact-info">
-            <h1 class="mb-12">Contact us</h1>
+            <h1 class="heading mb-16">Contact us</h1>
             <div class="flex flex-col justify-center">
               <a
                 v-for="contact in contactList"

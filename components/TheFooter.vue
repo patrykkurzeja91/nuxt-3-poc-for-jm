@@ -2,7 +2,9 @@
   <footer class="bg-royal-blue py-24">
     <div class="container mx-auto max-w-screen-xl px-4 sm:px-6">
       <div class="md:flex md:justify-between">
-        <div class="mb-6 md:mb-0">
+        <div
+          class="mb-20 flex items-center justify-center md:mb-0 md:items-start"
+        >
           <a href="https://flowbite.com/" class="flex items-center text-white">
             <img
               src="@/assets/images/bk-awards-full-logo.svg"
@@ -12,23 +14,23 @@
             <!-- <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">Flowbite</span> -->
           </a>
         </div>
-        <div class="grid grid-cols-2 gap-8 sm:grid-cols-3 sm:gap-6">
+        <div
+          class="grid grid-cols-1 gap-12 sm:grid-cols-2 md:grid-cols-3 md:gap-8"
+        >
           <div>
-            <p
-              class="mb-6 text-lg font-bold uppercase text-white dark:text-white"
-            >
-              Resources
-            </p>
-            <ul class="text-white dark:text-gray-400">
+            <p class="mb-6 text-lg font-bold uppercase text-white">Resources</p>
+            <ul class="dark:light-grayish-blue-600 text-light-grayish-blue-400">
               <li class="mb-4">
-                <a href="https://flowbite.com/" class="hover:underline"
-                  >Flowbite</a
+                <nuxt-link
+                  href="tickets"
+                  class="inline-flex w-full hover:underline"
+                  >Buy a ticket</nuxt-link
                 >
               </li>
               <li>
-                <a href="https://tailwindcss.com/" class="hover:underline">
-                  Tailwind CSS
-                </a>
+                <nuxt-link href="register" class="hover:underline">
+                  Register a nominee
+                </nuxt-link>
               </li>
             </ul>
           </div>
@@ -36,30 +38,26 @@
             <p
               class="mb-6 text-lg font-bold uppercase text-white dark:text-white"
             >
-              Follow us
+              Links
             </p>
-            <ul class="text-white dark:text-gray-400">
-              <li class="mb-4">
-                <a
-                  href="https://github.com/themesberg/flowbite"
-                  class="hover:underline"
-                  >Github</a
-                >
+            <ul class="text-light-grayish-blue-400">
+              <li v-for="link in links" :key="link.name" class="mb-4">
+                <nuxt-link :href="link.href" class="hover:underline">{{
+                  link.name
+                }}</nuxt-link>
               </li>
-              <li>
+              <!-- <li>
                 <a href="https://discord.gg/4eeurUVvTy" class="hover:underline"
                   >Discord</a
                 >
-              </li>
+              </li> -->
             </ul>
           </div>
           <div>
-            <p
-              class="mb-6 text-lg font-bold uppercase text-white dark:text-white"
-            >
+            <p class="text-whit mb-6 text-lg font-bold uppercase text-white">
               Legal
             </p>
-            <ul class="text-white dark:text-gray-400">
+            <ul class="text-light-grayish-blue-400">
               <li class="mb-4">
                 <nuxt-link to="privacy" class="hover:underline"
                   >Privacy Policy</nuxt-link
@@ -74,19 +72,15 @@
           </div>
         </div>
       </div>
-      <hr
-        class="my-6 border-gray-200 dark:border-gray-700 sm:mx-auto lg:my-8"
-      />
+      <hr class="my-6 border-light-grayish-blue-700 sm:mx-auto lg:my-8" />
       <div class="sm:flex sm:items-center sm:justify-between">
-        <span class="text-lg text-gray-500 dark:text-gray-400 sm:text-center"
-          >© 2022
-          <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>.
-          All Rights Reserved.
+        <span class="text-lg text-light-grayish-blue-700 sm:text-center"
+          >© 2022 Beauty Kingdom Awards™. All Rights Reserved.
         </span>
-        <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
+        <!-- <div class="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
           <a
             href="#"
-            class="text-gray-500 hover:text-white dark:hover:text-white"
+            class="text-light-grayish-blue-700 hover:text-white dark:hover:text-white"
           >
             <svg
               class="h-5 w-5"
@@ -104,7 +98,7 @@
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-white dark:hover:text-white"
+            class="text-light-grayish-blue-700 hover:text-white dark:hover:text-white"
           >
             <svg
               class="h-5 w-5"
@@ -122,7 +116,7 @@
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-white dark:hover:text-white"
+            class="text-light-grayish-blue-700 hover:text-white dark:hover:text-white"
           >
             <svg
               class="h-5 w-5"
@@ -138,7 +132,7 @@
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-white dark:hover:text-white"
+            class="text-light-grayish-blue-700 hover:text-white dark:hover:text-white"
           >
             <svg
               class="h-5 w-5"
@@ -156,7 +150,7 @@
           </a>
           <a
             href="#"
-            class="text-gray-500 hover:text-white dark:hover:text-white"
+            class="text-light-grayish-blue-700 hover:text-white dark:hover:text-white"
           >
             <svg
               class="h-5 w-5"
@@ -172,8 +166,33 @@
             </svg>
             <span class="sr-only">Dribbbel account</span>
           </a>
-        </div>
+        </div> -->
       </div>
     </div>
   </footer>
 </template>
+
+<script setup>
+const links = [
+  {
+    name: 'About us',
+    href: 'about',
+  },
+  {
+    name: 'Categories',
+    href: 'categories',
+  },
+  {
+    name: 'Contact',
+    href: 'contact',
+  },
+  {
+    name: 'Sponsors',
+    href: 'sponsors',
+  },
+  {
+    name: 'Tickets',
+    href: 'tickets',
+  },
+]
+</script>

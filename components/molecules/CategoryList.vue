@@ -161,6 +161,7 @@
 //     name: 'Top Tatoo Salon',
 //   },
 // ])
+import useGroupedCategories from '~~/composables/useGroupedCategories'
 
 interface Category {
   id: string
@@ -174,6 +175,10 @@ const { data } = await useFetch<{ categories: Category[] }>(
 )
 
 categories.value = data.value.categories
+
+const allCategories = computed(() => data.value.categories)
+
+const { groupedCategories } = useGroupedCategories(allCategories.value)
 </script>
 
 <template>
@@ -183,7 +188,7 @@ categories.value = data.value.categories
     /> -->
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="mb-12">Categories</h1>
+        <h1 class="heading mb-16">See our categories</h1>
         <p class="mx-auto lg:w-2/3">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
           gentrify, subway tile poke farm-to-table. Franzen you probably haven't
@@ -195,24 +200,44 @@ categories.value = data.value.categories
         fill
         class="absolute right-0 -z-10 w-full opacity-20"
       /> -->
-      <div v-if="categories" class="z-10 -m-2 flex flex-wrap">
+      <!-- {{ groupedCategories }} -->
+      <div
+        v-for="group in groupedCategories"
+        :key="group.subcat"
+        class="mx-auto mb-16 max-w-4xl"
+      >
         <div
-          v-for="(category, index) in categories"
+          class="mb-8 flex h-36 w-full rounded-md bg-royal-blue p-4 text-white"
+        >
+          <h5>{{ group.subcat }}</h5>
+        </div>
+        <div class="z-10 flex w-3/4 flex-wrap">
+          <div
+            v-for="category in group.data"
+            :key="category.id"
+            class="mb-4 w-full md:w-1/2"
+          >
+            <div
+              class="card relative flex h-full flex-col items-start justify-start border-l-2 border-dark-golden bg-white/80 p-2"
+            >
+              <p class="z-10 text-xl text-gray-500">{{ category.name }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div v-if="categories" class="z-10 -m-2 flex flex-wrap">
+        <div
+          v-for="category in categories"
           :key="category.id"
           class="w-full p-3 md:w-1/2 lg:w-1/3"
         >
           <div
             class="card relative flex h-full flex-col items-start justify-start rounded-xl border-2 border-light-grayish-blue-100 bg-white/80 p-6"
           >
-            <h6
-              class="title-font mb-3 mr-4 text-5xl font-medium text-dark-golden/30"
-            >
-              {{ index + 1 }}
-            </h6>
             <h3 class="z-10 text-2xl text-gray-500">{{ category.name }}</h3>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
