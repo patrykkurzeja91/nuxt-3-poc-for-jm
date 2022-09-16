@@ -32,7 +32,6 @@
                 fill
                 class="flex h-5 w-5 items-center justify-center"
               />
-              <MenuIcon class="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <ul :class="{ flex: open, hidden: !open }" class="flex-col">
@@ -115,7 +114,7 @@ const links = [
     href: 'tickets',
   },
 ]
-const open = ref(true)
+const open = ref(false)
 </script>
 
 <style scoped>
