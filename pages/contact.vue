@@ -32,12 +32,14 @@ const marketingList = ref([
 <template>
   <div>
     <section class="relative">
-      <div class="container mx-auto px-6 py-4 lg:py-24">
+      <div class="container mx-auto px-6 py-24">
+        <div class="flex mb-20 w-full flex-col text-center">
+          <h1 class="heading mb-16">Contact us</h1>
+        </div>
         <div
-          class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white text-center md:w-2/3 lg:border lg:border-light-grayish-blue-200 lg:p-16"
+          class="flex mx-auto mb-12 w-full flex-col rounded-lg bg-white text-center lg:w-3/4 lg:border lg:border-light-grayish-blue-200 lg:p-16 xl:w-1/2"
         >
           <div class="contact-info">
-            <h1 class="heading mb-16">Contact us</h1>
             <div class="flex flex-col justify-center">
               <a
                 v-for="contact in contactList"
@@ -48,9 +50,8 @@ const marketingList = ref([
                 <nuxt-icon
                   :name="contact.icon"
                   fill
-                  class="icon mr-6 mb-3 lg:mb-0"
+                  class="icon mr-6 mb-3 md:mb-0"
                 />
-
                 {{ contact.label }}</a
               >
             </div>
@@ -66,7 +67,7 @@ const marketingList = ref([
                 class="item mb-4 inline-flex flex-col items-center justify-center rounded-md py-3 px-6 text-lg md:flex-row"
                 :class="
                   contact.link
-                    ? 'hover:bg-light-grayish-blue-100 hover:text-dark-golden '
+                    ? 'hover:bg-light-grayish-blue-100 hover:text-dark-golden'
                     : ''
                 "
                 :href="contact.link"
@@ -74,9 +75,8 @@ const marketingList = ref([
                 <nuxt-icon
                   :name="contact.icon"
                   fill
-                  class="icon mr-6 mb-3 lg:mb-0"
+                  class="icon mr-6 mb-3 md:mb-0"
                 />
-
                 {{ contact.label }}</component
               >
             </div>

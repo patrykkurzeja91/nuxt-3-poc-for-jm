@@ -20,7 +20,7 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
 <template>
   <section class="relative overflow-x-hidden">
     <div class="container mx-auto px-5 py-24">
-      <div class="mb-20 flex w-full flex-col text-center">
+      <div class="flex mb-20 w-full flex-col text-center">
         <h1 class="heading mb-16">See our categories</h1>
         <p class="mx-auto lg:w-2/3">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -34,18 +34,18 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
         class="mx-auto mb-16 max-w-4xl"
       >
         <div
-          class="mb-8 flex h-36 w-full rounded-md bg-royal-blue p-4 text-white"
+          class="flex mb-8 h-36 w-full rounded-md bg-royal-blue p-4 text-white"
         >
           <h5>{{ group.subcat }}</h5>
         </div>
-        <div class="z-10 flex w-3/4 flex-wrap">
+        <div class="flex z-10 w-3/4 flex-wrap">
           <div
             v-for="category in group.data"
             :key="category.id"
             class="mb-4 w-full md:w-1/2"
           >
             <div
-              class="card relative flex h-full flex-col items-start justify-start border-l-2 border-dark-golden bg-white/80 p-2"
+              class="card flex relative h-full flex-col items-start justify-start border-l-2 border-dark-golden bg-white/80 p-2"
             >
               <p class="z-10 text-xl text-gray-500">{{ category.name }}</p>
             </div>

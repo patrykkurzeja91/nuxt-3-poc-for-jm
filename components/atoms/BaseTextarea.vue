@@ -3,7 +3,7 @@
     <div class="relative" :class="{ 'input--error': v && v.$error }">
       <div
         v-if="icon"
-        class="icon-wrapper pointer-events-none absolute flex items-center pl-3"
+        class="icon-wrapper flex pointer-events-none absolute items-center pl-3"
       >
         <nuxt-icon
           name="mail"
