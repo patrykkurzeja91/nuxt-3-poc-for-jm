@@ -3,7 +3,7 @@
     <div class="container mx-auto max-w-screen-xl px-4 sm:px-6">
       <div class="md:flex md:justify-between">
         <div
-          class="mb-20 flex items-center justify-center md:mb-0 md:items-start"
+          class="flex mb-20 items-center justify-center md:mb-0 md:items-start"
         >
           <a href="https://flowbite.com/" class="flex items-center text-white">
             <img
@@ -22,13 +22,13 @@
             <ul class="dark:light-grayish-blue-600 text-light-grayish-blue-400">
               <li class="mb-4">
                 <nuxt-link
-                  href="tickets"
+                  href="/tickets"
                   class="inline-flex w-full hover:underline"
                   >Buy a ticket</nuxt-link
                 >
               </li>
               <li>
-                <nuxt-link href="register" class="hover:underline">
+                <nuxt-link href="/register" class="hover:underline">
                   Register a nominee
                 </nuxt-link>
               </li>
@@ -42,7 +42,7 @@
             </p>
             <ul class="text-light-grayish-blue-400">
               <li v-for="link in links" :key="link.name" class="mb-4">
-                <nuxt-link :href="link.href" class="hover:underline">{{
+                <nuxt-link :href="'/' + link.href" class="hover:underline">{{
                   link.name
                 }}</nuxt-link>
               </li>
@@ -59,12 +59,12 @@
             </p>
             <ul class="text-light-grayish-blue-400">
               <li class="mb-4">
-                <nuxt-link to="privacy" class="hover:underline"
+                <nuxt-link to="/privacy" class="hover:underline"
                   >Privacy Policy</nuxt-link
                 >
               </li>
               <li>
-                <nuxt-link to="terms-and-conditions" class="hover:underline"
+                <nuxt-link to="/terms-and-conditions" class="hover:underline"
                   >Terms &amp; Conditions</nuxt-link
                 >
               </li>
