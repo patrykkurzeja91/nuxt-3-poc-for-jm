@@ -1,14 +1,14 @@
 <template>
   <section
-    class="error-page flex relative items-center justify-center overflow-x-hidden"
+    class="error-page relative flex items-center justify-center overflow-x-hidden"
   >
     <div class="container mx-auto px-5 py-24">
-      <div class="flex mb-20 w-full flex-col text-center">
+      <div class="mb-20 flex w-full flex-col text-center">
         <h1 class="error-status mb-16">{{ error.statusCode }}</h1>
         <p class="mx-auto text-2xl">{{ error.message }}</p>
       </div>
       <button
-        class="flex mx-auto rounded border-0 bg-royal-blue py-2 px-8 text-lg text-white hover:bg-yale-blue focus:outline-none"
+        class="mx-auto flex rounded border-0 bg-royal-blue py-2 px-8 text-lg text-white hover:bg-yale-blue focus:outline-none"
         @click="handleError"
       >
         Go back to homepage

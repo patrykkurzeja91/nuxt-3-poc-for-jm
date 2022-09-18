@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: ['nuxt-icons'],
   plugins: ['@/plugins/vue-select.ts'],
+  router: {
+    trailingSlash: false,
+  },
   build: {
     postcss: {
       postcssOptions: {

@@ -1,9 +1,14 @@
 <IfModule mod_rewrite.c>
+  <Directory "public_html">
+    Options +Indexes +Includes +FollowSymLinks +MultiViews
+    AllowOverride All
+    Require local
+  </Directory>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+  RewriteRule ^index.html$ - [L]
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule ^(.*)/$ /$1 [R=301,L]
   RewriteRule . /index.html [L]
 </IfModule>
+

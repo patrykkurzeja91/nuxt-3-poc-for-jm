@@ -1,7 +1,20 @@
 <template>
-  <section class="bg-new-gray py-24">
+  <section class="relative bg-new-gray pt-48 pb-24">
+    <div class="custom-shape-divider-top-1663530825">
+      <svg
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1200 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+          class="shape-fill"
+        ></path>
+      </svg>
+    </div>
     <div
-      class="container mx-auto flex max-w-screen-xl items-center justify-center px-4"
+      class="flex container mx-auto max-w-screen-xl items-center justify-center px-4"
     >
       <form class="max-w-xl text-center" @submit.prevent="subscribe">
         <div class="flex justify-center">
@@ -66,3 +79,26 @@ const subscribe = async () => {
   console.log(data)
 }
 </script>
+
+<style scoped>
+.custom-shape-divider-top-1663530825 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1663530825 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 90px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1663530825 .shape-fill {
+  fill: #002366;
+}
+</style>

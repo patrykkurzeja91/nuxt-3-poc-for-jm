@@ -18,7 +18,7 @@
           distinctio hic excepturi.
         </p>
         <div class="flex justify-center">
-          <nuxt-link
+          <!-- <nuxt-link
             href="/register"
             class="mr-6 inline-flex items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
           >
@@ -41,7 +41,7 @@
             class="inline-flex items-center justify-center rounded-md border border-royal-blue px-10 py-3 text-center text-base font-medium text-gray-900 hover:bg-new-gray"
           >
             Contact us
-          </nuxt-link>
+          </nuxt-link> -->
         </div>
       </div>
     </div>

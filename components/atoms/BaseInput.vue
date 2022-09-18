@@ -37,7 +37,7 @@
 </template>
 
 <script setup lang="ts">
-import { ValidationArgs } from '@vuelidate/core'
+import type { ValidationArgs } from '@vuelidate/core'
 
 const props = withDefaults(
   defineProps<{
@@ -54,6 +54,7 @@ const props = withDefaults(
     placeholder: '',
     label: '',
     type: 'text',
+    v: null,
     required: false,
   }
 )
