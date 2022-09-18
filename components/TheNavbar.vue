@@ -38,7 +38,7 @@
             <li v-for="link in links" :key="link.name">
               <button
                 class="flex my-3 w-full justify-center rounded-md px-6 py-3 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
-                @click="navigate(link.href)"
+                @click="'/' + navigate(link.href)"
               >
                 {{ link.name }}
               </button>
@@ -46,7 +46,7 @@
             <li>
               <button
                 class="flex my-3 w-full items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
-                @click="navigate('register')"
+                @click="navigate('/register')"
               >
                 Register
               </button>
@@ -72,7 +72,7 @@
             <nuxt-link
               v-for="link in links"
               :key="link.name"
-              :to="link.href"
+              :to="'/' + link.href"
               class="rounded-md px-5 py-2 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
             >
               {{ link.name }}
@@ -80,7 +80,7 @@
           </div>
           <div class="hidden items-center lg:flex">
             <nuxt-link
-              to="register"
+              to="/register"
               class="ml-5 inline-flex items-center justify-center rounded-md bg-royal-blue px-5 py-2 text-center text-base font-medium text-white hover:bg-yale-blue"
             >
               Register

@@ -110,7 +110,7 @@
             </p>
             <nuxt-link
               class="flex mt-auto w-full items-center rounded border-0 bg-light-grayish-blue-500 py-2 px-4 text-white hover:bg-light-grayish-blue-800 focus:outline-none"
-              to="contact"
+              to="/contact"
             >
               Contact us
               <svg
@@ -217,7 +217,7 @@
             </p>
             <nuxt-link
               class="flex mt-auto w-full items-center rounded border-0 bg-dark-golden py-2 px-4 text-white hover:bg-dark-orange focus:outline-none"
-              to="contact"
+              to="/contact"
             >
               Contact us
               <svg
@@ -337,7 +337,7 @@
             </p>
             <nuxt-link
               class="flex mt-auto w-full items-center rounded border-0 bg-light-grayish-blue-500 py-2 px-4 text-white hover:bg-light-grayish-blue-800 focus:outline-none"
-              to="contact"
+              to="/contact"
             >
               Contact us
               <svg
