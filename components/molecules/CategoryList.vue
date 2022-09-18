@@ -56,7 +56,7 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
           class="flex relative mb-8 h-36 w-full rounded-md bg-royal-blue p-4 text-white"
         > -->
         <div class="flex relative mb-8 w-full rounded-md">
-          <h5 class="text-3xl">{{ group.subcat }}</h5>
+          <h5 class="text-4xl text-dark-golden">{{ group.subcat }}</h5>
           <!-- <div class="custom-shape-divider-bottom-1663533482">
             <svg
               data-name="Layer 1"
@@ -76,7 +76,9 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
             <div
               class="card flex relative h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 bg-light-grayish-blue-100 py-4 px-6 hover:bg-white/60"
             >
-              <p class="text-lg uppercase">{{ category.name }}</p>
+              <p class="text-lg">
+                {{ category.name }}
+              </p>
             </div>
           </div>
         </div>
