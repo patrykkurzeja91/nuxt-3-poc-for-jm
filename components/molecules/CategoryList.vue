@@ -5,16 +5,18 @@ interface Category {
   updated_at: Date
 }
 
-const categories = ref([] as Category[])
-const { data } = await useFetch<{ categories: Category[] }>(
+// const categories = ref([] as Category[])
+const { data: categories } = await useFetch<{ categories: Category[] }>(
   () => import.meta.env.VITE_API_URL + `/categories/all`
 )
 
-categories.value = data.value.categories
+// categories.value = categories.value.categories
 
-const allCategories = computed(() => data.value.categories)
+// const allCategories = computed(() => categories.value.categories)
 
-const { groupedCategories } = useGroupedCategories(allCategories.value)
+const { groupedCategories } = await useGroupedCategories(
+  categories.value.categories
+)
 </script>
 
 <template>
@@ -56,7 +58,9 @@ const { groupedCategories } = useGroupedCategories(allCategories.value)
           class="flex relative mb-8 h-36 w-full rounded-md bg-royal-blue p-4 text-white"
         > -->
         <div class="flex relative mb-8 w-full rounded-md">
-          <h5 class="text-4xl text-dark-golden">{{ group.subcat }}</h5>
+          <h5 class="text-2xl text-dark-golden md:text-4xl">
+            {{ group.subcat }}
+          </h5>
           <!-- <div class="custom-shape-divider-bottom-1663533482">
             <svg
               data-name="Layer 1"

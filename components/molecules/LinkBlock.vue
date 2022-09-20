@@ -7,7 +7,7 @@ const linkCards = [
   },
   {
     label: 'Buy a ticket',
-    href: '/ticket',
+    href: '/tickets',
     image: 'https://picsum.photos/300/310',
   },
   {
@@ -55,7 +55,7 @@ const linkCards = [
           @click="$router.push(card.href)"
         >
           <div
-            class="relative block cursor-pointer overflow-hidden rounded-md p-6"
+            class="relative block w-full cursor-pointer overflow-hidden rounded-md p-6"
           >
             <img
               v-if="card.image"

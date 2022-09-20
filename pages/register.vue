@@ -1,10 +1,7 @@
 <template>
-  <section class="relative overflow-x-hidden bg-white">
-    <!-- <AtomsBackgroundPatternWave
-      class="absolute bottom-0 left-0 right-0 -z-10 w-screen"
-    /> -->
+  <section class="flex relative overflow-x-hidden bg-white">
     <div class="container mx-auto px-5 py-24">
-      <div class="mb-20 flex w-full flex-col text-center">
+      <div class="flex mb-20 w-full flex-col text-center">
         <h1 class="heading mb-16">Register for event</h1>
 
         <p class="mx-auto mb-10 lg:w-2/3">
@@ -27,7 +24,7 @@
         fill
         class="absolute right-0 -z-10 w-full opacity-20"
       /> -->
-      <div class="z-10 -m-2 flex flex-wrap"></div>
+      <div class="flex py-16">Payment icons - visa, mastercard etc</div>
     </div>
   </section>
 </template>

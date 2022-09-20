@@ -1,8 +1,11 @@
 <template>
   <div
-    class="mx-auto flex max-w-xl rounded-lg border border-light-grayish-blue-200 bg-white drop-shadow-xl"
+    class="flex mx-auto max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:bg-white md:drop-shadow-xl"
   >
-    <form class="flex w-full flex-col p-20" @submit.prevent="handleSubmit">
+    <form
+      class="flex w-full flex-col md:px-20 md:py-20"
+      @submit.prevent="handleSubmit"
+    >
       <AtomsBaseInput
         v-model="v$.name.$model"
         placeholder="Name and surname"

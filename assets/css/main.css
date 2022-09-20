@@ -2,6 +2,7 @@
   --cadmium-orange: #E08C37ff;
 
   --royal-blue-dark: #002366; /* primary color;*/
+  --royal-blue-dark-100: #002a7a; /* primary color;*/
   --dark-orange: #664300; /* complementory color;*/
 
   --dark-golden: #b8860b;
@@ -14,7 +15,7 @@
 
   --cobalt-blue: #1E4BAAff;
   --space-cadet: #101E45ff;
-  --glaucous: #667FB2ff;
+  --glaucous: #667FB2;
   --royal-blue-dark-2: #0B2A70ff;
 
 
@@ -33,26 +34,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  @apply text-6xl;
-}
-h2 {
   @apply text-4xl;
 }
-
-h3 {
+h2 {
   @apply text-3xl;
 }
 
-h4 {
+h3 {
   @apply text-2xl;
 }
 
-h5 {
+h4 {
   @apply text-xl;
 }
 
-h6 {
+h5 {
   @apply text-lg;
+}
+
+h6 {
+  @apply text-base;
+}
+@screen md {
+  h1 {
+    @apply text-6xl;
+  }
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-lg;
+  }
 }
 .heading {
   position: relative;

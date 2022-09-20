@@ -1,10 +1,12 @@
 <template>
   <div
-    class="mx-auto flex max-w-xl rounded-lg border border-light-grayish-blue-200 bg-white drop-shadow-xl"
+    class="flex mx-auto max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:drop-shadow-xl"
   >
-    <form class="flex w-full flex-col p-20" @submit.prevent="handleSubmit">
+    <form
+      class="flex w-full flex-col md:px-20 md:py-20"
+      @submit.prevent="handleSubmit"
+    >
       <h3 class="mb-4">Personal info</h3>
-
       <AtomsBaseInput
         v-model="v$.name.$model"
         placeholder="Name and surname"
@@ -116,6 +118,10 @@
         :close-on-select="false"
       >
       </VueMultiselect> -->
+      <label class="mb-2 inline-flex text-lg"
+        >Categories
+        <span v-if="required" class="ml-1 text-red-600">*</span></label
+      >
       <VueMultiselect
         v-model="state.selectedCategories"
         group-values="data"
@@ -125,6 +131,8 @@
         :options="groupedCategories"
         multiple
         :close-on-select="false"
+        select-label="Select"
+        deselect-label="Remove"
       >
       </VueMultiselect>
 
@@ -225,9 +233,17 @@ const handleSubmit = async () => {
 </script>
 
 <style>
-::v-deep(.multiselect__tags) {
-  border-radius: 12px;
-  background-color: red;
+.multiselect__option--selected {
+  @apply bg-royal-blue/80 text-white !important;
+}
+.multiselect__option--selected::after {
+  @apply font-thin text-light-grayish-blue-500 !important;
+}
+.multiselect__option--selected.multiselect__option--highlight {
+  @apply bg-red-400 !important;
+}
+.multiselect__option--selected.multiselect__option--highlight::after {
+  @apply bg-red-400 font-thin text-light-grayish-blue-500 !important;
 }
 .multiselect__tags {
   @apply border-light-grayish-blue-300 !important;
