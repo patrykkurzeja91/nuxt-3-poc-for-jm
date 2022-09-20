@@ -150,17 +150,15 @@
 import { useVuelidate } from '@vuelidate/core'
 import { required, email } from '@vuelidate/validators'
 import type { Ticket, Category } from '@/types'
-import useGroupedCategories from '@/composables/useGroupedCategories'
 const { data: currentEvent } = await useFetch<Ticket>(
   () => import.meta.env.VITE_API_URL + `/event`,
   { pick: ['id'] }
 )
-const { data: categories } = await useFetch<{ categories: Category[] }>(
+const { data } = await useFetch<{ categories: Category[] }>(
   () => import.meta.env.VITE_API_URL + `/categories/all`
 )
-const allCategories = computed(() => categories.value.categories)
 
-const { groupedCategories } = useGroupedCategories(allCategories.value)
+const { groupedCategories } = useGroupedCategories(data.value.categories)
 
 const state = reactive({
   name: '',

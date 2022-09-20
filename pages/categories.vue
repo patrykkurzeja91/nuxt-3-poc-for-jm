@@ -1,7 +1,82 @@
 <template>
   <div>
-    <MoleculesCategoryList />
+    <section class="relative overflow-x-hidden">
+      <div class="container mx-auto px-5 py-24">
+        <div class="flex w-full flex-col text-center">
+          <h1 class="heading mb-16">See our categories</h1>
+          <p class="mx-auto lg:w-2/3">
+            Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
+            gentrify, subway tile poke farm-to-table. Franzen you probably
+            haven't heard of them.
+          </p>
+        </div>
+      </div>
+    </section>
+    <LazyMoleculesCategoryList
+      v-if="categories"
+      :grouped-categories="groupedCategories"
+    />
     <!-- <MoleculesContentBlock1 />
     <MoleculesContentBlock3 /> -->
+    <!-- <div>
+      {{ groupedCategories }}
+    </div>
+    <div>
+      {{ categories }}
+    </div> -->
   </div>
 </template>
+<script setup lang="ts">
+import axios from 'axios'
+interface Category {
+  id: string
+  name: string
+  updated_at: Date
+}
+const categories = ref()
+onMounted(async () => {
+  const aa = await axios
+    .get(import.meta.env.VITE_API_URL + '/categories/all')
+    .then(({ data }) => data.categories)
+  console.log(aa)
+  categories.value = aa
+})
+
+const array = ['Award', 'Top', 'Best', 'Award of the year']
+
+const newCategoriesWithRandomSubcat = computed(() =>
+  categories?.value?.map((i) => {
+    const item = array[Math.floor(Math.random() * array.length)]
+    return {
+      ...i,
+      subcat: item,
+    }
+  })
+)
+const groupBy = (items, key) =>
+  items.reduce(
+    (result, item) => ({
+      ...result,
+      [item[key]]: [...(result[item[key]] || []), item],
+    }),
+    {}
+  )
+const groupedCategories = computed(() => {
+  if (newCategoriesWithRandomSubcat.value) {
+    const groupedCategoriesObject = groupBy(
+      newCategoriesWithRandomSubcat.value,
+      'subcat'
+    )
+    return Object.entries(groupedCategoriesObject).map((e) => ({
+      subcat: e[0],
+      data: e[1] as { data: { id: string; name: string } },
+    }))
+  }
+})
+// const { data } = await useFetch<{ categories: Category[] }>(
+//   import.meta.env.VITE_API_URL + `/categories/all`
+// )
+// console.log('cat from categories: ', data.value.categories)
+
+// const { groupedCategories } = useGroupedCategories(categories.value)
+</script>
