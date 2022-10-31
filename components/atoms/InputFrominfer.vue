@@ -47,7 +47,8 @@ const showErrorMessage = computed(() => {
   return props.v?.$error
 })
 </script>
-<style lang="scss" scoped>
+
+<style scoped>
 .input {
   width: 100%;
 }

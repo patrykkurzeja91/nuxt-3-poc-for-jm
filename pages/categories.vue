@@ -12,10 +12,14 @@
         </div>
       </div>
     </section>
-    <LazyMoleculesCategoryList
-      v-if="categories"
-      :grouped-categories="groupedCategories"
-    />
+    <div class="bg-gray-200">
+      <BaseLoader :color="'black'" />
+    </div>
+
+    <div v-if="pending">
+      <BaseLoader :color="'white'" />
+    </div>
+    <MoleculesCategoryList v-else :grouped-categories="groupedCategories" />
     <!-- <MoleculesContentBlock1 />
     <MoleculesContentBlock3 /> -->
     <!-- <div>
@@ -27,29 +31,28 @@
   </div>
 </template>
 <script setup lang="ts">
-import axios from 'axios'
+import BaseLoader from '../components/atoms/BaseLoader.vue'
+// import axios from 'axios'
 interface Category {
   id: string
   name: string
   updated_at: Date
+  subcategory: 'award'
 }
-const categories = ref()
-onMounted(async () => {
-  const aa = await axios
-    .get(import.meta.env.VITE_API_URL + '/categories/all')
-    .then(({ data }) => data.categories)
-  console.log(aa)
-  categories.value = aa
-})
+const { data, pending } = await useFetch<{ categories: Category[] }>(
+  () => import.meta.env.VITE_API_URL + `/categories/all`
+)
+const categories = computed(() => data.value && data.value.categories)
+// const { groupedCategories } = useGroupedCategories(data?.value?.categories)
+// const { groupedCategories } = useGroupedCategories(aa.value)
 
-const array = ['Award', 'Top', 'Best', 'Award of the year']
+// const array = ['Award', 'Top', 'Best', 'Award of the year']
 
 const newCategoriesWithRandomSubcat = computed(() =>
   categories?.value?.map((i) => {
-    const item = array[Math.floor(Math.random() * array.length)]
     return {
       ...i,
-      subcat: item,
+      subcat: i.subcategory,
     }
   })
 )

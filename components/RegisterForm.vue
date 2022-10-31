@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex mx-auto max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:drop-shadow-xl"
+    class="mx-auto flex max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:drop-shadow-xl"
   >
     <form
       class="flex w-full flex-col md:px-20 md:py-20"

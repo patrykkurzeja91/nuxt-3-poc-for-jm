@@ -1,14 +1,14 @@
 import type { Category } from '@/types'
 
 export default function useGroupedCategories(categories: Category[]) {
-  const array = ['Award', 'Top', 'Best', 'Award of the year']
+  // const array = ['Award', 'Top', 'Best', 'Award of the year']
 
   const newCategoriesWithRandomSubcat = computed(() =>
     categories?.map((i) => {
-      const item = array[Math.floor(Math.random() * array.length)]
+      // const item = array[Math.floor(Math.random() * array.length)]
       return {
         ...i,
-        subcat: item,
+        subcat: i.subcategory,
       }
     })
   )
