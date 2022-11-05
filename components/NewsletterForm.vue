@@ -93,7 +93,7 @@ const subscribe = async () => {
 .custom-shape-divider-top-1663530825 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: calc(100% + 2px);
   height: 90px;
   transform: rotateY(180deg);
 }
