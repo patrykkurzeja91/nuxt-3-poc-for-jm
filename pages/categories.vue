@@ -34,8 +34,10 @@ interface Category {
   updated_at: Date
   subcategory: 'award'
 }
+const categories = ref()
 const { data } = await useFetch<{ categories: Category[] }>(
   () => import.meta.env.VITE_API_URL + `/categories/all`
 )
-const { groupedCategories } = useGroupedCategories(data?.value?.categories)
+categories.value = data.value?.categories
+const { groupedCategories } = useGroupedCategories(categories.value)
 </script>

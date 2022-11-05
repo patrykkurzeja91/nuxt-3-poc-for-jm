@@ -145,11 +145,13 @@ const { data: currentEvent } = await useFetch<Ticket>(
   () => import.meta.env.VITE_API_URL + `/event`,
   { pick: ['id'] }
 )
+const categories = ref()
 const { data } = await useFetch<{ categories: Category[] }>(
   () => import.meta.env.VITE_API_URL + `/categories/all`
 )
+categories.value = data.value?.categories
 
-const { groupedCategories } = useGroupedCategories(data.value.categories)
+const { groupedCategories } = useGroupedCategories(categories.value)
 
 const state = reactive({
   name: '',

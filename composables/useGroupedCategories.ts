@@ -13,13 +13,16 @@ export default function useGroupedCategories(categories: Category[]) {
     })
   )
 
-  const groupBy = (items, key) =>
+  const groupBy = (items: Category[], key: string) =>
     items.reduce(
-      (result, item) => ({
+      (result: Category, item) => ({
         ...result,
-        [item[key]]: [...(result[item[key]] || []), item],
+        [item[key as keyof Category]]: [
+          ...(result[item[key as keyof Category] as keyof Category] || []),
+          item,
+        ],
       }),
-      {}
+      {} as Category
     )
 
   const groupedCategories = computed(() => {
