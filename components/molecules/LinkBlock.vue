@@ -52,7 +52,7 @@ const linkCards = [
           v-for="card in linkCards"
           :key="card.label"
           class="flex h-72 w-full"
-          @click="$router.push({path: card.href})"
+          @click="$router.push({ path: card.href })"
         >
           <div
             class="relative block w-full cursor-pointer overflow-hidden rounded-md p-6"

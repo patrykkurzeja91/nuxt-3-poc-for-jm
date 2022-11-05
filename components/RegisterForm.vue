@@ -11,7 +11,7 @@
         v-model="v$.name.$model"
         placeholder="Name and surname"
         required
-        label="Full name"
+        label="Name and surname"
         :v="v$.name"
       />
       <AtomsBaseInput
@@ -25,7 +25,7 @@
         v-model="v$.phone.$model"
         placeholder="Phone number"
         required
-        label="Phone"
+        label="Phone number"
         :v="v$.phone"
       />
       <AtomsBaseInput
@@ -44,80 +44,71 @@
       />
       <AtomsBaseInput
         v-model="v$.postcode.$model"
-        placeholder="postcode"
+        placeholder="Post code"
         required
-        label="postcode"
+        label="Post Code"
         :v="v$.postcode"
       />
       <AtomsBaseInput
         v-model="state.additional_info"
-        placeholder="additional address information"
-        label="Additional info"
+        placeholder="Additional address information"
+        label="Additional address information"
       />
 
       <h3 class="mt-6 mb-4">Company info</h3>
       <AtomsBaseInput
         v-model="v$.company.$model"
-        placeholder="Company name"
+        placeholder="Your company name"
         required
         label="Company name"
         :v="v$.company"
       />
       <AtomsBaseInput
         v-model="v$.established.$model"
-        placeholder="established"
+        placeholder=""
         required
-        label="Established"
+        label="How long has the company been in existence?"
         :v="v$.established"
       />
       <AtomsBaseTextarea
         v-model="v$.socials.$model"
-        placeholder="social media profiles"
+        placeholder="twitter, instagram, facebook..."
         required
         maxlength="1000"
-        label="Socials"
+        label="Links to social media / websites"
         :v="v$.socials"
       />
       <AtomsBaseTextarea
         v-model="v$.company_profile.$model"
-        placeholder="what company do"
+        placeholder=""
         required
         maxlength="500"
-        label="Company profile"
+        label="What does the company do?"
         :v="v$.company_profile"
       />
       <AtomsBaseTextarea
         v-model="v$.achievements.$model"
-        placeholder="company achievements"
+        placeholder=""
         required
         maxlength="500"
-        label="Achievements"
+        label="Company achievements. List the awards, distinctions"
         :v="v$.achievements"
       />
       <AtomsBaseTextarea
         v-model="v$.publications.$model"
-        placeholder="Publications"
+        placeholder="trade magazines, radio, speeches at conferences..."
         required
         maxlength="500"
-        label="Publications"
+        label="Publications about the company in the media"
         :v="v$.publications"
       />
       <AtomsBaseTextarea
-        v-model="v$.publications.$model"
-        placeholder="Motivation"
+        v-model="v$.motivation.$model"
+        placeholder=""
         required
-        label="Motivation"
+        label="Why should you be the winner in your category?"
         :v="v$.motivation"
       />
-      <!-- <VueMultiselect
-        v-model="selected"
-        track-by="id"
-        label="name"
-        :options="allCategories"
-        multiple
-        :close-on-select="false"
-      >
-      </VueMultiselect> -->
       <label class="mb-2 inline-flex text-lg"
         >Categories
         <span v-if="required" class="ml-1 text-red-600">*</span></label
