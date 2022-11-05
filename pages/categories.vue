@@ -34,8 +34,13 @@ interface Category {
   subcategory: 'award'
 }
 const categories = ref()
-const { data, pending, error } = await useFetch<{ categories: Category[] }>(
-  () => import.meta.env.VITE_API_URL + `/categories/all`
+// const { data, pending, error } = await useFetch<{ categories: Category[] }>(
+//   () => import.meta.env.VITE_API_URL + `/categories/all`
+// )
+
+const { data, pending, error } = await useAsyncData<{ categories: Category[] }>(
+  'categories',
+  () => $fetch(import.meta.env.VITE_API_URL + `/categories/all`)
 )
 categories.value = data.value?.categories
 const { groupedCategories } = useGroupedCategories(categories.value)
