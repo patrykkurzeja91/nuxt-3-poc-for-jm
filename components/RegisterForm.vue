@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex mx-auto max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:drop-shadow-xl"
-  >
+  <div class="flex mx-auto max-w-xl">
     <form
       class="flex w-full flex-col md:px-20 md:py-20"
       @submit.prevent="handleSubmit"
@@ -88,10 +86,10 @@
       />
       <AtomsBaseTextarea
         v-model="v$.achievements.$model"
-        placeholder=""
+        placeholder="List the awards, distinctions..."
         required
         maxlength="500"
-        label="Company achievements. List the awards, distinctions"
+        label="Company achievements"
         :v="v$.achievements"
       />
       <AtomsBaseTextarea

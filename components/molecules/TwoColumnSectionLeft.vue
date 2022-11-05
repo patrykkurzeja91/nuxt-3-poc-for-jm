@@ -14,12 +14,12 @@
       </svg>
     </div>
     <div
-      class="flex container mx-auto max-w-screen-xl flex-col px-5 pb-12 pt-48"
+      class="flex container mx-auto max-w-screen-lg flex-col px-5 pb-12 pt-48"
     >
       <div class="mx-auto">
         <div class="flex flex-col md:flex-row">
           <div
-            class="flex items-center justify-center pt-12 text-center first-line:px-6 md:w-1/2 lg:items-start lg:px-12"
+            class="flex items-center justify-center pl-6 pr-6 pt-12 text-center md:w-1/2 md:pl-0 lg:items-start lg:pr-12"
           >
             <div
               class="image-wrapper flex object-fit relative overflow-hidden rounded-lg"
@@ -105,10 +105,5 @@
   width: 70px;
   height: 1px;
   background-color: var(--dark-golden);
-}
-.image-wrapper {
-  box-shadow: rgba(184, 134, 11, 0.4) -5px 5px,
-    rgba(184, 134, 11, 0.3) -10px 10px, rgba(184, 134, 11, 0.2) -15px 15px,
-    rgba(184, 134, 11, 0.1) -20px 20px, rgba(184, 134, 11, 0.05) -25px 25px;
 }
 </style>

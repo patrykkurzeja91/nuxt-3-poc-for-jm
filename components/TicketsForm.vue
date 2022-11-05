@@ -1,7 +1,5 @@
 <template>
-  <div
-    class="flex mx-auto max-w-xl rounded-lg border-light-grayish-blue-200 bg-white md:border md:bg-white md:drop-shadow-xl"
-  >
+  <div class="flex mx-auto max-w-xl">
     <form
       class="flex w-full flex-col md:px-20 md:py-20"
       @submit.prevent="handleSubmit"
@@ -24,14 +22,14 @@
         v-model="v$.company.$model"
         placeholder="Company name"
         required
-        label="Company"
+        label="Company name"
         :v="v$.company"
       />
       <AtomsBaseInput
         v-model="v$.phone.$model"
         placeholder="Phone number"
         required
-        label="Phone"
+        label="Phone number"
         :v="v$.phone"
       />
 
@@ -81,7 +79,7 @@ const handleSubmit = async () => {
     body: {
       name: state.name,
       email: state.email,
-      event_id: currentEvent.value.id,
+      event_id: currentEvent.value?.id,
       company: state.company,
       phone: state.phone,
     },
