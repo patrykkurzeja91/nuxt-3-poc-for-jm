@@ -21,10 +21,9 @@
         </div>
       </div>
     </section>
-    <MoleculesCategoryList
-      v-if="groupedCategories"
-      :grouped-categories="groupedCategories"
-    />
+    <AtomsBaseLoader v-if="pending" />
+    <MoleculesCategoryList v-else :grouped-categories="groupedCategories" />
+    <div>{{ error }}</div>
   </div>
 </template>
 <script setup lang="ts">
@@ -35,7 +34,7 @@ interface Category {
   subcategory: 'award'
 }
 const categories = ref()
-const { data } = await useFetch<{ categories: Category[] }>(
+const { data, pending, error } = await useFetch<{ categories: Category[] }>(
   () => import.meta.env.VITE_API_URL + `/categories/all`
 )
 categories.value = data.value?.categories

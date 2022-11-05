@@ -9,7 +9,7 @@ interface Category {
   }
 }
 interface Props {
-  groupedCategories: Category[]
+  groupedCategories?: Category[]
 }
 defineProps<Props>()
 
