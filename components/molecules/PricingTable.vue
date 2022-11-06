@@ -13,7 +13,7 @@
           'Possibility to award a prize: a voucher, your product, a material prize',
           'Logo and information about the sponsor in social media during the gala, during the presentation of the selected category',
           'Information about the sponsor in the event brochure',
-          'Information about the sponsor in the newslatter',
+          'Information about the sponsor in the newsletter',
           'Rotating logo displayed during the gala',
           'Thanks to the sponsor from the stage',
         ]"
@@ -22,7 +22,7 @@
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
       <MoleculesPricingCard
         popular="popular"
-        bundle="CATEGORY SPONSOR"
+        bundle="DIAMOND"
         price="£600"
         :benefit-list="[
           '2 tickets to the Final Gala',
@@ -32,7 +32,7 @@
           'Logo and information about the sponsor in social media and during the gala',
           'Company logo in a movie  from the gala',
           'Information about the sponsor in the event brochure',
-          'Information about the sponsor in the newslatter',
+          'Information about the sponsor in the newsletter',
           'Rotating logo displayed during the gala',
           'Thanks to the sponsor from the stage',
         ]"
@@ -50,7 +50,7 @@
           'Logo and information about the sponsor in social media and during the gala',
           'Company logo in a movie  from the gala',
           'Information about the sponsor in the event brochure',
-          'Information about the sponsor in the newslatter',
+          'Information about the sponsor in the newsletter',
           'Rotating logo displayed during the gala',
           'Thanks to the sponsor from the stage',
         ]"
@@ -65,7 +65,7 @@
           'Possibility to add to goodie bags for gala participants: voucher, product sample',
           'Logo and information about the sponsor in social media and during the gala',
           'Information about the sponsor in the event brochure',
-          'Information about the sponsor in the newslatter',
+          'Information about the sponsor in the newsletter',
           'Rotating logo displayed during the gala',
           'Thanks to the sponsor from the stage',
         ]"

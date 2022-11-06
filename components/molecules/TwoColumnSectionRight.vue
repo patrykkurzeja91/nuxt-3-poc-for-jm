@@ -1,7 +1,7 @@
 <template>
   <section class="bg-new-gray">
     <div
-      class="flex container mx-auto max-w-screen-lg flex-col px-5 pt-12 pb-24"
+      class="container mx-auto flex max-w-screen-lg flex-col px-5 pt-12 pb-24"
     >
       <div class="mx-auto">
         <div class="flex flex-col-reverse md:flex-row">
@@ -32,7 +32,7 @@
             class="flex items-center justify-center pt-12 pl-6 pr-6 text-center md:w-1/2 md:pr-0 lg:items-start lg:pl-12"
           >
             <div
-              class="image-wrapper flex object-fit relative overflow-hidden rounded-lg"
+              class="image-wrapper object-fit relative flex overflow-hidden rounded-lg"
             >
               <img
                 class="h-full w-full max-w-sm"

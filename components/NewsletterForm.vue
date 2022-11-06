@@ -14,11 +14,11 @@
       </svg>
     </div>
     <div
-      class="flex container mx-auto max-w-screen-xl items-center justify-center px-4"
+      class="container mx-auto flex max-w-screen-xl items-center justify-center px-4"
     >
       <form class="max-w-xl text-center" @submit.prevent="subscribe">
         <div class="flex justify-center">
-          <nuxt-icon name="noun-paper-plane" class="w-1/3"></nuxt-icon>
+          <nuxt-icon name="noun-paper-plane" class="icon mb-6 flex"></nuxt-icon>
         </div>
         <h2 class="mb-10">Join our newsletter today!</h2>
         <p class="mb-12 text-lg">
@@ -81,6 +81,10 @@ const subscribe = async () => {
 </script>
 
 <style scoped>
+.icon {
+  width: 96px;
+  height: 96px;
+}
 .custom-shape-divider-top-1663530825 {
   position: absolute;
   top: 0;

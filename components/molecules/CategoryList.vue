@@ -41,7 +41,7 @@ defineProps<Props>()
       :key="group.subcat"
       class="container relative mx-auto mb-16 max-w-4xl"
     >
-      <div class="flex relative mb-8 w-full rounded-md">
+      <div class="relative mb-8 flex w-full rounded-md">
         <h5 class="text-2xl text-dark-golden md:text-4xl">
           {{ group.subcat }}
         </h5>
@@ -49,7 +49,7 @@ defineProps<Props>()
       <div class="z-10 grid gap-y-3 gap-x-8 md:grid-cols-2">
         <div v-for="category in group.data" :key="category.id" class="w-full">
           <div
-            class="card flex relative h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 bg-light-grayish-blue-100 py-4 px-6 hover:bg-white/60"
+            class="card relative flex h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 bg-light-grayish-blue-100 py-4 px-6 hover:bg-white/60"
           >
             <p class="text-lg">
               {{ category.name }}

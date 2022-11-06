@@ -1,23 +1,36 @@
 <script lang="ts" setup>
 const linkCards = [
   {
-    label: 'Register now',
-    href: '/register',
-    image: 'https://picsum.photos/300/300',
+    icon: 'benefit-brand-identity',
+    label:
+      'Increasing brand awareness among new recipients and potential customers',
+    // image: 'https://picsum.photos/300/300',
   },
   {
-    label: 'Buy a ticket',
-    href: '/tickets',
-    image: 'https://picsum.photos/300/310',
+    icon: 'benefit-trust',
+    label: 'Building brand credibility, trust and loyalty among consumers',
+    // image: 'https://picsum.photos/300/310',
   },
   {
-    label: 'contact us',
-    href: '/contact',
-    image: 'https://picsum.photos/300/320',
+    icon: 'benefit-collaboration',
+    label:
+      'Industry recognition and new collaboration opportunities with other high-quality brands',
+    // image: 'https://picsum.photos/300/320',
   },
   {
-    label: 'Become a sponsor',
-    href: '/sponsors',
+    icon: 'benefit-success',
+    label: 'Stand out from the competition - there is only one winner',
+    // image: 'https://picsum.photos/305/320',
+  },
+  {
+    icon: 'benefit-growth',
+    label: 'Increasing the sale of your products or services',
+    // image: 'https://picsum.photos/305/320',
+  },
+  {
+    icon: 'benefit-coaching',
+    label:
+      'Presentation of the company during the final gala with media partners',
     // image: 'https://picsum.photos/305/320',
   },
 ]
@@ -43,48 +56,30 @@ const linkCards = [
     />
     <div class="container mx-auto max-w-screen-lg px-5 pb-32 pt-64">
       <div
-        class="flex mb-20 w-full flex-col flex-wrap items-center text-center"
+        class="mx-auto mb-20 flex w-full max-w-screen-md flex-col flex-wrap items-center text-center"
       >
-        <h2 class="mb-10">Pitchfork Kickstarter Taxidermy</h2>
+        <h2 class="mb-10">
+          Find out about the benefits of entering the competition
+        </h2>
+        <p class="mb-20 text-lg">
+          Close your eyes and imagine that you are hearing that you are the
+          winner of your category ...is probably one of the most exciting
+          messages a brand, product or company can hear.
+        </p>
+        <p class="text-lg">
+          An invitation to the final gala and winning is a huge success for your
+          brand and benefits
+        </p>
       </div>
-      <div class="grid gap-5 md:grid-cols-2">
-        <div
-          v-for="card in linkCards"
-          :key="card.label"
-          class="flex h-72 w-full"
-          @click="$router.push({ path: card.href })"
-        >
+      <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div v-for="card in linkCards" :key="card.label" class="flex w-full">
           <div
-            class="relative block w-full cursor-pointer overflow-hidden rounded-md p-6"
+            class="relative block w-full overflow-hidden rounded-md bg-white p-8 text-black"
           >
-            <img
-              v-if="card.image"
-              alt="content"
-              class="absolute left-0 top-0 z-0 h-full w-full object-cover object-center"
-              :src="card.image"
-            />
-            <div :class="card.image ? 'overlay' : 'overlay-hard'"></div>
-            <div
-              class="mb-4 inline-flex h-10 w-10 items-center justify-center rounded-full bg-indigo-100 text-royal-blue"
-            >
-              <!-- <svg
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    class="h-6 w-6"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                  </svg> -->
-            </div>
-            <h2 class="title relative z-10 mb-4">
+            <!-- <img :src="`@/assets/icons/${card.icon}.svg`" alt="" /> -->
+            <nuxt-icon :name="card.icon" class="icon mb-8 text-dark-golden" />
+            <p class="text-lg">
               {{ card.label }}
-            </h2>
-            <p class="relative z-10 text-base leading-relaxed">
-              Fingerstache flexitarian street art 8-bit waist co, subway tile
-              poke farm.
             </p>
           </div>
         </div>
@@ -94,8 +89,15 @@ const linkCards = [
   </section>
 </template>
 <style scoped>
-.title {
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+.icon {
+  display: flex;
+  width: 64px;
+  height: 64px;
+}
+.icon svg {
+  /* stroke-width: 3px; */
+  /* width: 48px;
+  height: 48px; */
 }
 .custom-shape-divider-top-1663530694 {
   position: absolute;
@@ -114,7 +116,7 @@ const linkCards = [
 }
 
 .custom-shape-divider-top-1663530694 .shape-fill {
-  fill: #fff;
+  fill: var(--new-gray);
 }
 
 .overlay {

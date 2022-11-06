@@ -33,11 +33,11 @@ const marketingList = ref([
   <div>
     <section class="relative">
       <div class="container mx-auto px-6 py-24">
-        <div class="flex mb-20 w-full flex-col text-center">
+        <div class="mb-20 flex w-full flex-col text-center">
           <h1 class="heading mb-16">Contact us</h1>
         </div>
         <div
-          class="flex mx-auto mb-12 w-full flex-col rounded-lg bg-white text-center lg:w-3/4 lg:border lg:border-light-grayish-blue-200 lg:p-16 xl:w-1/2"
+          class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white text-center lg:w-3/4 lg:border lg:border-light-grayish-blue-200 lg:p-16 xl:w-1/2"
         >
           <div class="contact-info">
             <div class="flex flex-col justify-center">
@@ -86,7 +86,7 @@ const marketingList = ref([
     </section>
   </div>
 </template>
-<style>
+<style scoped>
 .item {
   word-wrap: break-word;
   word-break: break-word;

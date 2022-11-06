@@ -14,7 +14,7 @@
       </svg>
     </div>
     <div
-      class="flex container mx-auto max-w-screen-lg flex-col px-5 pb-12 pt-48"
+      class="container mx-auto flex max-w-screen-lg flex-col px-5 pb-12 pt-48"
     >
       <div class="mx-auto">
         <div class="flex flex-col md:flex-row">
@@ -22,7 +22,7 @@
             class="flex items-center justify-center pl-6 pr-6 pt-12 text-center md:w-1/2 md:pl-0 lg:items-start lg:pr-12"
           >
             <div
-              class="image-wrapper flex object-fit relative overflow-hidden rounded-lg"
+              class="image-wrapper object-fit relative flex overflow-hidden rounded-lg"
             >
               <img
                 class="h-full w-full max-w-sm"

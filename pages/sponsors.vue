@@ -1,7 +1,7 @@
 <template>
   <section class="overflow-hidden">
     <div class="container mx-auto px-5 py-24">
-      <div class="flex mb-20 w-full flex-col text-center">
+      <div class="mb-20 flex w-full flex-col text-center">
         <h1 class="heading mb-16">Become a Sponsor</h1>
         <p class="mx-auto mb-4 leading-relaxed lg:w-2/3">
           Show your company and product to the best in the industry!
