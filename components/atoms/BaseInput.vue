@@ -3,7 +3,7 @@
     <div class="relative" :class="{ 'input--error': v && v.$error }">
       <div
         v-if="icon"
-        class="icon-wrapper flex pointer-events-none absolute items-center pl-3"
+        class="icon-wrapper pointer-events-none absolute flex items-center pl-3"
       >
         <nuxt-icon
           name="mail"
@@ -54,7 +54,7 @@ const props = withDefaults(
     placeholder: '',
     label: '',
     type: 'text',
-    v: null,
+    v: undefined,
     required: false,
   }
 )
@@ -63,18 +63,10 @@ const emit = defineEmits<{
   (e: 'update:modelValue', modelValue: string | number): void
 }>()
 
-const updateValue = (e: InputEvent) => {
+const updateValue = (e: Event) => {
   emit('update:modelValue', (e.target as HTMLInputElement).value)
 }
 
-// const fieldInput = computed({
-//   get() {
-//     return props.modelValue
-//   },
-//   set(newValue: string | number) {
-//     emit('update:modelValue', newValue)
-//   },
-// })
 const errorMessage = computed(() => {
   // if (props.v !== undefined && isArrayEmpty(props.v.$errors)) {
   //   return ''

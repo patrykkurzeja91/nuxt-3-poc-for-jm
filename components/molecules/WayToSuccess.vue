@@ -26,11 +26,11 @@
       <h6 class="relative inline-flex">Top categories</h6>
     </div>
     <div class="mb-10 grid gap-y-3 gap-x-5 sm:grid-cols-2 lg:grid-cols-4">
-      <div v-for="(category, index) in 8" :key="index" class="w-full">
+      <div v-for="(category, index) in categories" :key="index" class="w-full">
         <div
           class="card relative flex h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 bg-light-grayish-blue-100 py-4 px-6"
         >
-          <p class="text-lg">some top category</p>
+          <p class="text-lg">{{ category.name }}</p>
         </div>
       </div>
     </div>
@@ -44,6 +44,15 @@
     </nuxt-link>
   </div>
 </template>
+
+<script lang="ts" setup>
+import type { Category } from '@/types'
+
+interface Props {
+  categories: Category[]
+}
+defineProps<Props>()
+</script>
 
 <style lang="css" scoped>
 .arrow-icon {

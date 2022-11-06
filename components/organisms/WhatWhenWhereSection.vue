@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import { Category } from '~~/types'
+const categories = ref()
+const { data, pending } = await useFetch<{ categories: Category[] }>(
+  () => import.meta.env.VITE_API_URL + `/categories/top`
+)
+categories.value = data.value?.categories
+</script>
+
 <template>
   <section class="bg-new-gray">
     <div class="container mx-auto max-w-screen-lg px-5 py-24">
@@ -28,7 +37,12 @@
       <div class="relative py-12 font-bold">
         <h5 class="relative inline-flex">CELEBRATE YOUR SUCCESS WITH US!</h5>
       </div>
-      <MoleculesWayToSuccess class="pb-20" />
+
+      <MoleculesWayToSuccess
+        v-if="!pending"
+        class="pb-20"
+        :categories="categories"
+      />
 
       <div class="relative py-12 font-bold">
         <h5 class="relative inline-flex">TAKE PART IN LOTTERY</h5>

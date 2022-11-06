@@ -74,7 +74,7 @@ const handleSubmit = async () => {
   if (!valid) {
     return
   }
-  const data = await $fetch(import.meta.env.VITE_API_URL + `/ticket/buy`, {
+  const res = await $fetch(import.meta.env.VITE_API_URL + `/ticket/buy`, {
     method: 'POST',
     body: {
       name: state.name,
@@ -84,6 +84,6 @@ const handleSubmit = async () => {
       phone: state.phone,
     },
   })
-  console.log(data)
+  window.location.href = res.payment_url
 }
 </script>
