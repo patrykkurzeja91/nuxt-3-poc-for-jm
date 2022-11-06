@@ -1,7 +1,7 @@
 <template>
   <section class="body-font relative">
     <div class="container mx-auto px-5 py-24">
-      <div class="flex mb-12 w-full flex-col text-center">
+      <div class="mb-12 flex w-full flex-col text-center">
         <h1 class="heading mb-16">Contact Us</h1>
         <p class="mx-auto text-base leading-relaxed lg:w-2/3">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
@@ -50,7 +50,7 @@
           </div>
           <div class="w-full p-2">
             <button
-              class="flex mx-auto rounded border-0 bg-blue-500 py-2 px-8 text-lg text-white hover:bg-blue-600 focus:outline-none"
+              class="mx-auto flex rounded border-0 bg-blue-500 py-2 px-8 text-lg text-white hover:bg-blue-600 focus:outline-none"
             >
               Button
             </button>
