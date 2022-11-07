@@ -1,5 +1,9 @@
 import { defineNitroConfig } from 'nitropack'
 
 export default defineNitroConfig({
-  preset: 'node-server',
+  routeRules: {
+    '/categories': { swr: true },
+    '/register': { swr: true },
+    '/': { static: true },
+  },
 })
