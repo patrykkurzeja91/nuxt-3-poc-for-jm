@@ -1,5 +1,14 @@
+[build]
+  command = yarn build
+  publish = ".output/public"
+
 [dev]
-  command = "yarn dev"
+  command = "yarn preview"
   targetPort = 3000
   port = 8888
-  publish = ".output"
+  publish = ".output/public"
+
+[[redirects]]
+  from = "/*"
+  to = "index.html"
+  status = 200
