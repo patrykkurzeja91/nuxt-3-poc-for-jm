@@ -113,6 +113,7 @@
         <span v-if="required" class="ml-1 text-red-600">*</span></label
       >
       <VueMultiselect
+        v-if="!pending"
         v-model="v$.selectedCategories.$model"
         :class="{ 'is-error': v$.selectedCategories.$error }"
         required
@@ -127,6 +128,7 @@
         deselect-label="Remove"
       >
       </VueMultiselect>
+      <div v-if="error">some error {{ error }}</div>
       <span
         v-if="v$.selectedCategories.$error"
         class="mt-3 inline-flex w-full text-left text-red-600"
@@ -202,9 +204,15 @@ const { data: currentEvent } = await useFetch<Ticket>(
 
 const showErrorMessage = ref(false)
 const categories = ref()
-const { data } = await useFetch<{ categories: Category[] }>(
-  () => import.meta.env.VITE_API_URL + `/categories/all`
+
+const { data, pending, error } = await useAsyncData<{ categories: Category[] }>(
+  'categories',
+  () => $fetch('https://api.beautykingdomawards.co.uk' + `/categories/all`)
 )
+
+// const { data } = await useFetch<{ categories: Category[] }>(
+//   () => import.meta.env.VITE_API_URL + `/categories/all`
+// )
 categories.value = data.value?.categories
 
 const { groupedCategories } = useGroupedCategories(categories.value)
