@@ -27,7 +27,7 @@
               <span class="sr-only">Close menu</span>
               <nuxt-icon
                 name="x"
-                fill
+                filled
                 class="flex h-5 w-5 items-center justify-center"
               />
             </button>
@@ -35,7 +35,7 @@
           <ul :class="{ flex: open, hidden: !open }" class="flex-col">
             <li v-for="link in links" :key="link.name">
               <button
-                class="flex my-3 w-full justify-center rounded-md px-6 py-3 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
+                class="my-3 flex w-full justify-center rounded-md px-6 py-3 text-base font-medium hover:bg-light-grayish-blue-100 hover:text-dark-golden"
                 @click="'/' + navigate(link.href)"
               >
                 {{ link.name }}
@@ -43,7 +43,7 @@
             </li>
             <li>
               <button
-                class="flex my-3 w-full items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
+                class="my-3 flex w-full items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
                 @click="navigate('/register')"
               >
                 Register
@@ -52,7 +52,7 @@
           </ul>
         </nav>
         <!-- desktop menu -->
-        <div class="flex ml-auto">
+        <div class="ml-auto flex">
           <div class="lg:hidden">
             <button
               class="inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -61,17 +61,17 @@
               <span class="sr-only">Open menu</span>
               <nuxt-icon
                 name="menu"
-                fill
+                filled
                 class="flex h-5 w-5 items-center justify-center"
               />
             </button>
           </div>
-          <div class="hidden space-x-2 lg:flex">
+          <div class="hidden items-center justify-center space-x-2 lg:flex">
             <nuxt-link
               v-for="link in links"
               :key="link.name"
               :to="'/' + link.href"
-              class="rounded-md px-5 py-2 text-base font-medium hover:bg-new-gray hover:text-dark-golden"
+              class="rounded-md px-5 py-2 text-base font-medium hover:bg-light-grayish-blue-100 hover:text-dark-golden"
             >
               {{ link.name }}
             </nuxt-link>
@@ -112,10 +112,6 @@ const links = [
   {
     name: 'Sponsors',
     href: 'sponsors',
-  },
-  {
-    name: 'Tickets',
-    href: 'tickets',
   },
 ]
 const open = ref(false)

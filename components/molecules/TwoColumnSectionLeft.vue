@@ -1,5 +1,5 @@
 <template>
-  <section class="two-column-l bg-new-gray">
+  <section class="two-column-l bg-light-grayish-blue-100">
     <div class="custom-shape-divider-top-1663530694">
       <svg
         data-name="Layer 1"
@@ -17,6 +17,7 @@
       class="container mx-auto flex max-w-screen-lg flex-col px-5 pb-12 pt-48"
     >
       <div class="mx-auto">
+        <h3 class="text-dark-golden">Meet Joanna and Oktawia</h3>
         <div class="flex flex-col md:flex-row">
           <div
             class="flex items-center justify-center pl-6 pr-6 pt-12 text-center md:w-1/2 md:pl-0 lg:items-start lg:pr-12"
@@ -31,7 +32,6 @@
             </div>
           </div>
           <div class="pt-16 text-left sm:mt-0 md:w-2/3 md:pt-6 md:pl-8 lg:mt-4">
-            <h3 class="mb-8">Meet Joanna and Oktawia</h3>
             <p class="mb-4 text-lg font-semibold">
               Joanna has 14 years’ experience in the industry and won the award
               for best Lincolnshire beauty salon in the 2021 and 2022 England

@@ -17,7 +17,7 @@
       <p>
         A registration fee of &pound; 150 is required to enter the contest.
         Applications will be open from October 2022 to the end of January 2023.
-        The final gala is planned for March 2023.
+        The final gala is planned for April 2023.
       </p>
       <p>
         After payment, you will receive an e-mail with confirmation of
@@ -126,7 +126,7 @@
       <p>
         If you have any doubts, questions or matters that you think should be
         brought to our attention, please send an email to
-        contact@beautykingdomawards.co.uk and include in the subject of your
+        contact@beautykingdomawards.co.uk and include it in the subject of your
         message. Any complaints about our events must be received in writing via
         email or postal mail within 21 days of the event in order for us to act
         and respond.

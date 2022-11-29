@@ -7,7 +7,8 @@
       >
         <nuxt-icon
           name="mail"
-          fill
+          filled
+          font-size=""
           class="flex h-5 w-5 items-center justify-center"
         />
       </div>

@@ -3,7 +3,7 @@
     <section class="relative overflow-x-hidden">
       <div class="container mx-auto px-5 py-24">
         <div class="flex w-full flex-col text-center">
-          <h1 class="heading mb-16">See our categories</h1>
+          <h1 class="heading mb-16 text-dark-golden">See our categories</h1>
           <p class="mx-auto mb-6 lg:w-2/3">
             The Beauty industry is one of the fastest growing industries in the
             UK.

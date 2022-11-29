@@ -3,7 +3,7 @@
     <div class="container mx-auto max-w-screen-xl px-4 sm:px-6">
       <div class="md:flex md:justify-between">
         <div
-          class="flex mb-20 items-center justify-center md:mb-0 md:items-start"
+          class="mb-20 flex items-center justify-center md:mb-0 md:items-start"
         >
           <a href="https://flowbite.com/" class="flex items-center text-white">
             <img
@@ -20,13 +20,13 @@
           <div>
             <p class="mb-6 text-lg font-bold uppercase text-white">Resources</p>
             <ul class="dark:light-grayish-blue-600 text-light-grayish-blue-400">
-              <li class="mb-4">
+              <!-- <li class="mb-4">
                 <nuxt-link
                   href="/tickets"
                   class="inline-flex w-full hover:underline"
                   >Buy a ticket</nuxt-link
                 >
-              </li>
+              </li> -->
               <li>
                 <nuxt-link href="/register" class="hover:underline">
                   Register a nominee
@@ -189,10 +189,6 @@ const links = [
   {
     name: 'Sponsors',
     href: 'sponsors',
-  },
-  {
-    name: 'Tickets',
-    href: 'tickets',
   },
 ]
 </script>

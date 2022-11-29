@@ -6,12 +6,12 @@ const contactList = ref([
     icon: 'mail',
   },
   {
-    label: '3334412 123 312',
-    link: 'callto:3334412 123 312',
+    label: '07442947306',
+    link: 'callto:07442947306',
     icon: 'phone',
   },
   {
-    label: '399 High St, Lincoln LN5 7SS',
+    label: '27 Errington Road, S2 2EF Sheffield, South Yorkshire',
     link: 'https://goo.gl/maps/FfaYHCp5KDTMY9286',
     icon: 'map-pin',
   },
@@ -34,12 +34,14 @@ const marketingList = ref([
     <section class="relative">
       <div class="container mx-auto px-6 py-24">
         <div class="mb-20 flex w-full flex-col text-center">
-          <h1 class="heading mb-16">Contact us</h1>
+          <h1 class="heading mb-16 text-dark-golden">Contact us</h1>
         </div>
         <div
           class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white text-center lg:w-3/4 lg:border lg:border-light-grayish-blue-200 lg:p-16 xl:w-1/2"
         >
           <div class="contact-info">
+            <h4 class="mb-6">Beauty Kingdom Awards</h4>
+
             <div class="flex flex-col justify-center">
               <a
                 v-for="contact in contactList"
@@ -49,7 +51,7 @@ const marketingList = ref([
               >
                 <nuxt-icon
                   :name="contact.icon"
-                  fill
+                  filled
                   class="icon mr-6 mb-3 md:mb-0"
                 />
                 {{ contact.label }}</a
@@ -74,7 +76,7 @@ const marketingList = ref([
               >
                 <nuxt-icon
                   :name="contact.icon"
-                  fill
+                  filled
                   class="icon mr-6 mb-3 md:mb-0"
                 />
                 {{ contact.label }}</component

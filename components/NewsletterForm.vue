@@ -1,5 +1,5 @@
 <template>
-  <section class="relative bg-new-gray pt-48 pb-24">
+  <section class="relative bg-light-grayish-blue-100 pt-48 pb-24">
     <div class="custom-shape-divider-top-1663530825">
       <svg
         data-name="Layer 1"
@@ -35,10 +35,10 @@
             :v="v$.email"
           />
           <button
-            class="ml-6 inline-flex items-center justify-center rounded-md border border-royal-blue bg-royal-blue px-10 py-2.5 text-center text-base font-medium text-white hover:bg-yale-blue"
+            class="ml-6 inline-flex items-center justify-center rounded-md border border-dark-golden bg-dark-golden px-10 py-2.5 text-center text-base font-medium text-white hover:bg-dark-golden/95"
             type="submit"
           >
-            Submit
+            SUBMIT
           </button>
           <!-- <button class="items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-royal-blue hover:bg-indigo-700">Subscribe</button> -->
         </div>

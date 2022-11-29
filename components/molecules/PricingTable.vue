@@ -1,5 +1,5 @@
 <template>
-  <div class="flex -m-4 flex-wrap">
+  <div class="-m-4 flex flex-wrap">
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
       <MoleculesPricingCard
         popular="bestSeller"

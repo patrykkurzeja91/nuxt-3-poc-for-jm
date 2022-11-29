@@ -20,14 +20,17 @@
         hairdressers, cosmetic companies that offer services for the beauty
         industry and marketing agencies.&nbsp;
       </p>
-      <p>The registered address of the company is:&nbsp;</p>
-      <p>Telephone:&nbsp;</p>
+      <p>
+        The registered address of the company is:&nbsp; 27 Errington Road S2 2EF
+        Sheffield, South Yorkshire
+      </p>
+      <p>Telephone:&nbsp; 07442947306</p>
       <p>
         &nbsp;E-mail:&nbsp;<a href="mailto:contact@beautykingdomawards.co.uk"
           >contact@beautykingdomawards.co.uk</a
         >
       </p>
-      <p>&nbsp;Company registration number:&nbsp;</p>
+      <p>&nbsp;Company registration number:&nbsp;14319476</p>
       <h4>
         2. Why is the data being collected, and what&rsquo;s our lawful basis
         for doing so?
@@ -65,10 +68,10 @@
         gala and information about your company..
       </p>
       <p>
-        2.3 Competitions - By participating in the Beauty Kingdom Awards and
-        E&amp;T Mareketing Solutions competitions, we have a contractual
-        obligation to process your data in order to send you relevant
-        information about the competition, including prizes and finalists.
+        2.3 Competitions - By participating in the Beauty Kingdom Awards and E&T
+        Marketing Solutions competitions, we have a contractual obligation to
+        process your data in order to send you relevant information about the
+        competition, including prizes and finalists.
       </p>
       <h4>3. Who else will we tell about you?</h4>
       <p>
@@ -103,7 +106,7 @@
         to you.
       </p>
       <p>
-        3.6 Finally, Beauty Kingdom Awards and E&amp;T Markting Solutions not
+        3.6 Finally, Beauty Kingdom Awards and E&T Marketing Solutions are not
         responsible for the websites of third parties referred to or linked to
         by this website. When you visit these other websites, your personal
         information may be used by other people in a manner that is inconsistent

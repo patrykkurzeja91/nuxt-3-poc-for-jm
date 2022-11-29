@@ -2,34 +2,35 @@
   --cadmium-orange: #E08C37ff;
 
   --royal-blue-dark: #002366; /* primary color;*/
-  --royal-blue-dark-100: #002a7a; /* primary color;*/
-  --dark-orange: #664300; /* complementory color;*/
+  --dark-golden: #b37a00; /* complementory color;*/
 
-  --dark-golden: #b8860b;
-  --new-gray: #f6f7f8;
+  --dark-orange: #664300; /* complementory color additional;*/
+
+  --royal-blue-dark-100: #002a7a;
+  --new-gray: #fafafa;
 
   --pale-silver: #BDB8A9ff;
   --platinum: #EDEDEAff;
   --silver: #C1C1BFff;
   --cultured: #FAFAF9ff;
-
-  --cobalt-blue: #1E4BAAff;
-  --space-cadet: #101E45ff;
+  --cobalt-blue: #1E4BAA;
+  --space-cadet: #101E45;
   --glaucous: #667FB2;
-  --royal-blue-dark-2: #0B2A70ff;
+  --royal-blue-dark-2: #0B2A70;
 
 
 /* CSS HEX palette from logo*/
 --yale-blue: #1B4A8Bff;
---white: #FEFEFEff;
+--white: #FEFEFE;
 --bdazzled-blue: #3A5FA4ff;
 --bdazzled-blue-2: #2F59A3ff;
---white-2: #FFFFFFff;
 
+color: #00215e;
 }
 
 h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
+  line-height: normal !important;
   @apply font-serif font-bold;
 }
 

@@ -16,7 +16,7 @@ defineProps<Props>()
       'border-royal-blue': popular === 'popular',
       'border-light-grayish-blue-100': popular === '',
     }"
-    class="flex relative h-full flex-col overflow-hidden rounded-lg border-2 bg-white/70 px-6 pt-10 pb-6 drop-shadow-2xl backdrop-blur-md"
+    class="relative flex h-full flex-col overflow-hidden rounded-lg border-2 bg-white/70 px-6 pt-10 pb-6 drop-shadow-2xl backdrop-blur-md"
   >
     <span
       v-if="popular"
@@ -32,31 +32,33 @@ defineProps<Props>()
       {{ bundle }}
     </h2>
     <h1
-      class="flex mb-4 items-center border-b border-light-grayish-blue-100 pb-8 text-5xl leading-none text-gray-900"
+      class="mb-4 flex items-center border-b border-light-grayish-blue-100 pb-8 text-5xl leading-none text-gray-900"
     >
       <span>{{ price }} </span>
     </h1>
-    <p
-      v-for="(item, index) in benefitList"
-      :key="index"
-      class="flex mb-3 items-start text-gray-600"
-    >
-      <span
-        class="mr-3 mt-1 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-light-grayish-blue-500 text-white"
+    <div class="mb-4">
+      <p
+        v-for="(item, index) in benefitList"
+        :key="index"
+        class="mb-3 flex items-start text-gray-600"
       >
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2.5"
-          class="h-3 w-3"
-          viewBox="0 0 24 24"
+        <span
+          class="mr-3 mt-1 inline-flex h-4 w-4 flex-shrink-0 items-center justify-center rounded-full bg-light-grayish-blue-500 text-white"
         >
-          <path d="M20 6L9 17l-5-5"></path>
-        </svg> </span
-      >{{ item }}
-    </p>
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2.5"
+            class="h-3 w-3"
+            viewBox="0 0 24 24"
+          >
+            <path d="M20 6L9 17l-5-5"></path>
+          </svg> </span
+        >{{ item }}
+      </p>
+    </div>
 
     <nuxt-link
       :class="{
@@ -65,7 +67,7 @@ defineProps<Props>()
         'bg-light-grayish-blue-500 hover:bg-light-grayish-blue-800':
           popular === '',
       }"
-      class="flex mt-auto w-full items-center rounded border-0 py-2 px-4 text-white focus:outline-none"
+      class="mt-auto flex w-full items-center rounded border-0 py-2 px-4 text-white focus:outline-none"
       to="/contact"
     >
       Contact us
