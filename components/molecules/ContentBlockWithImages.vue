@@ -13,7 +13,7 @@
       <div class="flex flex-wrap">
         <div class="p-4 md:w-1/2 xl:w-1/3">
           <div
-            class="overflow-hidden rounded-md border border-new-gray shadow-sm"
+            class="overflow-hidden rounded-md border border-light-grayish-blue-100 shadow-sm"
           >
             <div class="h-100 flex w-full overflow-hidden">
               <img
@@ -36,7 +36,7 @@
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
           <div
-            class="overflow-hidden rounded-md border border-new-gray shadow-sm"
+            class="overflow-hidden rounded-md border border-light-grayish-blue-100 shadow-sm"
           >
             <div class="h-100 flex w-full overflow-hidden">
               <img
@@ -59,7 +59,7 @@
         </div>
         <div class="p-4 md:w-1/2 xl:w-1/3">
           <div
-            class="overflow-hidden rounded-md border border-new-gray shadow-sm"
+            class="overflow-hidden rounded-md border border-light-grayish-blue-100 shadow-sm"
           >
             <div class="h-100 flex w-full overflow-hidden">
               <img

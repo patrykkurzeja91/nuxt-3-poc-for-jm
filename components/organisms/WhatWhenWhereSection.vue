@@ -20,9 +20,9 @@ const formatedEventDate = computed(() =>
 <template>
   <section class="bg-light-grayish-blue-100">
     <div class="container mx-auto max-w-screen-lg px-5 py-24">
-      <div class="mb-20 text-center">
+      <!-- <div class="mb-20 text-center">
         <h2 class="mb-4 text-dark-golden">What. When. Where.</h2>
-      </div>
+      </div> -->
       <div class="subheading relative py-12 font-bold">
         <h5 class="relative inline-flex">BEAUTY AWARDS KEY DATES</h5>
       </div>

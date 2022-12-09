@@ -116,7 +116,7 @@ const linkCards = [
 }
 
 .custom-shape-divider-top-1663530694 .shape-fill {
-  fill: var(--new-gray);
+  fill: var(--light-grayish-blue);
 }
 
 .overlay {
