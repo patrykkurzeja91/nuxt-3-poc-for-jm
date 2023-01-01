@@ -12,11 +12,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        'royal-blue': 'var(--royal-blue-dark)',
-        'dark-orange': 'var(--dark-orange)',
-        'dark-golden': 'var(--dark-golden)',
-        'yale-blue': 'var(--yale-blue)',
-        silver: 'var(--silver)',
+        'royal-blue': '#002366',
+        'dark-orange': '#664300',
+        'dark-golden': '#b37a00',
+        'yale-blue': '#1B4A8Bff',
+        silver: '#C1C1BFff',
         'light-grayish-blue': {
           100: '#fafafa',
           200: '#ebedef',

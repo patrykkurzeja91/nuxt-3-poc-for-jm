@@ -106,12 +106,12 @@ const links = [
     href: 'categories',
   },
   {
-    name: 'Contact',
-    href: 'contact',
-  },
-  {
     name: 'Sponsors',
     href: 'sponsors',
+  },
+  {
+    name: 'Contact',
+    href: 'contact',
   },
 ]
 const open = ref(false)

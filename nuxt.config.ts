@@ -5,8 +5,8 @@ export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   plugins: ['@/plugins/vue-select.ts'],
-  router: {
-    // trailingSlash: false,
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   routeRules: {
     // Static page generated on-demand, revalidates in background
@@ -14,8 +14,5 @@ export default defineNuxtConfig({
     // Static page generated on-demand once
     '/': { static: true },
     '/register': { static: true },
-    // Add redirect headers
-    '/old-page': { redirect: '/categories' },
-    '/old-page2': { redirect: { to: '/new-page', statusCode: 302 } },
   },
 })

@@ -1,30 +1,16 @@
 <template>
-  <section class="relative bg-light-grayish-blue-100 pt-48 pb-24">
-    <div class="custom-shape-divider-top-1663530825">
-      <svg
-        data-name="Layer 1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 1200 120"
-        preserveAspectRatio="none"
-      >
-        <path
-          d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-          class="shape-fill"
-        ></path>
-      </svg>
-    </div>
+  <section class="relative bg-light-grayish-blue-100 pt-24 pb-24">
     <div
-      class="container mx-auto flex max-w-screen-xl items-center justify-center px-4"
+      class="flex container mx-auto max-w-screen-xl items-center justify-center px-4"
     >
       <form class="max-w-xl text-center" @submit.prevent="subscribe">
         <div class="flex justify-center">
-          <nuxt-icon name="noun-paper-plane" class="icon mb-6 flex"></nuxt-icon>
+          <nuxt-icon name="noun-paper-plane" class="icon flex mb-6"></nuxt-icon>
         </div>
-        <h2 class="mb-10">Join our newsletter today!</h2>
+        <h2 class="mb-10">Join our community!</h2>
         <p class="mb-12 text-lg">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor libero
-          nihil debitis facere vero rerum quos totam cupiditate. Cupiditate sit
-          similique id in harum incidunt nemo praesentium? Nisi, quo harum!
+          Every month we will send you news in the beauty industry, marketing
+          and PR tips and the latest information about our awards.
         </p>
         <div class="flex flex-row items-start">
           <AtomsBaseInput
@@ -84,25 +70,5 @@ const subscribe = async () => {
 .icon {
   width: 96px;
   height: 96px;
-}
-.custom-shape-divider-top-1663530825 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1663530825 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 2px);
-  height: 90px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-top-1663530825 .shape-fill {
-  fill: #002366;
 }
 </style>

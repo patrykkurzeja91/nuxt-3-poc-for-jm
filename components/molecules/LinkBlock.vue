@@ -56,7 +56,7 @@ const linkCards = [
     />
     <div class="container mx-auto max-w-screen-lg px-5 pb-32 pt-64">
       <div
-        class="mx-auto mb-20 flex w-full max-w-screen-md flex-col flex-wrap items-center text-center"
+        class="flex mx-auto mb-20 w-full max-w-screen-md flex-col flex-wrap items-center text-center"
       >
         <h2 class="mb-10">
           Find out about the benefits of entering the competition
@@ -116,7 +116,7 @@ const linkCards = [
 }
 
 .custom-shape-divider-top-1663530694 .shape-fill {
-  fill: var(--light-grayish-blue);
+  fill: var(--white);
 }
 
 .overlay {

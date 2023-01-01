@@ -1,5 +1,5 @@
 <template>
-  <section class="relative flex overflow-x-hidden bg-light-grayish-blue-100">
+  <section class="flex relative overflow-x-hidden bg-light-grayish-blue-100">
     <div class="container mx-auto px-5 py-24">
       <div class="flex w-full flex-col text-center">
         <h1 class="heading mb-16 text-dark-golden">
@@ -23,8 +23,7 @@
         </p>
         <p class="mx-auto mb-10 font-bold lg:w-2/3">
           The registration fee is £150 per category. You can apply to more than
-          one category. The fee for 2 categories is £260 Your data will not be
-          passed on without your consent.
+          one category. The fee for 2 categories is £260
         </p>
         <p class="mx-auto mb-4 lg:w-2/3">
           Your data will not be passed on without your consent. You make a
@@ -38,7 +37,7 @@
         class="absolute right-0 -z-10 w-full opacity-20"
       /> -->
       <div
-        class="mx-auto flex max-w-xl shrink-0 flex-wrap items-center justify-center"
+        class="flex mx-auto max-w-xl shrink-0 flex-wrap items-center justify-center"
       >
         <nuxt-icon name="visa" filled class="mr-6 w-32" />
         <nuxt-icon name="mastercard" filled class="w-32" />

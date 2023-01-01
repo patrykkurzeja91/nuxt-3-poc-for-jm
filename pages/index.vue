@@ -14,6 +14,7 @@ if (data.value !== null) {
     <PageHero />
     <OrganismsWhatWhenWhereSection />
     <MoleculesLinkBlock />
+    <MoleculesLottery />
     <NewsletterForm />
   </div>
 </template>

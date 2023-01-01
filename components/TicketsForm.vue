@@ -1,5 +1,5 @@
 <template>
-  <div class="mx-auto flex max-w-xl">
+  <div class="flex mx-auto max-w-xl">
     <form
       class="flex w-full flex-col md:px-20 md:py-20"
       novalidate
@@ -44,7 +44,7 @@
     <div
       v-if="showErrorMessage"
       id="toast-warning"
-      class="fixed bottom-20 right-14 flex w-full max-w-xs items-center rounded-lg bg-red-100 p-4 text-gray-500 shadow"
+      class="flex fixed bottom-20 right-14 w-full max-w-xs items-center rounded-lg bg-red-100 p-4 text-gray-500 shadow"
       role="alert"
     >
       <div
