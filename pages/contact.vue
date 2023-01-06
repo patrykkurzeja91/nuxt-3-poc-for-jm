@@ -59,7 +59,6 @@ const marketingList = ref([
               </div>
             </div>
           </div>
-          <!-- <hr class="border-1 my-16 border-light-grayish-blue-100" /> -->
           <div
             class="flex mx-auto mb-12 w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
           >
@@ -100,11 +99,6 @@ const marketingList = ref([
 }
 .contact-info > .item:last-of-type {
   margin-bottom: 0 !important;
-}
-.icon {
-  /*  display: inline-flex;
-  justify-content: center;
-  align-items: center; */
 }
 .icon svg {
   width: 36px;

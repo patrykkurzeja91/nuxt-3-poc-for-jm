@@ -64,14 +64,6 @@ const formatedEventDate = (eventDate: string) => {
 </template>
 
 <style scoped>
-@screen md {
-  .next {
-    right: -16px;
-    top: 50%;
-    bottom: none;
-    transform: rotate(0deg);
-  }
-}
 .next {
   position: absolute;
   bottom: -20px;

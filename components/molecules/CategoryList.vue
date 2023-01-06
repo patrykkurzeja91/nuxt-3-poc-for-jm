@@ -42,7 +42,7 @@ defineProps<Props>()
       class="container relative mx-auto mb-16 max-w-4xl"
     >
       <div class="relative mb-8 flex w-full rounded-md">
-        <h5 class="text-2xl text-dark-golden md:text-4xl">
+        <h5 class="text-2xl capitalize text-dark-golden md:text-4xl">
           {{ group.subcat }}
         </h5>
       </div>
@@ -51,7 +51,7 @@ defineProps<Props>()
           <div
             class="card relative flex h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 bg-light-grayish-blue-100 py-4 px-6 hover:bg-white/60"
           >
-            <p class="text-lg">
+            <p class="mb-0 text-lg">
               {{ category.name }}
             </p>
           </div>

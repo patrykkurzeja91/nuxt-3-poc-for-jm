@@ -25,23 +25,27 @@
         </h6>
       </div>
     </div>
-    <div class="rounded-md border-2 border-dark-golden py-6 px-10">
+    <div
+      class="categories-card relative rounded-md border-2 border-dark-golden bg-white py-6 px-10"
+    >
       <div class="relative py-6 font-bold">
-        <h6 class="relative inline-flex">
-          Check out our chosen top categories
-        </h6>
+        <h5 class="relative inline-flex">
+          Check out our chosen top categories:
+        </h5>
       </div>
-      <div class="mb-10 grid gap-y-3 gap-x-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="mb-10 grid gap-y-3 gap-x-5 sm:grid-cols-2">
         <div
           v-for="(category, index) in categories"
           :key="index"
           class="w-full"
         >
           <div
-            class="card relative flex h-full flex-col items-start justify-start rounded-md border border-light-grayish-blue-300 py-4 px-6"
+            class="card relative flex h-full flex-col items-start justify-start rounded-md border-2 border-light-grayish-blue-300 bg-white py-6 px-8"
           >
-            <p class="text-lg font-bold">{{ category.name }}</p>
-            <p class="">{{ category.description }}</p>
+            <p class="text-lg font-bold uppercase">
+              {{ category.name }}
+            </p>
+            <p class="mb-0">{{ category.description }}</p>
           </div>
         </div>
       </div>
@@ -67,6 +71,11 @@ defineProps<Props>()
 </script>
 
 <style lang="css" scoped>
+.categories-card {
+  background-image: url('@/assets/icons/pattern.svg');
+  background-repeat: repeat;
+  object-fit: fill;
+}
 .arrow-icon {
   stroke-width: 2px;
   width: 24px;

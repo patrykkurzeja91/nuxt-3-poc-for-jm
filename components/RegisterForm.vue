@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mx-auto max-w-xl">
+  <div class="mx-auto flex max-w-xl">
     <form
       class="flex w-full flex-col md:px-20 md:py-20"
       novalidate
@@ -110,8 +110,8 @@
       />
       <label class="mb-2 inline-flex text-lg"
         >Categories
-        <span v-if="required" class="ml-1 text-red-600">*</span></label
-      >
+        <span v-if="required" class="ml-1 text-red-600">*</span>
+      </label>
       <VueMultiselect
         v-if="!pending"
         v-model="v$.selectedCategories.$model"
@@ -142,11 +142,15 @@
       >
         submit
       </button>
+      <p class="mt-4 text-sm">
+        Your data will not be passed on without your consent. You make a secure
+        payment through the payment gateway.
+      </p>
     </form>
     <div
       v-if="showErrorMessage"
       id="toast-warning"
-      class="flex fixed bottom-20 right-14 w-full max-w-xs items-center rounded-lg bg-red-100 p-4 text-gray-500 shadow"
+      class="fixed bottom-20 right-14 flex w-full max-w-xs items-center rounded-lg bg-red-100 p-4 text-gray-500 shadow"
       role="alert"
     >
       <div
@@ -311,7 +315,6 @@ const handleSubmit = async () => {
 }
 .multiselect__tag {
   @apply bg-royal-blue !important;
-  /* background: var(--royal-blue-dark) !important; */
 }
 .multiselect__tag-icon:hover.multiselect__tag-icon::after {
   @apply text-white !important;

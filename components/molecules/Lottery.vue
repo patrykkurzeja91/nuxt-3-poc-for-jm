@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-const heplItems = ref([
+const helpItems = ref([
   'Helping children to develop their talents and abilities',
   'Helping children in their education',
   'Helping children and their families in crisis',
@@ -26,7 +26,7 @@ const heplItems = ref([
     </div>
     <div class="container mx-auto max-w-screen-lg px-5">
       <div class="relative pb-12 font-bold">
-        <h5 class="flex relative justify-center">TAKE PART IN LOTTERY</h5>
+        <h5 class="relative flex justify-center">TAKE PART IN LOTTERY</h5>
       </div>
       <div class="flex flex-col md:flex-row">
         <div
@@ -52,7 +52,7 @@ const heplItems = ref([
           </p>
         </div>
       </div>
-      <div class="flex mt-10 flex-col md:flex-row">
+      <div class="mt-10 flex flex-col md:flex-row">
         <div class="">
           <p class="mb-6 text-lg">
             <span class="font-semibold uppercase">Our mission statement</span>
@@ -62,7 +62,7 @@ const heplItems = ref([
 
           <div class="mb-4">
             <span
-              v-for="(item, index) in heplItems"
+              v-for="(item, index) in helpItems"
               :key="index"
               class="mr-4 border-l-4 border-dark-golden pl-2"
             >
