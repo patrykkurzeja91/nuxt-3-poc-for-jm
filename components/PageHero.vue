@@ -11,9 +11,7 @@
             src="@/assets/images/bk_logo-gold.png"
           />
           <div class="w-full">
-            <h1
-              class="mb-10 text-center text-4xl text-dark-orange md:text-left"
-            >
+            <h1 class="mb-10 text-center text-4xl md:text-left">
               Celebrate your success with us!
             </h1>
             <p
