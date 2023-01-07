@@ -3,7 +3,7 @@ import type { IEvent } from '@/types'
 const event = useEvent()
 
 const { data } = await useAsyncData<IEvent>('event', () =>
-  $fetch('https://api.beautykingdomawards.co.uk' + `/event`)
+  $fetch(import.meta.env.VITE_API_URL + `/event`)
 )
 if (data.value !== null) {
   event.value = data.value

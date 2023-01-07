@@ -212,7 +212,7 @@ const categories = ref()
 
 const { data, pending, error } = await useAsyncData<{ categories: Category[] }>(
   'categories',
-  () => $fetch('https://api.beautykingdomawards.co.uk' + `/categories/all`)
+  () => $fetch(import.meta.env.VITE_API_URL + `/categories/all`)
 )
 
 // const { data } = await useFetch<{ categories: Category[] }>(
