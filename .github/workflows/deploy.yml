@@ -82,4 +82,4 @@ jobs:
           port: 22
           source: "./dist/**"
           target: "./domains/beautykingdomawards.co.uk/public_html/"
-
+          strip_components: 1
