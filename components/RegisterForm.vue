@@ -140,7 +140,7 @@
         class="mt-8 inline-flex items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
         type="submit"
       >
-        submit
+        Go to payment
       </button>
       <p class="mt-4 text-sm">
         Your data will not be passed on without your consent. You make a secure

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500|Playfair+Display:400,500');
 
 :root {
-
   --royal-blue-dark: #002366; /* primary color;*/
   --dark-golden: #b37a00; /* complementory color;*/
   --light-grayish-blue-100: #fafafa;
@@ -37,7 +36,8 @@ background-color: var(--dark-golden);
 
 
 
-html {font-size: 100%;} /*16px*/
+html {font-size: 100%;     min-width: 250px;
+} /*16px*/
 
 body {
   background: white;

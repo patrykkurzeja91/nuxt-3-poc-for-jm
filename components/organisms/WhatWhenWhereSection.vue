@@ -19,7 +19,7 @@ const formatedEventDate = computed(() =>
 
 <template>
   <section class="relative bg-light-grayish-blue-100">
-    <AtomsFireworksAnimation class="absolute left-0 bottom-0" />
+    <!-- <AtomsFireworksAnimation class="absolute left-0 bottom-0" /> -->
     <div class="container relative mx-auto max-w-screen-lg px-5 py-24">
       <!-- <div class="mb-20 text-center">
         <h2 class="mb-4 text-dark-golden">What. When. Where.</h2>

@@ -4,15 +4,19 @@
       class="container mx-auto flex max-w-screen-lg flex-col items-center justify-center px-5"
     >
       <div class="grid grid-cols-12">
-        <div class="relative z-20 col-span-6 mb-20 mt-20">
+        <div class="relative z-20 col-span-12 mb-20 mt-20 md:col-span-6">
           <img
             class="mb-16 w-full rounded object-cover object-center md:w-1/2"
             alt="hero"
             src="@/assets/images/bk_logo-gold.png"
           />
           <div class="w-full">
-            <h1 class="mb-10 text-4xl">Celebrate your success with us!</h1>
-            <p class="mb-10 w-5/6 text-lg">
+            <h1 class="mb-10 text-center text-4xl md:text-left">
+              Celebrate your success with us!
+            </h1>
+            <p
+              class="mx-auto mb-10 w-5/6 text-center text-lg md:ml-0 md:text-left"
+            >
               After many years of running salons and an academy that gives
               British qualifications to work in the beauty industry, we want to
               appreciate other businesses in the industry that stand out on the
@@ -20,10 +24,8 @@
             </p>
           </div>
         </div>
-        <div>
-          <div
-            class="image-wrapper absolute right-0 top-0 bottom-0 flex h-full bg-yale-blue object-contain"
-          >
+        <div class="col-span-12 hidden md:col-span-6 md:flex">
+          <div class="image-wrapper">
             <div class="triangle absolute">
               <svg
                 viewBox="0 0 265 661"
@@ -55,6 +57,7 @@
   fill: #fff;
 }
 .image-wrapper {
+  @apply absolute right-0 top-0 bottom-0 flex h-full bg-yale-blue object-contain;
   width: 60%;
 }
 .image {
