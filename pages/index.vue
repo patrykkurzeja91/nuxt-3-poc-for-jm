@@ -2,6 +2,11 @@
 import type { IEvent } from '@/types'
 const event = useEvent()
 
+definePageMeta({
+  key: 'home',
+  name: 'Home',
+})
+
 const { data } = await useAsyncData<IEvent>('event', () =>
   $fetch('https://api.beautykingdomawards.co.uk' + `/event`)
 )

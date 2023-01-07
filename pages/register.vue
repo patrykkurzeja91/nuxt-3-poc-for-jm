@@ -1,7 +1,7 @@
 <template>
   <section class="relative flex overflow-x-hidden bg-light-grayish-blue-100">
     <div class="container mx-auto px-5 py-24">
-      <div class="flex w-full flex-col text-center">
+      <div class="mx-auto flex w-full flex-col text-center lg:w-2/3">
         <h1 class="heading mb-16 text-dark-golden">
           Develop your dream business with us!
         </h1>

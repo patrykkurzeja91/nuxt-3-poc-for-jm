@@ -18,22 +18,23 @@ const formatedEventDate = computed(() =>
 </script>
 
 <template>
-  <section class="bg-light-grayish-blue-100">
-    <div class="container mx-auto max-w-screen-lg px-5 py-24">
+  <section class="relative bg-light-grayish-blue-100">
+    <AtomsFireworksAnimation class="absolute left-0 bottom-0" />
+    <div class="container relative mx-auto max-w-screen-lg px-5 py-24">
       <!-- <div class="mb-20 text-center">
         <h2 class="mb-4 text-dark-golden">What. When. Where.</h2>
       </div> -->
       <div class="subheading relative py-12 font-bold">
-        <h5 class="flex relative justify-center">BEAUTY AWARDS KEY DATES</h5>
+        <h5 class="relative flex justify-center">BEAUTY AWARDS KEY DATES</h5>
       </div>
       <MoleculesKeyDates class="pb-20" />
       <div
-        class="card flex relative z-10 mb-20 flex-col rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
+        class="card relative z-10 my-10 flex flex-col rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
       >
-        <div class="icon-left flex absolute items-center justify-center">
+        <div class="icon-left absolute flex items-center justify-center">
           <nuxt-icon name="dress2" filled class="h-20 w-20 text-dark-golden" />
         </div>
-        <div class="flex order-3 flex-col px-0 pt-28 md:px-28 md:pt-0">
+        <div class="order-3 flex flex-col px-0 pt-28 md:px-28 md:pt-0">
           <p class="mb-6 text-center text-2xl font-semibold">
             The final gala will take place on {{ formatedEventDate }}.
           </p>
@@ -43,7 +44,7 @@ const formatedEventDate = computed(() =>
             industry.
           </p>
         </div>
-        <div class="icon-right flex absolute items-center justify-center">
+        <div class="icon-right absolute flex items-center justify-center">
           <nuxt-icon name="men-suit" filled class="h-20 w-20" />
         </div>
       </div>

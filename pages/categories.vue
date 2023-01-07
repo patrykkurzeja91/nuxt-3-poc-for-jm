@@ -1,16 +1,12 @@
 <template>
   <div>
     <section class="relative overflow-x-hidden">
-      <div class="container mx-auto px-5 py-24">
-        <div class="flex w-full flex-col text-center">
+      <div class="container mx-auto px-5 pt-24 pb-10">
+        <div class="mx-auto flex w-full flex-col text-center lg:w-2/3">
           <h2 class="heading mb-16 text-dark-golden">
             The Beauty industry is one of the fastest growing industries in the
             UK
           </h2>
-          <!-- <p class="mx-auto mb-6 lg:w-2/3">
-            The Beauty industry is one of the fastest growing industries in the
-            UK.
-          </p> -->
           <p class="mx-auto mb-6 lg:w-2/3">
             We want to appreciate the work, customer and employee care, high
             standards of work, development in the field of cosmetology and

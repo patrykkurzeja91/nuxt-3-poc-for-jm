@@ -15,7 +15,8 @@ module.exports = {
         'royal-blue': '#002366',
         'dark-orange': '#664300',
         'dark-golden': '#b37a00',
-        'yale-blue': '#1B4A8Bff',
+        'hero-blue': '#045ca7',
+        'yale-blue': '#1B4A8B',
         silver: '#C1C1BFff',
         'light-grayish-blue': {
           100: '#fafafa',

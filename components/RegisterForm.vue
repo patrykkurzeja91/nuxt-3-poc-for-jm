@@ -205,6 +205,7 @@ const { data: currentEvent } = await useFetch<Ticket>(
   () => import.meta.env.VITE_API_URL + `/event`,
   { pick: ['id'] }
 )
+console.log(currentEvent.value)
 
 const showErrorMessage = ref(false)
 const categories = ref()

@@ -304,6 +304,13 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fireworks-js/vue@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@fireworks-js/vue/-/vue-2.10.1.tgz#30f0320a994928ee97a93fd3c0bd41915e276468"
+  integrity sha512-YnCo6GGDQmEXSgyRs1dc9i2VMpMPp2mu8yB8/TwGgW8ULVBIUk6HzloyEFUjhN8NlLxZQKPG8GzT850X/hQgtg==
+  dependencies:
+    fireworks-js "2.10.1"
+
 "@humanwhocodes/config-array@^0.11.6":
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.7.tgz#38aec044c6c828f6ed51d5d7ae3d9b9faf6dbb0f"
@@ -2841,6 +2848,11 @@ find-up@^5.0.0:
   dependencies:
     locate-path "^6.0.0"
     path-exists "^4.0.0"
+
+fireworks-js@2.10.1:
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/fireworks-js/-/fireworks-js-2.10.1.tgz#3b3cb653843ed39a2999d936f3fc88ced9e38e01"
+  integrity sha512-D0Hr5uSo+TD326jUHBWhf/AtP+x+NmHPmvJ3fKPDXzKGKP47ASfbk9U4JQugK4jwlKn1fdZ8kkk0CFqmva3BBw==
 
 flat-cache@^3.0.4:
   version "3.0.4"

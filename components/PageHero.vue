@@ -1,23 +1,101 @@
 <template>
-  <section class="">
+  <section class="hero relative overflow-hidden">
     <div
-      class="flex container mx-auto max-w-screen-lg flex-col items-center justify-center px-5 pb-24 pt-20"
+      class="container mx-auto flex max-w-screen-lg flex-col items-center justify-center px-5"
     >
-      <img
-        class="mb-16 w-5/6 rounded object-cover object-center md:w-4/6 lg:w-4/6"
-        alt="hero"
-        src="@/assets/images/bk_logo-gold.png"
-      />
-      <div class="w-full text-center lg:w-2/3">
-        <p class="mb-10 text-xl">
-          After many years of running salons and an academy that gives British
-          qualifications to work in the beauty industry, we want to appreciate
-          other businesses in the industry that stand out on the market.
-        </p>
+      <div class="grid grid-cols-12">
+        <div class="relative z-20 col-span-6 mb-20 mt-20">
+          <img
+            class="mb-16 w-full rounded object-cover object-center md:w-1/2"
+            alt="hero"
+            src="@/assets/images/bk_logo-gold.png"
+          />
+          <div class="w-full">
+            <h1 class="mb-10 text-4xl">Celebrate your success with us!</h1>
+            <p class="mb-10 w-5/6 text-lg">
+              After many years of running salons and an academy that gives
+              British qualifications to work in the beauty industry, we want to
+              appreciate other businesses in the industry that stand out on the
+              market.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="image-wrapper absolute right-0 top-0 bottom-0 flex h-full bg-yale-blue object-contain"
+          >
+            <div class="triangle absolute">
+              <svg
+                viewBox="0 0 265 661"
+                fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M265 1.7314e-05L1.84029e-06 7.14891e-05L3.28317e-05 661L265 1.7314e-05Z"
+                />
+              </svg>
+            </div>
+            <img
+              class="image"
+              alt="hero"
+              src="@/assets/images/hero-woman-trans.png"
+            />
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </template>
+<style scoped>
+.triangle {
+  width: 380px;
+  height: calc(100% + 2px);
+}
+.triangle svg {
+  fill: #fff;
+}
+.image-wrapper {
+  width: 60%;
+}
+.image {
+  margin-top: auto;
+  display: block;
+  position: relative;
+  width: 560px;
+  margin-left: 100px;
+}
+/* .hero-image:after {
+  @apply absolute left-0 top-0 bottom-0 w-1/2 bg-yale-blue object-contain;
+  height: 100%;
+  width: 100%;
+  content: '';
+
+  background: url('@/assets/images/hero-woman-trans.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+
+.custom-shape-divider-top-1663530825 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1663530825 svg {
+  position: relative;
+  display: block;
+  width: 96px;
+  height: calc(100% + 2px);
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1663530825 .shape-fill {
+  fill: #002366;
+}
+</style>
 <!-- <script lang="ts" setup>
 const event = useEvent()
 </script> -->

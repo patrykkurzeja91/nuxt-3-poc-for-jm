@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Inter:400|Playfair+Display:400,500');
-
+@import url('https://fonts.googleapis.com/css?family=Inter:400,500|Playfair+Display:400,500');
 
 :root {
 
@@ -7,6 +6,7 @@
   --dark-golden: #b37a00; /* complementory color;*/
   --light-grayish-blue-100: #fafafa;
   --silver: #C1C1BFff;
+  --hero-blue: #0282b9;
 
   --dark-orange: #664300; /* complementory color additional;*/
 
