@@ -40,7 +40,7 @@
             <img
               class="image"
               alt="hero"
-              src="@/assets/images/hero-woman-trans.png"
+              src="@/assets/images/hero-woman-bordered.png"
             />
           </div>
         </div>

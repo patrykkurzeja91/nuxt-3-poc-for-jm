@@ -90,7 +90,13 @@ const formatedEventDate = computed(() =>
     right: 36px;
   }
 }
+/* .card:hover {
+  box-shadow: 10px 10px 0 0 rgba(179, 122, 0, 0.9),
+    -10px -10px 0 0 rgba(179, 122, 0, 0.8);
+} */
 .card {
-  /* box-shadow: 0px 5px 0 0 var(--silver); */
+  transition: box-shadow 0.5s ease;
+  box-shadow: 0px 0px 0 0 rgba(179, 122, 0, 0.9),
+    0px 0px 0 0 rgba(179, 122, 0, 0.8);
 }
 </style>
