@@ -8,6 +8,9 @@ export default defineNuxtConfig({
   app: {
     pageTransition: { name: 'page', mode: 'out-in' },
   },
+  build: {
+    transpile: ['aos'],
+  },
   routeRules: {
     // Static page generated on-demand, revalidates in background
     '/categories': { swr: true },
