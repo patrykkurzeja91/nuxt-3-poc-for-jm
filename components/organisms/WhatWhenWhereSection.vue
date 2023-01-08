@@ -29,10 +29,16 @@ const formatedEventDate = computed(() =>
       </div>
       <MoleculesKeyDates class="pb-20" />
       <div
-        class="card relative z-10 my-10 flex flex-col rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
+        class="card relative my-10 flex flex-col overflow-hidden rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
       >
         <div class="icon-left absolute flex items-center justify-center">
-          <nuxt-icon name="dress2" filled class="h-20 w-20 text-dark-golden" />
+          <nuxt-icon
+            data-aos-duration="400"
+            data-aos="fade-right"
+            name="dress2"
+            filled
+            class="h-20 w-20 text-dark-golden"
+          />
         </div>
         <div class="order-3 flex flex-col px-0 pt-28 md:px-28 md:pt-0">
           <p class="mb-6 text-center text-2xl font-semibold">
@@ -45,7 +51,13 @@ const formatedEventDate = computed(() =>
           </p>
         </div>
         <div class="icon-right absolute flex items-center justify-center">
-          <nuxt-icon name="men-suit" filled class="h-20 w-20" />
+          <nuxt-icon
+            data-aos-duration="400"
+            data-aos="fade-left"
+            name="men-suit"
+            filled
+            class="h-20 w-20"
+          />
         </div>
       </div>
 
@@ -56,7 +68,7 @@ const formatedEventDate = computed(() =>
       /> -->
     </div>
   </section>
-  <section class="bg-white">
+  <section class="overflow-x-hidden bg-white">
     <div class="container mx-auto max-w-screen-lg px-5 py-24">
       <MoleculesWayToSuccess v-if="!pending" :categories="categories" />
     </div>
@@ -90,13 +102,14 @@ const formatedEventDate = computed(() =>
     right: 36px;
   }
 }
-/* .card:hover {
-  box-shadow: 10px 10px 0 0 rgba(179, 122, 0, 0.9),
-    -10px -10px 0 0 rgba(179, 122, 0, 0.8);
-} */
+
 .card {
   transition: box-shadow 0.5s ease;
-  box-shadow: 0px 0px 0 0 rgba(179, 122, 0, 0.9),
-    0px 0px 0 0 rgba(179, 122, 0, 0.8);
+  box-shadow: 5px 5px 0 0 rgba(179, 122, 0, 0.9),
+    -5px -5px 0 0 rgba(179, 122, 0, 0.8);
+}
+.card:hover {
+  box-shadow: 10px 10px 0 0 rgba(179, 122, 0, 0.9),
+    -10px -10px 0 0 rgba(179, 122, 0, 0.8);
 }
 </style>

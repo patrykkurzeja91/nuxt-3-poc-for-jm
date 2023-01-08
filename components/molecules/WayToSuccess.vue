@@ -1,6 +1,8 @@
 <template>
   <div>
     <div
+      data-aos-duration="400"
+      data-aos="fade-in"
       class="line mx-auto flex flex-col items-center border-dark-golden py-8 text-center md:w-1/3 md:border-t-0 md:pb-20"
     >
       <img src="@/assets/icons/success.svg" class="mb-10 w-20" alt="" />
@@ -22,7 +24,7 @@
       <div class="col-span-1">
         <div class="grid gap-y-6 md:gap-y-8">
           <div v-for="(category, index) in firstFourCategories" :key="index">
-            <div class="card">
+            <div data-aos-duration="400" data-aos="fade-right" class="card">
               <p class="text-xl font-bold uppercase text-dark-golden">
                 {{ category.name }}
               </p>
@@ -34,7 +36,7 @@
       <div class="col-span-1">
         <div class="grid gap-y-6 md:gap-y-8">
           <div v-for="(category, index) in lastFourCategories" :key="index">
-            <div class="card">
+            <div data-aos-duration="400" data-aos="fade-left" class="card">
               <p class="text-xl font-bold uppercase text-dark-golden">
                 {{ category.name }}
               </p>

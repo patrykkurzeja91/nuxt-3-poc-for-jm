@@ -17,7 +17,11 @@ const formatedEventDate = (eventDate: string) => {
   <div
     class="-mx-4 -mb-10 -mt-4 flex flex-col space-y-6 sm:-m-4 md:flex-row md:space-y-0"
   >
-    <div class="relative flex flex-col items-center p-6 text-center md:w-1/3">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="400"
+      class="relative flex flex-col items-center p-6 text-center md:w-1/3"
+    >
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center rounded-full"
       >
@@ -33,7 +37,12 @@ const formatedEventDate = (eventDate: string) => {
       </div>
       <nuxt-icon name="chevron-right" filled class="next w-8" />
     </div>
-    <div class="relative flex flex-col items-center p-6 text-center md:w-1/3">
+    <div
+      data-aos-delay="200"
+      data-aos="fade-up"
+      data-aos-duration="400"
+      class="relative flex flex-col items-center p-6 text-center md:w-1/3"
+    >
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center rounded-full"
       >
@@ -48,7 +57,12 @@ const formatedEventDate = (eventDate: string) => {
       </div>
       <nuxt-icon name="chevron-right" filled class="next w-8" />
     </div>
-    <div class="relative flex flex-col items-center p-6 text-center md:w-1/3">
+    <div
+      data-aos-delay="400"
+      data-aos="fade-up"
+      data-aos-duration="400"
+      class="relative flex flex-col items-center p-6 text-center md:w-1/3"
+    >
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center"
       >
