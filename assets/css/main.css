@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:400,500|Playfair+Display:400,500');
+@import 'aos/dist/aos.css';
 
 :root {
   --royal-blue-dark: #002366; /* primary color;*/
