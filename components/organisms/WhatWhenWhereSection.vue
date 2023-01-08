@@ -33,8 +33,6 @@ const formatedEventDate = computed(() =>
       >
         <div class="icon-left absolute flex items-center justify-center">
           <nuxt-icon
-            data-aos-duration="400"
-            data-aos="fade-right"
             name="dress2"
             filled
             class="h-20 w-20 text-dark-golden"
@@ -52,20 +50,12 @@ const formatedEventDate = computed(() =>
         </div>
         <div class="icon-right absolute flex items-center justify-center">
           <nuxt-icon
-            data-aos-duration="400"
-            data-aos="fade-left"
             name="men-suit"
             filled
             class="h-20 w-20"
           />
         </div>
       </div>
-
-      <!-- <MoleculesWayToSuccess
-        v-if="!pending"
-        class="pb-20"
-        :categories="categories"
-      /> -->
     </div>
   </section>
   <section class="overflow-x-hidden bg-white">

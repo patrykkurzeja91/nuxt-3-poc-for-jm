@@ -22,7 +22,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [16.14.2]
+        node: [18.12.1]
 
     steps:
       - name: set up Github repo
