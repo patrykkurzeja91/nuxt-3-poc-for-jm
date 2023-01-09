@@ -60,7 +60,6 @@
 </template>
 
 <script lang="ts" setup>
-import { defineProps, computed } from 'vue'
 import type { Category } from '@/types'
 interface Props {
   categories: Category[]
