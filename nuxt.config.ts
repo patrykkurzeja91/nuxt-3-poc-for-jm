@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         // <meta name="description" content="My amazing site">
         { name: 'description', content: 'Celebrate your success with us!' },
         {
-          name: 'og_image',
+          name: 'og:image',
           content: '@/assets/images/og_image.png',
         },
       ],
