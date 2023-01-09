@@ -10,11 +10,9 @@ export default defineNuxtConfig({
       script: [
         {
           src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
-          body: true,
         },
         {
           children: 'AOS.init()',
-          body: true,
         },
       ],
       link: [
