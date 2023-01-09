@@ -6,13 +6,13 @@ export default defineNuxtConfig({
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   app: {
     head: {
-      titleTemplate: 'BeautyKingdom Awards | %s',
+      titleTemplate: 'Beauty Kingdom Awards | %s',
       meta: [
         // <meta name="description" content="My amazing site">
         { name: 'description', content: 'Celebrate your success with us!' },
         {
           name: 'og_image',
-          content: '@/assets/images/bk_logo-gold.png',
+          content: '@/assets/images/og_image.png',
         },
       ],
     },
