@@ -1,4 +1,7 @@
 <script setup>
+useHead({
+  title: 'Contact',
+})
 const contactList = ref([
   {
     label: 'contact@beautykingdomawards.co.uk',
@@ -33,12 +36,12 @@ const marketingList = ref([
   <div>
     <section class="relative">
       <div class="container mx-auto px-6 py-24">
-        <div class="flex mb-20 w-full flex-col text-left">
+        <div class="mb-20 flex w-full flex-col text-left">
           <h1 class="heading mb-16 text-center text-dark-golden">Contact us</h1>
         </div>
         <div class="flex flex-col gap-x-16 lg:flex-row">
           <div
-            class="flex mx-auto mb-12 w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
+            class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
           >
             <div class="contact-info">
               <h4 class="mb-6 px-6 text-left">Beauty Kingdom Awards</h4>
@@ -60,7 +63,7 @@ const marketingList = ref([
             </div>
           </div>
           <div
-            class="flex mx-auto mb-12 w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
+            class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
           >
             <div class="contact-info">
               <h4 class="mb-6 px-6 text-left">Marketing PR</h4>

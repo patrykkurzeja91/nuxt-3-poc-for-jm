@@ -17,3 +17,8 @@
     <MoleculesTwoColumnSectionRight />
   </div>
 </template>
+<script lang="ts" setup>
+useHead({
+  title: 'About us',
+})
+</script>

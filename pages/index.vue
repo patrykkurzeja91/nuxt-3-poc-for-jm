@@ -7,6 +7,10 @@ definePageMeta({
   name: 'Home',
 })
 
+useHead({
+  title: 'Home',
+})
+
 const { data } = await useAsyncData<IEvent>('event', () =>
   $fetch(import.meta.env.VITE_API_URL + `/event`)
 )

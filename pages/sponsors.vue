@@ -8,6 +8,9 @@ const { data } = await useAsyncData<IEvent>('event', () =>
 if (data.value !== null) {
   event.value = data.value
 }
+useHead({
+  title: 'Become a sponsor',
+})
 </script>
 
 <template>

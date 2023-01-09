@@ -60,6 +60,11 @@
     </div>
   </section>
 </template>
+<script lang="ts" setup>
+useHead({
+  title: 'Register a nominee',
+})
+</script>
 <style lang="css" scoped>
 .image {
   background-image: url('@/assets/images/beauty-salon.png');

@@ -5,6 +5,18 @@ export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   app: {
+    head: {
+      titleTemplate: 'BeautyKingdom Awards | %s',
+      meta: [
+        // <meta name="description" content="My amazing site">
+        { name: 'description', content: 'Celebrate your success with us!' },
+        {
+          name: 'og_image',
+          content: '@/assets/images/bk_logo-gold.png',
+        },
+      ],
+    },
+
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   build: {
