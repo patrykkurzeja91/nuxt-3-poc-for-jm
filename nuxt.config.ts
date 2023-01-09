@@ -6,22 +6,22 @@ export default defineNuxtConfig({
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   plugins: ['@/plugins/vue-select.ts'],
   app: {
-    head: {
-      script: [
-        {
-          src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
-        },
-        {
-          children: 'AOS.init()',
-        },
-      ],
-      link: [
-        {
-          href: 'https://unpkg.com/aos@2.3.1/dist/aos.css',
-          rel: 'stylesheet',
-        },
-      ],
-    },
+    // head: {
+    //   script: [
+    //     {
+    //       src: 'https://unpkg.com/aos@2.3.1/dist/aos.js',
+    //     },
+    //     {
+    //       children: 'AOS.init()',
+    //     },
+    //   ],
+    //   link: [
+    //     {
+    //       href: 'https://unpkg.com/aos@2.3.1/dist/aos.css',
+    //       rel: 'stylesheet',
+    //     },
+    //   ],
+    // },
     pageTransition: { name: 'page', mode: 'out-in' },
   },
   build: {
