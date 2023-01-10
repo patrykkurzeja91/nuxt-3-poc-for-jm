@@ -11,6 +11,14 @@ const date = (someDate: string) => new Date(someDate)
 const formatedEventDate = (eventDate: string) => {
   return date(eventDate).toLocaleDateString(undefined, options)
 }
+const eventPlace = computed(
+  () =>
+    event.value.additional_info +
+    ', ' +
+    event.value.street +
+    ', ' +
+    event.value.city
+)
 </script>
 
 <template>
@@ -71,7 +79,7 @@ const formatedEventDate = (eventDate: string) => {
       <div class="flex-grow">
         <h5 class="mb-6">{{ formatedEventDate(event.event_date) }}</h5>
         <p class="mb-4 text-base">Winners announced</p>
-        <p class="text-base">GALA DINNER AT HOLIDAY INN, BRENTFORD, LONDON</p>
+        <p class="text-base uppercase">GALA DINNER AT {{ eventPlace }}</p>
       </div>
     </div>
   </div>

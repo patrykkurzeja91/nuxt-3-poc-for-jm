@@ -32,11 +32,7 @@ const formatedEventDate = computed(() =>
         class="card relative my-10 flex flex-col overflow-hidden rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
       >
         <div class="icon-left absolute flex items-center justify-center">
-          <nuxt-icon
-            name="dress2"
-            filled
-            class="h-20 w-20 text-dark-golden"
-          />
+          <nuxt-icon name="dress2" filled class="h-20 w-20 text-dark-golden" />
         </div>
         <div class="order-3 flex flex-col px-0 pt-28 md:px-28 md:pt-0">
           <p class="mb-6 text-center text-2xl font-semibold">
@@ -49,11 +45,7 @@ const formatedEventDate = computed(() =>
           </p>
         </div>
         <div class="icon-right absolute flex items-center justify-center">
-          <nuxt-icon
-            name="men-suit"
-            filled
-            class="h-20 w-20"
-          />
+          <nuxt-icon name="men-suit" filled class="h-20 w-20" />
         </div>
       </div>
     </div>
