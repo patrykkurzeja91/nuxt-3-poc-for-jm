@@ -65,9 +65,13 @@ interface Props {
   categories: Category[]
 }
 const props = defineProps<Props>()
+const sortedCategories = computed(() => {
+  const aa = props.categories.slice()
+  return aa.sort((a, b) => a.name.localeCompare(b.name))
+})
 
-const firstFourCategories = computed(() => props.categories.slice(0, 4))
-const lastFourCategories = computed(() => props.categories.slice(4, 8))
+const firstFourCategories = computed(() => sortedCategories.value.slice(0, 4))
+const lastFourCategories = computed(() => sortedCategories.value.slice(4, 8))
 </script>
 
 <style lang="css" scoped>
