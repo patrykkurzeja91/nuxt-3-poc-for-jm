@@ -1,0 +1,1 @@
+import{l as n}from"./entry.eda580bf.js";function d(e){const r=n(()=>e==null?void 0:e.map(t=>({...t,subcat:t.subcategory}))),s=(t,u)=>t.reduce((a,o)=>({...a,[o[u]]:[...a[o[u]]||[],o]}),{});return{groupedCategories:n(()=>{if(r.value){const t=s(r.value,"subcat");return Object.entries(t).map(u=>({subcat:u[0],data:u[1]}))}})}}export{d as u};
