@@ -27,4 +27,6 @@ export interface IEvent {
   evaluation_form: string;
   evaluation_to: string;
   updated_at: string;
+  first_category_price: number;
+  second_category_price: number;
 }

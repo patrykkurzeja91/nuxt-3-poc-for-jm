@@ -6,10 +6,14 @@ export default defineNuxtConfig({
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   app: {
     head: {
-      titleTemplate: 'Beauty Kingdom Awards | %s',
+      titleTemplate: 'Beauty Kingdom Awards | Celebrate your success with us!',
       meta: [
         // <meta name="description" content="My amazing site">
-        { name: 'description', content: 'Celebrate your success with us!' },
+        {
+          name: 'description',
+          content:
+            'After many years of running salons and an academy that gives British qualifications to work in the beauty industry, we want to appreciate other businesses in the industry that stand out on the market.',
+        },
         {
           name: 'og:image',
           content: '@/assets/images/og_image.png',

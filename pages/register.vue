@@ -13,7 +13,6 @@
           </li>
           <li class="flex flex-col items-center justify-start">
             <nuxt-icon name="star" filled class="mb-3 w-8 text-dark-golden" />
-
             <span>You develop your skills</span>
           </li>
           <li class="flex flex-col items-center justify-start">
@@ -39,7 +38,7 @@
             </p>
             <p class="mb-10 text-left font-bold">
               The registration fee is £150 per category. You can apply to more
-              than one category. The fee for 2 categories is £260
+              than one category. The fee for 2 categories is £{{ event }}
             </p>
           </div>
         </div>
@@ -61,6 +60,15 @@
   </section>
 </template>
 <script lang="ts" setup>
+import type { IEvent } from '@/types'
+const event = useEvent()
+
+const { data } = await useAsyncData<IEvent>('event', () =>
+  $fetch(import.meta.env.VITE_API_URL + `/event`)
+)
+if (data.value !== null) {
+  event.value = data.value
+}
 useHead({
   title: 'Register a nominee',
 })
