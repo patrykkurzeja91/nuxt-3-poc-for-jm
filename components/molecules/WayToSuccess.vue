@@ -78,11 +78,7 @@ const lastFourCategories = computed(() => sortedCategories.value.slice(4, 8))
 .card {
   @apply relative flex h-full flex-col items-start justify-start rounded-md bg-white/95 py-14 px-12 drop-shadow-xl md:py-14 md:px-16;
 }
-/* .categories-card {
-  background-image: url('@/assets/icons/pattern.svg');
-  background-repeat: repeat;
-  object-fit: fill;
-} */
+
 .arrow-icon {
   stroke-width: 2px;
   width: 24px;

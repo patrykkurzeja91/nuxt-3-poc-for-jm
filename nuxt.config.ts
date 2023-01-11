@@ -8,7 +8,6 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: 'Beauty Kingdom Awards | Celebrate your success with us!',
       meta: [
-        // <meta name="description" content="My amazing site">
         {
           name: 'description',
           content:

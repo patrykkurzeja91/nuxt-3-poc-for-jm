@@ -37,8 +37,9 @@
               Appreciate your work and show your beauty company to the world!
             </p>
             <p class="mb-10 text-left font-bold">
-              The registration fee is £150 per category. You can apply to more
-              than one category. The fee for 2 categories is £{{ event }}
+              The registration fee is £{{ event.first_category_price }} per
+              category. You can apply to more than one category. The fee for 2
+              categories is £{{ event.second_category_price }}
             </p>
           </div>
         </div>
