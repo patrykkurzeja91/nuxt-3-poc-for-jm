@@ -63,9 +63,7 @@ defineProps<Props>()
     <nuxt-link
       :class="{
         'bg-dark-golden hover:bg-dark-orange': popular === 'bestSeller',
-        'bg-royal-blue hover:bg-yale-blue': popular === 'popular',
-        'bg-light-grayish-blue-500 hover:bg-light-grayish-blue-800':
-          popular === '',
+        'bg-royal-blue hover:bg-yale-blue': popular === 'popular' || '',
       }"
       class="mt-auto flex w-full items-center rounded border-0 py-2 px-4 text-white focus:outline-none"
       to="/contact"

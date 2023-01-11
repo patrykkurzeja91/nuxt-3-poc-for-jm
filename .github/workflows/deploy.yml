@@ -26,10 +26,10 @@ jobs:
 
     steps:
       - name: set up Github repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Use Node.js 16
-        uses: actions/setup-node@v2.4.1
+        uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
 
@@ -38,7 +38,7 @@ jobs:
         run: echo "::set-output name=dir::$(npm config get cache)"
 
       - name: Cache node modules 📦
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         id: cache
         env:
           cache-name: cache-node-modules
@@ -57,7 +57,7 @@ jobs:
           VITE_API_URL: ${{ secrets.VITE_API_URL }}
 
       - name: Deploy to production branch 🚀
-        uses: JamesIves/github-pages-deploy-action@4.1.5
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: production
           folder: dist
@@ -69,7 +69,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           ref: production
       - name: 📂 Sync files via ssh to production
