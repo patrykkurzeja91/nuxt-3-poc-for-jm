@@ -8,7 +8,10 @@ export default function useGroupedCategories(categories: Category[]) {
       // const item = array[Math.floor(Math.random() * array.length)]
       return {
         ...i,
-        subcat: i.subcategory,
+        subcat:
+          i.subcategory === 'top' || i.subcategory === 'best'
+            ? i.subcategory + ' Award'
+            : i.subcategory,
       }
     })
   )
