@@ -9,7 +9,7 @@ const options = {
 
 const date = (someDate: string) => new Date(someDate)
 const formatedEventDate = (eventDate: string) => {
-  return date(eventDate).toLocaleDateString(undefined, options)
+  return date(eventDate).toLocaleDateString('pl', options)
 }
 const eventPlace = computed(
   () =>

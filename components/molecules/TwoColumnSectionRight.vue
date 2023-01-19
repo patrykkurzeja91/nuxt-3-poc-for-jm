@@ -9,10 +9,9 @@
             <h3 class="mb-8 text-dark-golden">Meet Elwira</h3>
             <p class="mb-4 text-lg font-semibold">
               Creator of a personal and company brand, a marketing specialist
-              and marketing strategist. She cooperated with companies on the
-              Polish and English market. She gained experience training by
-              training with the best trainers available on the Polish, English
-              and American markets.
+              and marketing strategist. She gained experience training by
+              training with the best trainers available on the English and
+              American markets.
             </p>
             <p class="mb-4">
               Her marketing agency is most often chosen for the promotion of

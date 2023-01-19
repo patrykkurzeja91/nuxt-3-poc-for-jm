@@ -6,12 +6,26 @@ export default defineNuxtConfig({
   modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
   app: {
     head: {
-      titleTemplate: 'Beauty Kingdom Awards | Celebrate your success with us!',
+      title: 'Beauty Kingdom Awards | Join now!',
       meta: [
         {
           name: 'description',
           content:
-            'After many years of running salons and an academy that gives British qualifications to work in the beauty industry, we want to appreciate other businesses in the industry that stand out on the market.',
+            'Celebrate your success with us! Show your company and product to the best in the  beauty industry!',
+        },
+        {
+          name: 'keywords',
+          content:
+            'company awards, beauty awards, beauty professionals. Beauty clinic, best  beauty, premium awards,  blogger, Semi-pernament Artist, aesthetic medicine, spa, hairdresser, professional business',
+        },
+        {
+          name: 'og:title',
+          content: 'Beauty Kingdom Awards | Join now!',
+        },
+        {
+          name: 'og:description',
+          content:
+            'Celebrate your success with us! Show your company and product to the best in the  beauty industry!',
         },
         {
           name: 'og:image',
