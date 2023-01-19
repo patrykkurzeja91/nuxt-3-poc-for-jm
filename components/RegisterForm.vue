@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto flex max-w-xl">
     <form
-      class="flex w-full flex-col md:px-20 md:py-20"
+      class="flex w-full flex-col md:px-16 md:py-20"
       novalidate
       @submit.prevent="handleSubmit"
     >

@@ -8,12 +8,12 @@ categories.value = data.value?.categories
 const event = useEvent()
 const options = {
   year: 'numeric',
-  month: 'long',
+  month: 'numeric',
   day: 'numeric',
 }
 const eventDate = computed(() => new Date(event.value.event_date))
 const formatedEventDate = computed(() =>
-  eventDate.value.toLocaleDateString('en-US', options)
+  eventDate.value.toLocaleDateString('pl', options)
 )
 </script>
 
