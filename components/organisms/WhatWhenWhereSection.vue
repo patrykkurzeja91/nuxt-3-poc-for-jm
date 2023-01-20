@@ -10,7 +10,16 @@ const options = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timezone: 'GMT',
 }
+const options1 = {
+  year: 'numeric',
+  month: 'numeric',
+  day: 'numeric',
+}
+const dateTimeFormat2 = new Intl.DateTimeFormat('en-GB', options1)
+console.log(dateTimeFormat2.format(new Date(event.value.event_date)))
+
 const eventDate = computed(() => new Date(event.value.event_date))
 const formatedEventDate = computed(() =>
   eventDate.value.toLocaleDateString('pl', options)

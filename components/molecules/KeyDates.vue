@@ -5,6 +5,7 @@ const options = {
   year: 'numeric',
   month: 'numeric',
   day: 'numeric',
+  timezone: 'GMT',
 }
 
 const date = (someDate: string) => new Date(someDate)
