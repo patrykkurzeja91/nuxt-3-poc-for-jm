@@ -3,7 +3,21 @@
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
-  modules: ['nuxt-icons', '@nuxtjs/tailwindcss'],
+  modules: [
+    'nuxt-icons',
+    '@nuxtjs/tailwindcss',
+    '@funken-studio/sitemap-nuxt-3',
+  ],
+  sitemap: {
+    hostname: 'https://beautykingdomawards.co.uk',
+    cacheTime: 1,
+    defaults: {
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date().toISOString(),
+    },
+  },
+
   app: {
     head: {
       title: 'Beauty Kingdom Awards | Join now!',

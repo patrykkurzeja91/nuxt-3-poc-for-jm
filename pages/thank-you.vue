@@ -22,19 +22,11 @@ const options = {
   month: 'numeric',
   day: 'numeric',
 }
-const eventDate = computed(() => new Date(event.value.ticket_sales_from))
+const eventDate = computed(() => new Date(event.value.event_date))
 const formatedEventDate = computed(() =>
   eventDate.value.toLocaleDateString(undefined, options)
 )
 const eventPlace = computed(() => event.value.city + ', ' + event.value.street)
-const options1 = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  timeZone: 'UTC',
-}
-const dateTimeFormat2 = new Intl.DateTimeFormat('en-GB', options1)
-console.log(dateTimeFormat2.format(eventDate.value))
 </script>
 <template>
   <section
@@ -52,7 +44,6 @@ console.log(dateTimeFormat2.format(eventDate.value))
           <span class="text-dark-golden">{{ eventPlace }}</span
           >. Please feel free to contact us if you have any questions. We wish
           you good luck. Beauty Kingdom Awards team
-          {{ event.ticket_sales_from }}
         </p>
       </div>
       <div class="flex justify-center">
