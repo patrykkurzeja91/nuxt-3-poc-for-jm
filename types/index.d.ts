@@ -24,7 +24,7 @@ export interface IEvent {
   nominee_sales_to: string;
   ticket_sales_from: string;
   ticket_sales_to: string;
-  evaluation_form: string;
+  evaluation_from: string;
   evaluation_to: string;
   updated_at: string;
   first_category_price: number;

@@ -51,7 +51,7 @@ const eventPlace = computed(
       </div>
       <div class="flex-grow">
         <h5 class="mb-6">
-          {{ londonDate(event.evaluation_form) }} -
+          {{ londonDate(event.evaluation_from) }} -
           {{ londonDate(event.evaluation_to) }}
         </h5>
         <p class="text-base">Evaluation of applications</p>
