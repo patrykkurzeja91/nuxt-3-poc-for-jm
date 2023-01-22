@@ -17,10 +17,9 @@ export default defineNuxtConfig({
       lastmod: new Date().toISOString(),
     },
   },
-
   app: {
     head: {
-      title: 'Beauty Kingdom Awards | Join now!',
+      titleTemplate: 'Beauty Kingdom Awards | Join now!',
       meta: [
         {
           name: 'description',
