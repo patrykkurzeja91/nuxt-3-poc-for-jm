@@ -7,7 +7,7 @@
         <div class="relative z-20 col-span-12 mb-20 mt-20 md:col-span-6">
           <img
             class="mb-16 w-full rounded object-cover object-center md:w-1/2"
-            alt="hero"
+            alt=" beauty kingdom awards logo"
             src="@/assets/images/bk_logo-gold.png"
           />
           <div class="w-full">
@@ -28,7 +28,7 @@
           <div class="image-wrapper">
             <img
               class="image"
-              alt="hero"
+              alt="Lady that won a beauty price - hero image"
               src="@/assets/images/hero-image.png"
             />
           </div>

@@ -6,33 +6,13 @@ const { data, pending } = await useFetch<{ categories: Category[] }>(
 )
 categories.value = data.value?.categories
 const event = useEvent()
-const options = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  timezone: 'GMT',
-}
-const options1 = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-}
-const dateTimeFormat2 = new Intl.DateTimeFormat('en-GB', options1)
-console.log(dateTimeFormat2.format(new Date(event.value.event_date)))
 
-const eventDate = computed(() => new Date(event.value.event_date))
-const formatedEventDate = computed(() =>
-  eventDate.value.toLocaleDateString('pl', options)
-)
+const { londonDate } = useDateConverter()
 </script>
 
 <template>
   <section class="relative bg-light-grayish-blue-100">
-    <!-- <AtomsFireworksAnimation class="absolute left-0 bottom-0" /> -->
     <div class="container relative mx-auto max-w-screen-lg px-5 py-24">
-      <!-- <div class="mb-20 text-center">
-        <h2 class="mb-4 text-dark-golden">What. When. Where.</h2>
-      </div> -->
       <div class="subheading relative py-12 font-bold">
         <h5 class="relative flex justify-center">BEAUTY AWARDS KEY DATES</h5>
       </div>
@@ -45,7 +25,8 @@ const formatedEventDate = computed(() =>
         </div>
         <div class="order-3 flex flex-col px-0 pt-28 md:px-28 md:pt-0">
           <p class="mb-6 text-center text-2xl font-semibold">
-            The final gala will take place on {{ formatedEventDate }}.
+            The final gala will take place on
+            {{ londonDate(event.event_date) }}.
           </p>
           <p class="text-center text-xl">
             Black Tie event, red carpet, 3-course dinner and some entertainment,

@@ -35,7 +35,7 @@ const helpItems = ref([
           <img
             src="@/assets/images/feetchar.jpg"
             class="object-fit h-auto w-full rounded-md"
-            alt=""
+            alt="man from charity organization helping children"
           />
         </div>
         <div class="md:w-3/4">

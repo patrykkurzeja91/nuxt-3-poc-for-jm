@@ -36,6 +36,7 @@
               <img
                 class="h-full w-full max-w-sm"
                 src="@/assets/images/elwira.jpg"
+                alt="Elwira"
               />
             </div>
           </div>

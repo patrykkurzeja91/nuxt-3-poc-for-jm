@@ -1,17 +1,8 @@
 <script lang="ts" setup>
 const event = useEvent()
 
-const options = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  timezone: 'GMT',
-}
+const { londonDate } = useDateConverter()
 
-const date = (someDate: string) => new Date(someDate)
-const formatedEventDate = (eventDate: string) => {
-  return date(eventDate).toLocaleDateString('pl', options)
-}
 const eventPlace = computed(
   () =>
     event.value.additional_info +
@@ -39,8 +30,9 @@ const eventPlace = computed(
       </div>
       <div class="flex-grow">
         <h5 class="mb-6">
-          {{ formatedEventDate(event.ticket_sales_from) }} -
-          {{ formatedEventDate(event.ticket_sales_to) }}
+          {{ londonDate(event.ticket_sales_from) }}
+          -
+          {{ londonDate(event.ticket_sales_to) }}
         </h5>
         <p class="text-base">Early entry</p>
       </div>
@@ -59,8 +51,8 @@ const eventPlace = computed(
       </div>
       <div class="flex-grow">
         <h5 class="mb-6">
-          {{ formatedEventDate(event.evaluation_form) }} -
-          {{ formatedEventDate(event.evaluation_to) }}
+          {{ londonDate(event.evaluation_form) }} -
+          {{ londonDate(event.evaluation_to) }}
         </h5>
         <p class="text-base">Evaluation of applications</p>
       </div>
@@ -78,7 +70,9 @@ const eventPlace = computed(
         <img src="@/assets/icons/crown-3.svg" class="w-20" alt="crown icon" />
       </div>
       <div class="flex-grow">
-        <h5 class="mb-6">{{ formatedEventDate(event.event_date) }}</h5>
+        <h5 class="mb-6">
+          {{ londonDate(event.event_date) }}
+        </h5>
         <p class="mb-4 text-base">Winners announced</p>
         <p class="text-base uppercase">GALA DINNER AT {{ eventPlace }}</p>
       </div>

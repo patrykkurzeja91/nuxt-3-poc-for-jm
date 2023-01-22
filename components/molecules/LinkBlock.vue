@@ -52,11 +52,12 @@ const linkCards = [
     </div>
     <img
       src="@/assets/icons/kumiko_pattern.svg"
+      alt="background abstract pattern"
       class="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 opacity-10"
     />
     <div class="container mx-auto max-w-screen-lg px-5 pb-32 pt-64">
       <div
-        class="flex mx-auto mb-20 w-full max-w-screen-md flex-col flex-wrap items-center text-center"
+        class="mx-auto mb-20 flex w-full max-w-screen-md flex-col flex-wrap items-center text-center"
       >
         <h2 class="mb-10">
           Find out about the benefits of entering the competition

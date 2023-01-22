@@ -28,6 +28,7 @@
               <img
                 class="h-full w-full max-w-sm"
                 src="@/assets/images/joanna-and-oktawia.jpg"
+                alt="Joanna and Oktawia"
               />
             </div>
           </div>

@@ -17,15 +17,8 @@ const { data } = await useAsyncData<IEvent>('event', () =>
 if (data.value !== null) {
   event.value = data.value
 }
-const options = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-}
-const eventDate = computed(() => new Date(event.value.event_date))
-const formatedEventDate = computed(() =>
-  eventDate.value.toLocaleDateString(undefined, options)
-)
+const { londonDate } = useDateConverter()
+
 const eventPlace = computed(() => event.value.city + ', ' + event.value.street)
 </script>
 <template>
@@ -40,8 +33,10 @@ const eventPlace = computed(() => event.value.city + ', ' + event.value.street)
         <p class="mx-auto max-w-3xl text-2xl">
           Your business will be assessed by our committee, and if you become a
           FINALIST, we will invite you to the Gala Dinner on
-          <span class="text-dark-golden">{{ formatedEventDate }}</span> in
-          <span class="text-dark-golden">{{ eventPlace }}</span
+          <span class="text-dark-golden">{{
+            londonDate(event.event_date)
+          }}</span>
+          in <span class="text-dark-golden">{{ eventPlace }}</span
           >. Please feel free to contact us if you have any questions. We wish
           you good luck. Beauty Kingdom Awards team
         </p>
