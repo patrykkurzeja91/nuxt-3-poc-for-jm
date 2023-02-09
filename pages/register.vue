@@ -39,17 +39,12 @@
             <p class="mb-10 text-left font-bold">
               The registration fee is £{{ event.first_category_price }} per
               category. You can apply to more than one category. The fee for 2
-              categories is £{{ event.second_category_price }}
+              categories is £{{ twoTicketsPrice }}
             </p>
           </div>
         </div>
       </div>
       <RegisterForm />
-      <!-- <nuxt-icon
-        name="undraw-barber"
-        fill
-        class="absolute right-0 -z-10 w-full opacity-20"
-      /> -->
       <div
         class="mx-auto flex max-w-xl shrink-0 flex-wrap items-center justify-center"
       >
@@ -70,6 +65,9 @@ const { data } = await useAsyncData<IEvent>('event', () =>
 if (data.value !== null) {
   event.value = data.value
 }
+const twoTicketsPrice = computed(() => {
+  return event.value.first_category_price + event.value.second_category_price
+})
 useHead({
   title: 'Register a nominee',
 })
