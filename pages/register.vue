@@ -57,17 +57,19 @@
 </template>
 <script lang="ts" setup>
 import type { IEvent } from '@/types'
-const event = useEvent()
+// const event = useEvent()
 
-const { data } = await useAsyncData<IEvent>('event', () =>
+const { data: event } = await useAsyncData<IEvent>('event', () =>
   $fetch(import.meta.env.VITE_API_URL + `/event`)
 )
-if (data.value !== null) {
-  event.value = data.value
-}
-const twoTicketsPrice = computed(() => {
-  return event.value.first_category_price + event.value.second_category_price
-})
+// if (data.value !== null) {
+//   event.value = data.value
+// }
+const twoTicketsPrice = computed(
+  () =>
+    Number(event.value?.first_category_price) +
+    Number(event.value?.second_category_price)
+)
 useHead({
   title: 'Register a nominee',
 })

@@ -1,13 +1,14 @@
 <script lang="ts" setup>
 import type { IEvent } from '@/types'
-const event = useEvent()
+// const event = useEvent()
 
-const { data } = await useAsyncData<IEvent>('event', () =>
+const { data: event } = await useAsyncData<IEvent>('event', () =>
   $fetch(import.meta.env.VITE_API_URL + `/event`)
 )
-if (data.value !== null) {
-  event.value = data.value
-}
+// if (data.value !== null) {
+//   event.value = data.value
+// }
+const eventName = computed(() => event.value?.name ?? 'Beauty Kingdom Awards')
 useHead({
   title: 'Become a sponsor',
 })
@@ -28,7 +29,7 @@ useHead({
           business partners.
         </p>
         <p class="mx-auto mb-10 text-lg font-bold leading-relaxed lg:w-2/3">
-          Be a part of {{ event.name }}
+          Be a part of {{ eventName }}
         </p>
         <p class="mx-auto mb-4 leading-relaxed lg:w-2/3">
           Take advantage of the packages prepared by the experienced marketing

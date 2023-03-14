@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 import type { IEvent } from '@/types'
-const event = useEvent()
+// const event = useEvent()
 
 definePageMeta({
   key: 'thank-you',
@@ -11,15 +11,17 @@ useHead({
   title: 'Thank You for Payment',
 })
 
-const { data } = await useAsyncData<IEvent>('event', () =>
+const { data: event } = await useAsyncData<IEvent>('event-sponsor', () =>
   $fetch(import.meta.env.VITE_API_URL + `/event`)
 )
-if (data.value !== null) {
-  event.value = data.value
-}
+// if (data.value !== null) {
+//   event.value = data.value
+// }
 const { londonDate } = useDateConverter()
 
-const eventPlace = computed(() => event.value.city + ', ' + event.value.street)
+const eventPlace = computed(
+  () => event.value?.city + ', ' + event.value?.street
+)
 </script>
 <template>
   <section
