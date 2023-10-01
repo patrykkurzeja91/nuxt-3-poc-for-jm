@@ -37,14 +37,18 @@ const marketingList = ref([
     <section class="relative">
       <div class="container mx-auto px-6 py-24">
         <div class="mb-20 flex w-full flex-col text-left">
-          <h1 class="heading mb-16 text-center text-dark-golden">Contact us</h1>
+          <h1 class="heading--1 heading mb-16 text-center text-dark-golden">
+            Contact us
+          </h1>
         </div>
         <div class="flex flex-col gap-x-16 lg:flex-row">
           <div
             class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
           >
             <div class="contact-info">
-              <h4 class="mb-6 px-6 text-left">Beauty Kingdom Awards</h4>
+              <h2 class="heading--4 mb-6 px-6 text-left">
+                Beauty Kingdom Awards
+              </h2>
               <div class="flex flex-col justify-start">
                 <a
                   v-for="contact in contactList"
@@ -66,7 +70,7 @@ const marketingList = ref([
             class="mx-auto mb-12 flex w-full flex-col rounded-lg bg-white lg:w-3/4 lg:p-16 lg:drop-shadow-2xl lg:backdrop-blur-md xl:w-1/2"
           >
             <div class="contact-info">
-              <h4 class="mb-6 px-6 text-left">Marketing PR</h4>
+              <h2 class="heading--4 mb-6 px-6 text-left">Marketing PR</h2>
               <div class="flex flex-col justify-start">
                 <component
                   :is="contact.link ? 'a' : 'span'"

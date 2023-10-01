@@ -14,7 +14,9 @@ import './assets/css/tailwind.css'
 <style>
 .page-enter-active,
 .page-leave-active {
-  transition: opacity 0.25s, filter 0.25s;
+  transition:
+    opacity 0.25s,
+    filter 0.25s;
 }
 .page-enter-from,
 .page-leave-to {

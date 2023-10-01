@@ -1,19 +1,19 @@
 <template>
   <section class="container mx-auto px-4">
     <div class="prose mx-auto max-w-screen-md py-24 lg:prose-xl">
-      <h2>Terms and Conditions</h2>
+      <h1 class="heading--3">Terms and Conditions</h1>
       <p>
         These terms and conditions apply to the company&apos;s entry to the
         competition and participation in the Dinner Gala, where the winners of
         each category will be selected.
       </p>
-      <h3>Competition regulations</h3>
+      <h2 class="heading--4">Competition regulations</h2>
       <p>
         The event, organized by Beauty Kingdom Awards and E&amp;T Marketing
         Solutions, is open only to industry and professional owners of beauty
         salons, cosmetologists, hairdressers, spa and solarium owners.
       </p>
-      <h3>Competition</h3>
+      <h2 class="heading--4">Competition</h2>
       <p>
         A registration fee of &pound; 150 is required to enter the contest.
         Applications will be open from October 2022 to the end of January 2023.
@@ -44,7 +44,7 @@
         with the gala must be claimed at this specific event and will not be
         posted
       </p>
-      <h3>Payments and refunds</h3>
+      <h2 class="heading--4">Payments and refunds</h2>
       <p>
         Beauty Kingdom Awards require all processors to securely protect data
         and store data only as long as they need it. Online payments for
@@ -66,7 +66,7 @@
         guarantee. For refunds, an administration fee of 10% will be charged.
         The company is not responsible for circumstances beyond its control.
       </p>
-      <h3>Photography</h3>
+      <h2 class="heading--4">Photography</h2>
       <p>
         The event will be photographed and filmed with the intention of using
         photos and videos for marketing purposes. By participating in the event,
@@ -74,7 +74,7 @@
         right to use photos at their own discretion. If you do not wish to be
         pictured, please inform the event organizers upon arrival.
       </p>
-      <h3>Marketing of the event</h3>
+      <h2 class="heading--4">Marketing of the event</h2>
       <p>
         Marketing will be handled by a professional marketing agency - E&amp;T
         Marketing Solutions.
@@ -93,14 +93,14 @@
         competition website, social media, magazines and radio broadcasts, where
         you also agree to provide information about your company.
       </p>
-      <h3>Transactions during the event</h3>
+      <h2 class="heading--4">Transactions during the event</h2>
       <p>
         Beauty Kingdom Awards and E&amp;T Marketing Solutions are not
         responsible for any transactions made during the gala between
         participants and exhibitors or event sponsors. All complaints should be
         sent directly to the sponsor or exhibitor.
       </p>
-      <h3>Data collection - event recording</h3>
+      <h2 class="heading--4">Data collection - event recording</h2>
       <p>
         To participate in the final gala you will need to purchase a ticket
         which you will need to bring to the event to gain access. Without the

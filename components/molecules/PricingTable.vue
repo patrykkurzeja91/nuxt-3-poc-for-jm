@@ -1,7 +1,7 @@
 <template>
   <div class="-m-4 flex flex-wrap">
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
-      <MoleculesPricingCard
+      <PricingCard
         popular="bestSeller"
         bundle="CATEGORY SPONSOR"
         price="£1000"
@@ -20,7 +20,7 @@
       />
     </div>
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
-      <MoleculesPricingCard
+      <PricingCard
         popular="popular"
         bundle="DIAMOND"
         price="£600"
@@ -39,7 +39,7 @@
       />
     </div>
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
-      <MoleculesPricingCard
+      <PricingCard
         popular=""
         bundle="GOLD"
         price="£400"
@@ -57,7 +57,7 @@
       />
     </div>
     <div class="w-full p-4 lg:w-1/2 xl:w-1/4">
-      <MoleculesPricingCard
+      <PricingCard
         popular=""
         bundle="SILVER"
         price="£250"

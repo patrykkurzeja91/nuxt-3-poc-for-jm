@@ -5,71 +5,71 @@
       novalidate
       @submit.prevent="handleSubmit"
     >
-      <h3 class="mb-4">Personal info</h3>
-      <AtomsBaseInput
+      <h2 class="heading--3 mb-4">Personal info</h2>
+      <BaseInput
         v-model="v$.name.$model"
         placeholder="Name and surname"
         required
         label="Name and surname"
         :v="v$.name"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.email.$model"
         placeholder="Your e-mail"
         required
         label="E-mail"
         :v="v$.email"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.phone.$model"
         placeholder="Phone number"
         required
         label="Phone number"
         :v="v$.phone"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.city.$model"
         placeholder="city"
         required
         label="City"
         :v="v$.city"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.street.$model"
         placeholder="street"
         required
         label="Street"
         :v="v$.street"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.postcode.$model"
         placeholder="Post code"
         required
         label="Post Code"
         :v="v$.postcode"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="state.additional_info"
         placeholder="Additional address information"
         label="Additional address information"
       />
 
-      <h3 class="mt-6 mb-4">Company info</h3>
-      <AtomsBaseInput
+      <h2 class="heading--3 mt-6 mb-4">Company info</h2>
+      <BaseInput
         v-model="v$.company.$model"
         placeholder="Your company name"
         required
         label="Company name"
         :v="v$.company"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.established.$model"
         placeholder=""
         required
         label="How long has the company been in existence?"
         :v="v$.established"
       />
-      <AtomsBaseTextarea
+      <BaseTextarea
         v-model="v$.socials.$model"
         placeholder="twitter, instagram, facebook..."
         required
@@ -77,7 +77,7 @@
         label="Links to social media / websites"
         :v="v$.socials"
       />
-      <AtomsBaseTextarea
+      <BaseTextarea
         v-model="v$.company_profile.$model"
         placeholder=""
         required
@@ -85,7 +85,7 @@
         label="What does the company do?"
         :v="v$.company_profile"
       />
-      <AtomsBaseTextarea
+      <BaseTextarea
         v-model="v$.achievements.$model"
         placeholder="List the awards, distinctions..."
         required
@@ -93,7 +93,7 @@
         label="Company achievements"
         :v="v$.achievements"
       />
-      <AtomsBaseTextarea
+      <BaseTextarea
         v-model="v$.publications.$model"
         placeholder="trade magazines, radio, speeches at conferences..."
         required
@@ -101,7 +101,7 @@
         label="Publications about the company in the media"
         :v="v$.publications"
       />
-      <AtomsBaseTextarea
+      <BaseTextarea
         v-model="v$.motivation.$model"
         placeholder=""
         required
@@ -173,6 +173,7 @@
       </div>
       <div class="ml-3 text-sm font-normal">Something went wrong</div>
       <button
+        type="button"
         class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg p-1.5 text-gray-400 hover:text-gray-900 focus:ring-2 focus:ring-gray-300"
         aria-label="Close"
         @click="showErrorMessage = false"
@@ -203,7 +204,7 @@ import { required, email } from '@vuelidate/validators'
 import type { Ticket, Category } from '@/types'
 const { data: currentEvent } = await useFetch<Ticket>(
   () => import.meta.env.VITE_API_URL + `/event`,
-  { pick: ['id'] }
+  { pick: ['id'] },
 )
 
 const showErrorMessage = ref(false)
@@ -211,7 +212,7 @@ const categories = ref()
 
 const { data, pending, error } = await useAsyncData<{ categories: Category[] }>(
   'categories',
-  () => $fetch(import.meta.env.VITE_API_URL + `/categories/all`)
+  () => $fetch(import.meta.env.VITE_API_URL + `/categories/all`),
 )
 
 // const { data } = await useFetch<{ categories: Category[] }>(

@@ -10,7 +10,7 @@
             class="icon-mail mb-6 flex"
           ></nuxt-icon>
         </div>
-        <h2 class="mb-10">Join our community!</h2>
+        <h2 class="heading--2 mb-10">Join our community!</h2>
         <p class="mb-12 text-lg">
           Every month we will send you news in the beauty industry, marketing
           and PR tips and the latest information about our awards.
@@ -26,7 +26,7 @@
           </div>
           <form v-else @submit.prevent="subscribe">
             <div class="flex flex-row items-start">
-              <AtomsBaseInput
+              <BaseInput
                 v-model="v$.email.$model"
                 placeholder="user@email.com"
                 icon="mail"
@@ -108,7 +108,9 @@ const subscribe = async () => {
 }
 .slide-up-enter-active,
 .slide-up-leave-active {
-  transition: opacity 0.25s ease-out, transform 0.25s ease-out;
+  transition:
+    opacity 0.25s ease-out,
+    transform 0.25s ease-out;
 }
 
 .slide-up-enter-from {

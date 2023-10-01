@@ -4,6 +4,7 @@
 export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: [
+    '@nuxtjs/html-validator',
     'nuxt-icons',
     '@nuxtjs/tailwindcss',
     '@funken-studio/sitemap-nuxt-3',
@@ -17,9 +18,33 @@ export default defineNuxtConfig({
       lastmod: new Date().toISOString(),
     },
   },
+  components: [
+    {
+      path: '@/components',
+      pathPrefix: false,
+    },
+  ],
   app: {
     head: {
-      titleTemplate: 'Beauty Kingdom Awards | Join now!',
+      htmlAttrs: {
+        lang: 'en',
+      },
+      titleTemplate: 'Beauty Kingdom Awards | Join now! - %s',
+      link: [
+        {
+          rel: 'preload',
+          href: 'https://fonts.googleapis.com',
+        },
+        {
+          rel: 'preload',
+          href: 'https://fonts.gstatic.com',
+          crossorigin: 'anonymous',
+        },
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;500&display=swap',
+        },
+      ],
       meta: [
         {
           name: 'description',
@@ -48,9 +73,6 @@ export default defineNuxtConfig({
     },
 
     pageTransition: { name: 'page', mode: 'out-in' },
-  },
-  build: {
-    transpile: ['aos'],
   },
   routeRules: {
     // Static page generated on-demand, revalidates in background

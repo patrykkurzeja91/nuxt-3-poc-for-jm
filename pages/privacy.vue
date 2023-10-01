@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto px-4">
     <div class="prose mx-auto max-w-screen-md py-24 lg:prose-xl">
-      <h2>Privacy Policy and Cookies Statement</h2>
+      <h1 class="heading--3">Privacy Policy and Cookies Statement</h1>
       <p>
         Beauty Kingdom Awards and E&amp;T Marketing Solutions &nbsp;are
         committed to protecting and respecting your privacy. This policy
@@ -12,7 +12,7 @@
         This privacy policy applies to the use that we make of personal
         information provided to us via all methods of personal data collection.
       </p>
-      <h4>1. Who is collecting your data?</h4>
+      <h2 class="heading--4">1. Who is collecting your data?</h2>
       <p>
         Beauty Kingdom Awards and E&amp;T Marketing Solutions are the organizers
         of the Beauty Kingdom Awards gala for the beauty industry: beauty
@@ -31,10 +31,10 @@
         >
       </p>
       <p>&nbsp;Company registration number:&nbsp;14319476</p>
-      <h4>
+      <h2 class="heading--4">
         2. Why is the data being collected, and what&rsquo;s our lawful basis
         for doing so?
-      </h4>
+      </h2>
       <p>
         In order for us to provide you with services (such as access to our
         subscriber-only programs, services and promotions, contest news,
@@ -73,7 +73,7 @@
         process your data in order to send you relevant information about the
         competition, including prizes and finalists.
       </p>
-      <h4>3. Who else will we tell about you?</h4>
+      <h2 class="heading--4">3. Who else will we tell about you?</h2>
       <p>
         3.1 Subject to what we say below, we will not transfer your Personal
         Data to any third party for marketing purposes, including website
@@ -112,14 +112,16 @@
         information may be used by other people in a manner that is inconsistent
         with the terms of this privacy policy.
       </p>
-      <h4>4. How do we store your data?</h4>
+      <h2 class="heading--4">4. How do we store your data?</h2>
       <p>All data is stored by Beauty Kingdom Awards address is:</p>
-      <h4>5. How long will your data be stored?</h4>
+      <h2 class="heading--4">5. How long will your data be stored?</h2>
       <p>
         We will keep your data for a maximum of 3 years from collection or until
         you request its deletion, whichever comes first.
       </p>
-      <h4>6. Security and possibility of international transfers</h4>
+      <h2 class="heading--4">
+        6. Security and possibility of international transfers
+      </h2>
       <p>
         Please note that countries outside the EEA may not have the same level
         of protection for personal data as countries in the EEA, but we always
@@ -135,7 +137,7 @@
         when you submit your personal data.
       </p>
       <p><br /></p>
-      <h4>7. The use of &quot;cookies&quot;</h4>
+      <h2 class="heading--4">7. The use of &quot;cookies&quot;</h2>
       <p>
         We use many types of cookies on our website. If you want to know more
         about cookies, please visit www.allaboutcookies.org. We use cookies
@@ -149,7 +151,7 @@
         Internet Explorer, &quot;Private Browsing&quot; in Firefox and Safari
         etc.).
       </p>
-      <h4>8. Why do we use cookies?</h4>
+      <h2 class="heading--4">8. Why do we use cookies?</h2>
       <p>
         8.1 Like many other websites, this website uses cookies as they enable
         www.beautykingdomawardsco.uk to identify your computer when you visit
@@ -165,7 +167,9 @@
         restricted.
       </p>
       <p><br /></p>
-      <h4>9. How can you access and update your information?</h4>
+      <h2 class="heading--4">
+        9. How can you access and update your information?
+      </h2>
       <p>
         You can view the data we hold about you at any time by contacting
         contact@beautykingdomawards.co.uk.
@@ -188,7 +192,7 @@
         not hesitate to contact us.
       </p>
       <p><br /></p>
-      <h4>10. Complaints</h4>
+      <h2 class="heading--4">10. Complaints</h2>
       <p>
         If you wish to make a complaint about communications you receive from
         us, you can email us at contact@beautykingdomawards.co.uk. If you

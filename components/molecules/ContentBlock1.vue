@@ -164,12 +164,12 @@
         </div>
       </div>
       <button
+        type="button"
         href="#"
         class="mx-auto mt-16 flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-royal-blue px-10 py-3 text-base font-medium text-white hover:shadow-sm hover:shadow-dark-golden"
       >
         Register
       </button>
-      <!-- <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> -->
     </div>
   </section>
 </template>

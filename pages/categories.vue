@@ -3,10 +3,10 @@
     <section class="relative overflow-x-hidden">
       <div class="container mx-auto px-5 pt-24 pb-10">
         <div class="mx-auto flex w-full flex-col text-center lg:w-2/3">
-          <h2 class="heading mb-16 text-dark-golden">
+          <h1 class="heading--3 heading mb-16 text-dark-golden">
             The Beauty industry is one of the fastest growing industries in the
             UK
-          </h2>
+          </h1>
           <p class="mx-auto mb-6 lg:w-2/3">
             We want to appreciate the work, customer and employee care, high
             standards of work, development in the field of cosmetology and
@@ -20,8 +20,8 @@
         </div>
       </div>
     </section>
-    <AtomsBaseLoader v-if="pending" />
-    <MoleculesCategoryList v-else :grouped-categories="groupedCategories" />
+    <BaseLoader v-if="pending" />
+    <CategoryList v-else :grouped-categories="groupedCategories" />
     <div>{{ error }}</div>
   </div>
 </template>
@@ -37,7 +37,7 @@ interface Category {
 }
 const categories = ref()
 const { data, pending, error } = await useFetch<{ categories: Category[] }>(
-  () => import.meta.env.VITE_API_URL + `/categories/all`
+  () => import.meta.env.VITE_API_URL + `/categories/all`,
 )
 categories.value = data.value?.categories
 const { groupedCategories } = useGroupedCategories(categories.value)

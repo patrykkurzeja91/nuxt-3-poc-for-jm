@@ -42,9 +42,9 @@ defineProps<Props>()
       class="container relative mx-auto mb-16 max-w-4xl"
     >
       <div class="relative mb-8 flex w-full rounded-md">
-        <h5 class="text-2xl capitalize text-dark-golden md:text-4xl">
+        <h2 class="text-2xl capitalize text-dark-golden md:text-4xl">
           {{ group.subcat }}
-        </h5>
+        </h2>
       </div>
       <div class="z-10 grid gap-y-3 gap-x-8 md:grid-cols-2">
         <div v-for="category in group.data" :key="category.id" class="w-full">

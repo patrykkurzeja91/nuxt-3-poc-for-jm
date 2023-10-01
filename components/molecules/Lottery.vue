@@ -26,7 +26,9 @@ const helpItems = ref([
     </div>
     <div class="container mx-auto max-w-screen-lg px-5">
       <div class="relative pb-12 font-bold">
-        <h5 class="relative flex justify-center">TAKE PART IN LOTTERY</h5>
+        <h2 class="heading--5 relative flex justify-center">
+          TAKE PART IN LOTTERY
+        </h2>
       </div>
       <div class="flex flex-col md:flex-row">
         <div
@@ -34,6 +36,9 @@ const helpItems = ref([
         >
           <img
             src="@/assets/images/feetchar.jpg"
+            width="468"
+            height="312"
+            loading="lazy"
             class="object-fit h-auto w-full rounded-md"
             alt="man from charity organization helping children"
           />

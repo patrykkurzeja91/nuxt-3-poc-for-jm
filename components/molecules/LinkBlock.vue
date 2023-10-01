@@ -53,13 +53,16 @@ const linkCards = [
     <img
       src="@/assets/icons/kumiko_pattern.svg"
       alt="background abstract pattern"
+      width="1000"
+      height="500"
+      loading="lazy"
       class="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 opacity-10"
     />
     <div class="container mx-auto max-w-screen-lg px-5 pb-32 pt-64">
       <div
         class="mx-auto mb-20 flex w-full max-w-screen-md flex-col flex-wrap items-center text-center"
       >
-        <h2 class="mb-10">
+        <h2 class="heading--2 mb-10">
           Find out about the benefits of entering the competition
         </h2>
         <p class="mb-20 text-lg">
@@ -85,7 +88,6 @@ const linkCards = [
           </div>
         </div>
       </div>
-      <!-- <button class="flex mx-auto mt-16 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button> -->
     </div>
   </section>
 </template>
