@@ -47,10 +47,29 @@ html {
   font-weight: 400;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 50;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 50;
+  font-display: swap;
+}
+
 body {
   background: white;
-  /* font-family: 'Inter', sans-serif;
-  font-weight: 400; */
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   line-height: 1.75;
 }
 
