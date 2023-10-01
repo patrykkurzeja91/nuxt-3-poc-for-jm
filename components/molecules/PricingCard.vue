@@ -32,7 +32,7 @@ defineProps<Props>()
       {{ bundle }}
     </h2>
     <h1
-      class="mb-4 flex items-center border-b border-light-grayish-blue-100 pb-8 text-5xl leading-none text-gray-900"
+      class="heading--1 mb-4 flex items-center border-b border-light-grayish-blue-100 pb-8 text-5xl leading-none text-gray-900"
     >
       <span>{{ price }} </span>
     </h1>

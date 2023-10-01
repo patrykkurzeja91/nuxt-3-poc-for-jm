@@ -2,7 +2,7 @@
   <section class="body-font relative">
     <div class="container mx-auto px-5 py-24">
       <div class="mb-12 flex w-full flex-col text-center">
-        <h1 class="heading mb-16 text-dark-golden">Contact Us</h1>
+        <h1 class="heading--1 heading mb-16 text-dark-golden">Contact Us</h1>
         <p class="mx-auto text-base leading-relaxed lg:w-2/3">
           Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
           gentrify.

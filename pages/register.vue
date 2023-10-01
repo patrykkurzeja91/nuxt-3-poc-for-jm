@@ -2,7 +2,7 @@
   <section class="relative flex overflow-x-hidden bg-light-grayish-blue-100">
     <div class="container mx-auto px-5 py-24">
       <div class="mx-auto flex w-full flex-col text-center lg:w-2/3">
-        <h1 class="heading mb-16 text-dark-golden">
+        <h1 class="heading--1 heading mb-16 text-dark-golden">
           Develop your dream business with us!
         </h1>
 
@@ -60,7 +60,7 @@ import type { IEvent } from '@/types'
 // const event = useEvent()
 
 const { data: event } = await useAsyncData<IEvent>('event', () =>
-  $fetch(import.meta.env.VITE_API_URL + `/event`)
+  $fetch(import.meta.env.VITE_API_URL + `/event`),
 )
 // if (data.value !== null) {
 //   event.value = data.value
@@ -68,7 +68,7 @@ const { data: event } = await useAsyncData<IEvent>('event', () =>
 const twoTicketsPrice = computed(
   () =>
     Number(event.value?.first_category_price) +
-    Number(event.value?.second_category_price)
+    Number(event.value?.second_category_price),
 )
 useHead({
   title: 'Register a nominee',

@@ -12,7 +12,7 @@ useHead({
 })
 
 const { data } = await useAsyncData<IEvent>('event', () =>
-  $fetch(import.meta.env.VITE_API_URL + `/event`)
+  $fetch(import.meta.env.VITE_API_URL + `/event`),
 )
 if (data.value !== null) {
   event.value = data.value
@@ -21,9 +21,9 @@ if (data.value !== null) {
 <template>
   <div>
     <PageHero />
-    <OrganismsWhatWhenWhereSection />
-    <MoleculesLinkBlock />
-    <MoleculesLottery />
+    <WhatWhenWhereSection />
+    <LinkBlock />
+    <Lottery />
     <NewsletterForm />
   </div>
 </template>

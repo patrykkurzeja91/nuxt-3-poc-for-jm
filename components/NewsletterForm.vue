@@ -26,7 +26,7 @@
           </div>
           <form v-else @submit.prevent="subscribe">
             <div class="flex flex-row items-start">
-              <AtomsBaseInput
+              <BaseInput
                 v-model="v$.email.$model"
                 placeholder="user@email.com"
                 icon="mail"

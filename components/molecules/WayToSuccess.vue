@@ -5,19 +5,25 @@
       data-aos="fade-in"
       class="line mx-auto flex flex-col items-center border-dark-golden py-8 text-center md:w-1/3 md:border-t-0 md:pb-20"
     >
-      <img src="@/assets/icons/success.svg" class="mb-10 w-20" alt="" />
-      <h6 class="text-lg">
+      <img
+        width="80"
+        height="80"
+        src="@/assets/icons/success.svg"
+        class="mb-10 w-20"
+        alt="hands with stars"
+      />
+      <p class="text-lg">
         Show your company and our committee will evaluate your actions and
         perhaps you will become the leader of your category.
-      </h6>
+      </p>
     </div>
 
     <div class="relative py-6 font-bold">
       <div class="mx-auto flex flex-col justify-center pb-10 md:w-2/3">
-        <h5 class="text-center">
+        <h2 class="heading--5 text-center">
           We know that the path to success is not easy, so we invite you to
           apply to the selected category.
-        </h5>
+        </h2>
       </div>
     </div>
     <div class="mb-20 grid w-full gap-y-6 gap-x-8 md:grid-cols-2 md:gap-y-8">

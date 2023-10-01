@@ -9,7 +9,7 @@ const eventPlace = computed(
     ', ' +
     event.value.street +
     ', ' +
-    event.value.city
+    event.value.city,
 )
 </script>
 
@@ -25,15 +25,21 @@ const eventPlace = computed(
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center rounded-full"
       >
-        <img src="@/assets/icons/crown-1.svg" class="w-10" alt="crown icon" />
+        <img
+          src="@/assets/icons/crown-1.svg"
+          width="40"
+          height="29"
+          class="w-10"
+          alt="crown icon"
+        />
         <!-- <nuxt-icon name="vector-8" class="h-10 w-10" stroke fill /> -->
       </div>
       <div class="flex-grow">
-        <h5 class="mb-6">
+        <h3 class="heading--5 mb-6">
           {{ londonDate(event.ticket_sales_from) }}
           -
           {{ londonDate(event.ticket_sales_to) }}
-        </h5>
+        </h3>
         <p class="text-base">Early entry</p>
       </div>
       <nuxt-icon name="chevron-right" filled class="next w-8" />
@@ -47,13 +53,19 @@ const eventPlace = computed(
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center rounded-full"
       >
-        <img src="@/assets/icons/crown-2.svg" class="w-14" alt="crown icon" />
+        <img
+          width="56"
+          height="39"
+          src="@/assets/icons/crown-2.svg"
+          class="w-14"
+          alt="crown icon"
+        />
       </div>
       <div class="flex-grow">
-        <h5 class="mb-6">
+        <h3 class="heading--5 mb-6">
           {{ londonDate(event.evaluation_from) }} -
           {{ londonDate(event.evaluation_to) }}
-        </h5>
+        </h3>
         <p class="text-base">Evaluation of applications</p>
       </div>
       <nuxt-icon name="chevron-right" filled class="next w-8" />
@@ -67,12 +79,18 @@ const eventPlace = computed(
       <div
         class="mb-10 inline-flex h-20 w-20 flex-shrink-0 items-end justify-center"
       >
-        <img src="@/assets/icons/crown-3.svg" class="w-20" alt="crown icon" />
+        <img
+          width="80"
+          height="78"
+          src="@/assets/icons/crown-3.svg"
+          class="w-20"
+          alt="crown icon"
+        />
       </div>
       <div class="flex-grow">
-        <h5 class="mb-6">
+        <h3 class="heading--5 mb-6">
           {{ londonDate(event.event_date) }}
-        </h5>
+        </h3>
         <p class="mb-4 text-base">Winners announced</p>
         <p class="text-base uppercase">GALA DINNER AT {{ eventPlace }}</p>
       </div>

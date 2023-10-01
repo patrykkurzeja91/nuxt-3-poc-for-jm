@@ -59,7 +59,7 @@ const linkCards = [
       <div
         class="mx-auto mb-20 flex w-full max-w-screen-md flex-col flex-wrap items-center text-center"
       >
-        <h2 class="mb-10">
+        <h2 class="heading--2 mb-10">
           Find out about the benefits of entering the competition
         </h2>
         <p class="mb-20 text-lg">

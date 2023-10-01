@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5 {
   line-height: 1.3;
 }
 
-h1 {
+.heading--1 {
   margin-top: 0;
   font-size: 2.488rem;
   @screen md {
@@ -62,27 +62,27 @@ h1 {
   }
 }
 
-h2 {
+.heading--2 {
   font-size: 2.074rem;
   @screen md {
     font-size: 3.157rem;
   }
 }
 
-h3 {
+.heading--3 {
   font-size: 1.728rem;
   @screen md {
     font-size: 2.369rem;
   }
 }
 
-h4 {
+.heading--4 {
   font-size: 1.44rem;
   @screen md {
     font-size: 1.777rem;
   }
 }
 
-h5 {font-size: 1.333rem;}
+.heading--5 {font-size: 1.333rem;}
 
 small, .text_small {font-size: 0.75rem;}

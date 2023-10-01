@@ -2,7 +2,7 @@
 import { Category } from '~~/types'
 const categories = ref()
 const { data, pending } = await useFetch<{ categories: Category[] }>(
-  () => import.meta.env.VITE_API_URL + `/categories/top`
+  () => import.meta.env.VITE_API_URL + `/categories/top`,
 )
 categories.value = data.value?.categories
 const event = useEvent()
@@ -14,9 +14,11 @@ const { londonDate } = useDateConverter()
   <section class="relative bg-light-grayish-blue-100">
     <div class="container relative mx-auto max-w-screen-lg px-5 py-24">
       <div class="subheading relative py-12 font-bold">
-        <h5 class="relative flex justify-center">BEAUTY AWARDS KEY DATES</h5>
+        <h2 class="relative flex justify-center heading--5">
+          BEAUTY AWARDS KEY DATES
+        </h2>
       </div>
-      <MoleculesKeyDates class="pb-20" />
+      <KeyDates class="pb-20" />
       <div
         class="card relative my-10 flex flex-col overflow-hidden rounded-md border-2 border-dark-golden bg-white py-8 px-12 md:flex-row"
       >
@@ -42,7 +44,7 @@ const { londonDate } = useDateConverter()
   </section>
   <section class="overflow-x-hidden bg-white">
     <div class="container mx-auto max-w-screen-lg px-5 py-24">
-      <MoleculesWayToSuccess v-if="!pending" :categories="categories" />
+      <WayToSuccess v-if="!pending" :categories="categories" />
     </div>
   </section>
 </template>
@@ -77,11 +79,13 @@ const { londonDate } = useDateConverter()
 
 .card {
   transition: box-shadow 0.5s ease;
-  box-shadow: 5px 5px 0 0 rgba(179, 122, 0, 0.9),
+  box-shadow:
+    5px 5px 0 0 rgba(179, 122, 0, 0.9),
     -5px -5px 0 0 rgba(179, 122, 0, 0.8);
 }
 .card:hover {
-  box-shadow: 10px 10px 0 0 rgba(179, 122, 0, 0.9),
+  box-shadow:
+    10px 10px 0 0 rgba(179, 122, 0, 0.9),
     -10px -10px 0 0 rgba(179, 122, 0, 0.8);
 }
 </style>

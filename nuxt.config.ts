@@ -17,6 +17,12 @@ export default defineNuxtConfig({
       lastmod: new Date().toISOString(),
     },
   },
+  components: [
+    {
+      path: '@/components',
+      pathPrefix: false,
+    },
+  ],
   app: {
     head: {
       titleTemplate: 'Beauty Kingdom Awards | Join now!',

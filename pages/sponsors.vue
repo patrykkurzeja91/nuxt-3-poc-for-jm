@@ -3,7 +3,7 @@ import type { IEvent } from '@/types'
 // const event = useEvent()
 
 const { data: event } = await useAsyncData<IEvent>('event', () =>
-  $fetch(import.meta.env.VITE_API_URL + `/event`)
+  $fetch(import.meta.env.VITE_API_URL + `/event`),
 )
 // if (data.value !== null) {
 //   event.value = data.value
@@ -18,7 +18,9 @@ useHead({
   <section class="overflow-hidden">
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="heading mb-16 text-dark-golden">Become a Sponsor</h1>
+        <h1 class="heading--1 heading mb-16 text-dark-golden">
+          Become a Sponsor
+        </h1>
         <p class="mx-auto mb-4 leading-relaxed lg:w-2/3">
           Show your company and product to the best in the industry!
         </p>
@@ -38,7 +40,7 @@ useHead({
           industry.
         </p>
       </div>
-      <MoleculesPricingTable />
+      <PricingTable />
     </div>
   </section>
 </template>

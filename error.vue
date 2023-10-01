@@ -4,7 +4,7 @@
   >
     <div class="container mx-auto px-5 py-24">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="error-status mb-16">{{ error.statusCode }}</h1>
+        <h1 class="heading--1 error-status mb-16">{{ error.statusCode }}</h1>
         <p class="mx-auto text-2xl">
           {{
             error.statusCode === '404'

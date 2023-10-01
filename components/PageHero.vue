@@ -28,6 +28,8 @@
           <div class="image-wrapper">
             <img
               class="image"
+              width="1600"
+              height="666"
               alt="Lady that won a beauty price - hero image"
               src="@/assets/images/hero-image.png"
             />

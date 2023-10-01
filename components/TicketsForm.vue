@@ -5,28 +5,28 @@
       novalidate
       @submit.prevent="handleSubmit"
     >
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.name.$model"
         placeholder="Name and surname"
         required
         label="Name and surname"
         :v="v$.name"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.email.$model"
         placeholder="Your e-mail"
         required
         label="E-mail"
         :v="v$.email"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.company.$model"
         placeholder="Company name"
         required
         label="Company name"
         :v="v$.company"
       />
-      <AtomsBaseInput
+      <BaseInput
         v-model="v$.phone.$model"
         placeholder="Phone number"
         required

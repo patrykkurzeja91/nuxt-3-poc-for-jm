@@ -12,7 +12,7 @@ useHead({
 })
 
 const { data: event } = await useAsyncData<IEvent>('event-sponsor', () =>
-  $fetch(import.meta.env.VITE_API_URL + `/event`)
+  $fetch(import.meta.env.VITE_API_URL + `/event`),
 )
 // if (data.value !== null) {
 //   event.value = data.value
@@ -20,7 +20,7 @@ const { data: event } = await useAsyncData<IEvent>('event-sponsor', () =>
 const { londonDate } = useDateConverter()
 
 const eventPlace = computed(
-  () => event.value?.city + ', ' + event.value?.street
+  () => event.value?.city + ', ' + event.value?.street,
 )
 </script>
 <template>
@@ -29,7 +29,7 @@ const eventPlace = computed(
   >
     <div class="container mx-auto px-5 py-48">
       <div class="mb-20 flex w-full flex-col text-center">
-        <h1 class="mb-16 text-4xl">
+        <h1 class="heading--1 mb-16 text-4xl">
           Thank you for registering your business at the Beauty Kingdom Awards.
         </h1>
         <p class="mx-auto max-w-3xl text-2xl">
