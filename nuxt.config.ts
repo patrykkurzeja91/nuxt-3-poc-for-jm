@@ -32,18 +32,17 @@ export default defineNuxtConfig({
       titleTemplate: 'Beauty Kingdom Awards | Join now! - %s',
       link: [
         {
-          rel: 'preconnect',
+          rel: 'preload',
           href: 'https://fonts.googleapis.com',
         },
         {
-          rel: 'preconnect',
+          rel: 'preload',
           href: 'https://fonts.gstatic.com',
           crossorigin: 'anonymous',
         },
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;500&display=swap',
-          as: 'font',
         },
       ],
       meta: [

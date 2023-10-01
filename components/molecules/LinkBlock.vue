@@ -53,6 +53,9 @@ const linkCards = [
     <img
       src="@/assets/icons/kumiko_pattern.svg"
       alt="background abstract pattern"
+      width="1000"
+      height="500"
+      loading="lazy"
       class="absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2 opacity-10"
     />
     <div class="container mx-auto max-w-screen-lg px-5 pb-32 pt-64">
