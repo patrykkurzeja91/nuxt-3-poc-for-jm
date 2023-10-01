@@ -67,14 +67,6 @@ const updateValue = (e: InputEvent) => {
   emit('update:modelValue', (e.target as HTMLInputElement).value)
 }
 
-// const fieldInput = computed({
-//   get() {
-//     return props.modelValue
-//   },
-//   set(newValue: string | number) {
-//     emit('update:modelValue', newValue)
-//   },
-// })
 const errorMessage = computed(() => {
   // if (props.v !== undefined && isArrayEmpty(props.v.$errors)) {
   //   return ''
