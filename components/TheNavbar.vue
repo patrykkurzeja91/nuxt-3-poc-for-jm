@@ -8,7 +8,9 @@
             <img
               class="h-8 w-auto sm:h-10"
               src="@/assets/images/Slice.svg"
-              alt=""
+              width="64"
+              height="40"
+              alt="Beauty Kingdom short logo"
             />
           </nuxt-link>
         </div>

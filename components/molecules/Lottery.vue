@@ -38,6 +38,7 @@ const helpItems = ref([
             src="@/assets/images/feetchar.jpg"
             width="468"
             height="312"
+            loading="lazy"
             class="object-fit h-auto w-full rounded-md"
             alt="man from charity organization helping children"
           />

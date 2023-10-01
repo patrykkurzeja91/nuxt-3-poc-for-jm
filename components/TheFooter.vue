@@ -9,6 +9,7 @@
             <img
               width="220"
               height="96"
+              loading="lazy"
               src="@/assets/images/bk-awards-full-logo.svg"
               class="mr-3 h-24 text-white"
               alt="Beauty kingdom awards Logo"

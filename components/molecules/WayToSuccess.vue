@@ -6,6 +6,7 @@
       <img
         width="80"
         height="80"
+        loading="lazy"
         src="@/assets/icons/success.svg"
         class="mb-10 w-20"
         alt="hands with stars"
