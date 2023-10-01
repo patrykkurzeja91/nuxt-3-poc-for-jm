@@ -34,15 +34,18 @@ export default defineNuxtConfig({
         {
           rel: 'preload',
           href: 'https://fonts.googleapis.com',
+          as: 'font',
         },
         {
           rel: 'preload',
           href: 'https://fonts.gstatic.com',
           crossorigin: 'anonymous',
+          as: 'font',
         },
         {
-          rel: 'stylesheet',
+          rel: 'preload',
           href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:wght@400;500&display=swap',
+          as: 'font',
         },
       ],
       meta: [
