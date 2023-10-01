@@ -14,6 +14,7 @@
         </p>
       </div>
       <button
+        type="button"
         class="mx-auto flex rounded border-0 bg-royal-blue py-2 px-8 text-lg text-white hover:bg-yale-blue focus:outline-none"
         @click="handleError"
       >

@@ -6,7 +6,7 @@
       <div class="mx-auto">
         <div class="flex flex-col-reverse md:flex-row">
           <div class="pt-16 text-left sm:mt-0 md:w-2/3 md:pt-6 md:pr-8 lg:mt-4">
-            <h3 class="mb-8 text-dark-golden">Meet Elwira</h3>
+            <h2 class="heading--3 mb-8 text-dark-golden">Meet Elwira</h2>
             <p class="mb-4 text-lg font-semibold">
               Creator of a personal and company brand, a marketing specialist
               and marketing strategist. She gained experience training by

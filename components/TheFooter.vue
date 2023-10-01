@@ -7,6 +7,8 @@
         >
           <nuxt-link to="/" class="flex items-center text-white">
             <img
+              width="220"
+              height="96"
               src="@/assets/images/bk-awards-full-logo.svg"
               class="mr-3 h-24 text-white"
               alt="Beauty kingdom awards Logo"

@@ -31,11 +31,11 @@ defineProps<Props>()
     <h2 class="title-font mb-4 text-sm font-medium tracking-widest">
       {{ bundle }}
     </h2>
-    <h1
+    <h2
       class="heading--1 mb-4 flex items-center border-b border-light-grayish-blue-100 pb-8 text-5xl leading-none text-gray-900"
     >
       <span>{{ price }} </span>
-    </h1>
+    </h2>
     <div class="mb-4">
       <p
         v-for="(item, index) in benefitList"

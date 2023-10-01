@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@nuxtjs/html-validator": "^1.5.2",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.10",
     "@typescript-eslint/parser": "^6.7.3",
@@ -35,6 +36,6 @@
     "date-fns": "^2.30.0",
     "date-fns-tz": "^2.0.0",
     "nuxt-icons": "^3.2.1",
-    "vue-multiselect": "^3.0.0-alpha.2"
+    "vue-multiselect": "^3.0.0-beta.2"
   }
 }

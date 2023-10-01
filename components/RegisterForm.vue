@@ -173,6 +173,7 @@
       </div>
       <div class="ml-3 text-sm font-normal">Something went wrong</div>
       <button
+        type="button"
         class="-mx-1.5 -my-1.5 ml-auto inline-flex h-8 w-8 rounded-lg p-1.5 text-gray-400 hover:text-gray-900 focus:ring-2 focus:ring-gray-300"
         aria-label="Close"
         @click="showErrorMessage = false"

@@ -4,6 +4,7 @@
 export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css', '@/assets/css/main.css'],
   modules: [
+    '@nuxtjs/html-validator',
     'nuxt-icons',
     '@nuxtjs/tailwindcss',
     '@funken-studio/sitemap-nuxt-3',
@@ -25,6 +26,9 @@ export default defineNuxtConfig({
   ],
   app: {
     head: {
+      htmlAttrs: {
+        lang: 'en',
+      },
       titleTemplate: 'Beauty Kingdom Awards | Join now!',
       meta: [
         {

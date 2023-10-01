@@ -12,13 +12,16 @@
           class="flex h-5 w-5 items-center justify-center"
         />
       </div>
-      <label v-if="label" :for="label" class="mb-2 inline-flex text-lg"
+      <label
+        v-show="label"
+        :for="slugify(label)"
+        class="mb-2 inline-flex text-lg"
         >{{ label
         }}<span v-if="required" class="ml-1 text-red-600">*</span></label
       >
       <input
         v-bind="$attrs"
-        :id="label"
+        :id="slugify(label)"
         :value="modelValue"
         type="text"
         :required="required"
@@ -40,6 +43,8 @@
 <script setup lang="ts">
 import type { ValidationArgs } from '@vuelidate/core'
 
+const { slugify } = useTextSlugify()
+
 const props = withDefaults(
   defineProps<{
     modelValue: string
@@ -57,7 +62,7 @@ const props = withDefaults(
     type: 'text',
     v: undefined,
     required: false,
-  }
+  },
 )
 
 const emit = defineEmits<{

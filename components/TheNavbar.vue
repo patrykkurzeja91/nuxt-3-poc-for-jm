@@ -21,6 +21,7 @@
         >
           <div class="flex py-6">
             <button
+              type="button"
               class="ml-auto inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               @click="open = false"
             >
@@ -35,6 +36,7 @@
           <ul :class="{ flex: open, hidden: !open }" class="flex-col">
             <li v-for="link in links" :key="link.name">
               <button
+                type="button"
                 class="my-3 flex w-full justify-center rounded-md px-6 py-3 text-base font-medium hover:bg-light-grayish-blue-100 hover:text-dark-golden"
                 @click="'/' + navigate(link.href)"
               >
@@ -43,6 +45,7 @@
             </li>
             <li>
               <button
+                type="button"
                 class="my-3 flex w-full items-center justify-center rounded-md bg-royal-blue px-10 py-3 text-center text-base font-medium text-white hover:bg-yale-blue"
                 @click="navigate('/register')"
               >
@@ -55,6 +58,7 @@
         <div class="ml-auto flex">
           <div class="lg:hidden">
             <button
+              type="button"
               class="inline-flex items-center justify-center rounded-md bg-white p-2 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
               @click="open = true"
             >
