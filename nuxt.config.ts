@@ -29,7 +29,7 @@ export default defineNuxtConfig({
       htmlAttrs: {
         lang: 'en',
       },
-      titleTemplate: 'Beauty Kingdom Awards | Join now!',
+      titleTemplate: 'Beauty Kingdom Awards | Join now! - %s',
       meta: [
         {
           name: 'description',
@@ -58,9 +58,6 @@ export default defineNuxtConfig({
     },
 
     pageTransition: { name: 'page', mode: 'out-in' },
-  },
-  build: {
-    transpile: ['aos'],
   },
   routeRules: {
     // Static page generated on-demand, revalidates in background

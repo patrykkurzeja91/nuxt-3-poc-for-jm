@@ -7,8 +7,10 @@
         <div class="relative z-20 col-span-12 mb-20 mt-20 md:col-span-6">
           <img
             class="mb-16 w-full rounded object-cover object-center md:w-1/2"
-            alt=" beauty kingdom awards logo"
+            alt="Beauty kingdom awards logo"
             src="@/assets/images/bk_logo-gold.png"
+            width="525"
+            height="230"
           />
           <div class="w-full">
             <h1 class="mb-10 text-center text-4xl md:text-left">
